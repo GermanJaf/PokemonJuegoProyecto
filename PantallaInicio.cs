@@ -33,6 +33,7 @@ namespace PokemonJuegoProyecto
         {
             Mispokemons mispokemons = new Mispokemons(idUsuario);
             mispokemons.Show();
+            this.Hide();
         }
 
         private void buttonTorneo_Click(object sender, EventArgs e)
@@ -42,7 +43,14 @@ namespace PokemonJuegoProyecto
 
         private void buttonSalir_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void buttonVolverLogin_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
     }
 }

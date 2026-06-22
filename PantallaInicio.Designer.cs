@@ -33,6 +33,7 @@
             this.buttonPokedex = new System.Windows.Forms.Button();
             this.buttonTorneo = new System.Windows.Forms.Button();
             this.buttonSalir = new System.Windows.Forms.Button();
+            this.buttonVolverLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -84,7 +85,7 @@
             // buttonSalir
             // 
             this.buttonSalir.Font = new System.Drawing.Font("Noto Sans JP", 18F, System.Drawing.FontStyle.Bold);
-            this.buttonSalir.Location = new System.Drawing.Point(333, 530);
+            this.buttonSalir.Location = new System.Drawing.Point(111, 530);
             this.buttonSalir.Name = "buttonSalir";
             this.buttonSalir.Size = new System.Drawing.Size(224, 55);
             this.buttonSalir.TabIndex = 4;
@@ -92,11 +93,23 @@
             this.buttonSalir.UseVisualStyleBackColor = true;
             this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
             // 
+            // buttonVolverLogin
+            // 
+            this.buttonVolverLogin.Font = new System.Drawing.Font("Noto Sans JP", 18F, System.Drawing.FontStyle.Bold);
+            this.buttonVolverLogin.Location = new System.Drawing.Point(574, 530);
+            this.buttonVolverLogin.Name = "buttonVolverLogin";
+            this.buttonVolverLogin.Size = new System.Drawing.Size(224, 55);
+            this.buttonVolverLogin.TabIndex = 5;
+            this.buttonVolverLogin.Text = "Salir cuenta";
+            this.buttonVolverLogin.UseVisualStyleBackColor = true;
+            this.buttonVolverLogin.Click += new System.EventHandler(this.buttonVolverLogin_Click);
+            // 
             // PantallaInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 680);
+            this.Controls.Add(this.buttonVolverLogin);
             this.Controls.Add(this.buttonSalir);
             this.Controls.Add(this.buttonTorneo);
             this.Controls.Add(this.buttonPokedex);
@@ -116,5 +129,6 @@
         private System.Windows.Forms.Button buttonPokedex;
         private System.Windows.Forms.Button buttonTorneo;
         private System.Windows.Forms.Button buttonSalir;
+        private System.Windows.Forms.Button buttonVolverLogin;
     }
 }
