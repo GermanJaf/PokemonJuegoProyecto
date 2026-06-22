@@ -10,7 +10,7 @@ namespace PokemonJuegoProyecto
 {
     public class GestorDatos
     {
-        private string cadenaConexion = "Data Source=PokemonJuego.db";
+        private string cadenaConexion = "Data Source=Pokedex.db";
 
         public bool RegistrarUsuario(string Nombreusuario, string contraseña)
         {
@@ -49,7 +49,7 @@ namespace PokemonJuegoProyecto
             {
                 connection.Open();
 
-                string query = "SELECT Id, NombreUsuario, BatallasGanadas FROM Usuarios WHERE NombreUsuarios = @Nombreusuario AND ContraseUsuarios = @contraseña";
+                string query = "SELECT Id, NombreUsuario, BatallasGanadas FROM Usuarios WHERE NombreUsuario = @Nombreusuario AND Contraseña = @contraseña";
                 
                 using (SqliteCommand command = new SqliteCommand(query, connection))
                 {
