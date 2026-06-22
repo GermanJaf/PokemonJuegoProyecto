@@ -34,6 +34,7 @@
             this.contraseñalabel = new System.Windows.Forms.Label();
             this.contraseñalogintext = new System.Windows.Forms.TextBox();
             this.iniciologinbotton = new System.Windows.Forms.Button();
+            this.NuevoUsuarioLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Pokeuady
@@ -65,6 +66,7 @@
             this.usuariologinbox.Name = "usuariologinbox";
             this.usuariologinbox.Size = new System.Drawing.Size(319, 22);
             this.usuariologinbox.TabIndex = 2;
+            this.usuariologinbox.TextChanged += new System.EventHandler(this.usuariologinbox_TextChanged);
             // 
             // contraseñalabel
             // 
@@ -83,6 +85,7 @@
             this.contraseñalogintext.PasswordChar = '*';
             this.contraseñalogintext.Size = new System.Drawing.Size(310, 22);
             this.contraseñalogintext.TabIndex = 4;
+            this.contraseñalogintext.TextChanged += new System.EventHandler(this.contraseñalogintext_TextChanged);
             // 
             // iniciologinbotton
             // 
@@ -94,11 +97,22 @@
             this.iniciologinbotton.UseVisualStyleBackColor = true;
             this.iniciologinbotton.Click += new System.EventHandler(this.iniciologinbotton_Click);
             // 
+            // NuevoUsuarioLogin
+            // 
+            this.NuevoUsuarioLogin.Location = new System.Drawing.Point(114, 391);
+            this.NuevoUsuarioLogin.Name = "NuevoUsuarioLogin";
+            this.NuevoUsuarioLogin.Size = new System.Drawing.Size(161, 44);
+            this.NuevoUsuarioLogin.TabIndex = 6;
+            this.NuevoUsuarioLogin.Text = "CREAR USUARIO NUEVO";
+            this.NuevoUsuarioLogin.UseVisualStyleBackColor = true;
+            this.NuevoUsuarioLogin.Click += new System.EventHandler(this.NuevoUsuarioLogin_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(432, 583);
+            this.Controls.Add(this.NuevoUsuarioLogin);
             this.Controls.Add(this.iniciologinbotton);
             this.Controls.Add(this.contraseñalogintext);
             this.Controls.Add(this.contraseñalabel);
@@ -120,6 +134,7 @@
         private System.Windows.Forms.Label contraseñalabel;
         private System.Windows.Forms.TextBox contraseñalogintext;
         private System.Windows.Forms.Button iniciologinbotton;
+        private System.Windows.Forms.Button NuevoUsuarioLogin;
     }
 }
 
