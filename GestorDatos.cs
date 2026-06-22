@@ -12,6 +12,37 @@ namespace PokemonJuegoProyecto
     {
         private string cadenaConexion = "Data Source=Pokedex.db";
 
+        public System.Data.DataTable PokemonPorUsuario(int idUsuario)
+        {
+            System.Data.DataTable dataTable = new System.Data.DataTable();
+
+            using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
+            {
+                connection.Open();
+
+                string queryTablaPokemon = @"
+                        SELECT 
+                            p.Nombre AS 'Pokemon',
+                            p.Tipo AS 'Tipo',
+                            pu.Nivel AS 'Nivel',
+                            pu.HP AS 'HP',
+                            pu.BatallasGanadasPK AS 'Victorias'
+                        FROM PokemonUsuario pu
+                        INNER JOIN Pokemones p ON pu.PokemonId = p.Id
+                        WHERE pu.UsuarioId = @Id";
+
+                using (SqliteCommand command = new SqliteCommand(queryTablaPokemon, connection))
+                {
+                    command.Parameters.AddWithValue("@Id", idUsuario);
+                    using (SqliteDataReader reader = command.ExecuteReader())
+                    {
+                        dataTable.Load(reader);
+                    }
+                }
+            }
+            return dataTable;
+        }
+
         public bool RegistrarUsuario(string Nombreusuario, string contraseña)
         {
             using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
@@ -34,7 +65,7 @@ namespace PokemonJuegoProyecto
                 using (SqliteCommand command = new SqliteCommand(queryAgregar, connection))
                 {
                     command.Parameters.AddWithValue("@Nombreusuario", Nombreusuario);
-                    command.Parameters.AddWithValue("@contraseña", contraseña);
+                    command.Parameters.AddWithValue("@Contraseña", contraseña);
                     command.ExecuteNonQuery();
                 }
             }

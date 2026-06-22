@@ -44,7 +44,9 @@ namespace PokemonJuegoProyecto
             if(usuario != null)
             {
                 MessageBox.Show("Inicio de sesión exitoso. ¡Bienvenido, " + usuario.NombreUsuarios + "!");
-                // Aquí puedes abrir la siguiente ventana o realizar otras acciones después del inicio de sesión exitoso.
+                PantallaInicio menuprincipal = new PantallaInicio(usuario.Id);
+                menuprincipal.Show();
+                this.Hide();
             }
             else
             {
