@@ -90,6 +90,3 @@ INSERT INTO HistorialTorneos (UsuarioId, PokemonID, FaseLograda) VALUES
 (1, 2, '16VO'),
 (2, 1, 'Semifinales'),
 (3, 3, 'Campeon');
-
-
---HOLA MAYATES
