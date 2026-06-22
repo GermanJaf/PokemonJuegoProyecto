@@ -30,7 +30,7 @@ namespace PokemonJuegoProyecto
                     }
                 }
 
-                string queryAgregar = "INSERT INTO Usuarios (NombreUsuario, Contraseña, BatallasGanadas) VALUES (@Nombreusuario, @contraseña, 0)";
+                string queryAgregar = "INSERT INTO Usuarios (NombreUsuario, Contraseña, BatallasGanadas) VALUES (@Nombreusuario, @Contraseña, 0)";
                 using (SqliteCommand command = new SqliteCommand(queryAgregar, connection))
                 {
                     command.Parameters.AddWithValue("@Nombreusuario", Nombreusuario);
