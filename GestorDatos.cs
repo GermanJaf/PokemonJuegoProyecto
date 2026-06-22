@@ -18,7 +18,7 @@ namespace PokemonJuegoProyecto
             {
                 connection.Open();
 
-                string queryVerificar = "SELECT COUNT(*) FROM Usuarios WHERE NombreUsuarios = @Nombreusuario";
+                string queryVerificar = "SELECT COUNT(*) FROM Usuarios WHERE NombreUsuario = @Nombreusuario";
 
                 using (SqliteCommand command = new SqliteCommand(queryVerificar, connection))
                 {
@@ -30,7 +30,7 @@ namespace PokemonJuegoProyecto
                     }
                 }
 
-                string queryAgregar = "INSERT INTO Usuarios (NombreUsuarios, ContraseUsuarios, BatallasGanadas) VALUES (@Nombreusuario, @contraseña, 0)";
+                string queryAgregar = "INSERT INTO Usuarios (NombreUsuario, Contraseña, BatallasGanadas) VALUES (@Nombreusuario, @contraseña, 0)";
                 using (SqliteCommand command = new SqliteCommand(queryAgregar, connection))
                 {
                     command.Parameters.AddWithValue("@Nombreusuario", Nombreusuario);
