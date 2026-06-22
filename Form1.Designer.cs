@@ -28,20 +28,98 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.Pokeuady = new System.Windows.Forms.Label();
+            this.usuariolabel = new System.Windows.Forms.Label();
+            this.usuariologinbox = new System.Windows.Forms.TextBox();
+            this.contraseñalabel = new System.Windows.Forms.Label();
+            this.contraseñalogintext = new System.Windows.Forms.TextBox();
+            this.iniciologinbotton = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // Pokeuady
+            // 
+            this.Pokeuady.AutoSize = true;
+            this.Pokeuady.Font = new System.Drawing.Font("Algerian", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pokeuady.Location = new System.Drawing.Point(80, 49);
+            this.Pokeuady.Name = "Pokeuady";
+            this.Pokeuady.Size = new System.Drawing.Size(272, 53);
+            this.Pokeuady.TabIndex = 0;
+            this.Pokeuady.Text = "PokeUADY";
+            this.Pokeuady.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Pokeuady.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // usuariolabel
+            // 
+            this.usuariolabel.AutoSize = true;
+            this.usuariolabel.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usuariolabel.Location = new System.Drawing.Point(28, 144);
+            this.usuariolabel.Name = "usuariolabel";
+            this.usuariolabel.Size = new System.Drawing.Size(75, 27);
+            this.usuariolabel.TabIndex = 1;
+            this.usuariolabel.Text = "Usuario";
+            this.usuariolabel.Click += new System.EventHandler(this.usuario_Click);
+            // 
+            // usuariologinbox
+            // 
+            this.usuariologinbox.Location = new System.Drawing.Point(33, 174);
+            this.usuariologinbox.Name = "usuariologinbox";
+            this.usuariologinbox.Size = new System.Drawing.Size(319, 22);
+            this.usuariologinbox.TabIndex = 2;
+            // 
+            // contraseñalabel
+            // 
+            this.contraseñalabel.AutoSize = true;
+            this.contraseñalabel.Font = new System.Drawing.Font("Arial Narrow", 13.8F);
+            this.contraseñalabel.Location = new System.Drawing.Point(28, 226);
+            this.contraseñalabel.Name = "contraseñalabel";
+            this.contraseñalabel.Size = new System.Drawing.Size(106, 27);
+            this.contraseñalabel.TabIndex = 3;
+            this.contraseñalabel.Text = "Contraseña";
+            // 
+            // contraseñalogintext
+            // 
+            this.contraseñalogintext.Location = new System.Drawing.Point(33, 256);
+            this.contraseñalogintext.Name = "contraseñalogintext";
+            this.contraseñalogintext.PasswordChar = '*';
+            this.contraseñalogintext.Size = new System.Drawing.Size(310, 22);
+            this.contraseñalogintext.TabIndex = 4;
+            // 
+            // iniciologinbotton
+            // 
+            this.iniciologinbotton.Location = new System.Drawing.Point(114, 326);
+            this.iniciologinbotton.Name = "iniciologinbotton";
+            this.iniciologinbotton.Size = new System.Drawing.Size(162, 37);
+            this.iniciologinbotton.TabIndex = 5;
+            this.iniciologinbotton.Text = "INICIAR SESION";
+            this.iniciologinbotton.UseVisualStyleBackColor = true;
+            this.iniciologinbotton.Click += new System.EventHandler(this.iniciologinbotton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(797, 475);
+            this.ClientSize = new System.Drawing.Size(432, 583);
+            this.Controls.Add(this.iniciologinbotton);
+            this.Controls.Add(this.contraseñalogintext);
+            this.Controls.Add(this.contraseñalabel);
+            this.Controls.Add(this.usuariologinbox);
+            this.Controls.Add(this.usuariolabel);
+            this.Controls.Add(this.Pokeuady);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Login";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label Pokeuady;
+        private System.Windows.Forms.Label usuariolabel;
+        private System.Windows.Forms.TextBox usuariologinbox;
+        private System.Windows.Forms.Label contraseñalabel;
+        private System.Windows.Forms.TextBox contraseñalogintext;
+        private System.Windows.Forms.Button iniciologinbotton;
     }
 }
 

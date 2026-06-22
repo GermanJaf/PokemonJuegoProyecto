@@ -16,5 +16,20 @@ namespace PokemonJuegoProyecto
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iniciologinbotton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
