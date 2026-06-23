@@ -43,6 +43,8 @@ CREATE TABLE PokemonUsuario(
        [PokemonID] INTEGER,
        [Nivel] INTEGER DEFAULT 1,
        [HP] INTEGER,
+       [Ataque] INTEGER,
+       [Defensa] INTEGER,
        [BatallasGanadasPK] INTEGER DEFAULT 0,
        FOREIGN KEY ([UsuarioId]) REFERENCES Usuarios([Id]),
        FOREIGN KEY ([PokemonID]) REFERENCES Pokemones([Id])
@@ -88,10 +90,10 @@ INSERT INTO Pokemones (Nombre, Tipo, HPBase, AtaqueBase, DefensaBase, Ataque1Id,
 ('Meowth', 'Normal', 40, 45, 35, 2, 3, 1, 12),
 ('Jigglypuff', 'Normal', 115, 45, 20, 1, 2, 3, 12);
 
-INSERT INTO PokemonUsuario (UsuarioId, PokemonID, Nivel, HP) VALUES
-(1, 2, 1, 35),
-(2, 1, 1, 35),
-(3, 3, 1, 43);
+INSERT INTO PokemonUsuario (UsuarioId, PokemonID, Nivel, HP, Ataque, Defensa) VALUES
+(1, 2, 1, 39, 52, 43),
+(2, 1, 1, 35, 55, 40),
+(3, 3, 1, 44, 48, 65);
 
 INSERT INTO HistorialTorneos (UsuarioId, PokemonID, FaseLograda) VALUES
 (1, 2, '16VO'),

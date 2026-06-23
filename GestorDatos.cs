@@ -12,6 +12,25 @@ namespace PokemonJuegoProyecto
     {
         private string cadenaConexion = "Data Source=Pokedex.db";
 
+        public int PtsMejorDisponible(int idUsuario)
+        {
+            int puntosMejora = 0;
+            using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
+            {
+                connection.Open();
+                string queryPuntosMejora = "SELECT PuntosMejora FROM Usuarios WHERE Id = @Id";
+                using (SqliteCommand command = new SqliteCommand(queryPuntosMejora, connection))
+                {
+                    command.Parameters.AddWithValue("@Id", idUsuario);
+                    object result = command.ExecuteScalar();
+                    if (result != null && result != DBNull.Value)
+                    {
+                        puntosMejora = Convert.ToInt32(result);
+                    }
+                }   
+            }
+            return puntosMejora;
+        }
         public void SubirNivelPK(int idUsuario, int idPokemon)
         {
             using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
@@ -29,7 +48,9 @@ namespace PokemonJuegoProyecto
                 string querySubirNivel = @"
                     UPDATE PokemonUsuario
                     SET Nivel = Nivel + 1,
-                        HP = HP + 10
+                        HP = HP + 10,
+                        Ataque = Ataque + 5,
+                        Defensa = Defensa + 5
                     WHERE UsuarioId = @UsuarioId AND PokemonId = @PokemonId";
                 using (SqliteCommand command = new SqliteCommand(querySubirNivel, connection))
                 {
@@ -39,33 +60,14 @@ namespace PokemonJuegoProyecto
                 }
             }
         }
-        public int ObtenerPtsMejora(int idUsuario)
-        {
-            int puntosMejora = 0;
-            using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
-            {
-                connection.Open();
-                string queryPuntosMejora = "SELECT PuntosMejora FROM Usuarios WHERE Id = @Id";
-                using (SqliteCommand command = new SqliteCommand(queryPuntosMejora, connection))
-                {
-                    command.Parameters.AddWithValue("@Id", idUsuario);
-                    object result = command.ExecuteScalar();
-                    if (result != null && result != DBNull.Value)
-                    {
-                        puntosMejora = Convert.ToInt32(result);
-                    }
-                }
-            }
-            return puntosMejora;
-        }
         public void AgregarPokemonUsuario(int idUsuario, int idPokemon)
         {
             using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
             {
                 connection.Open();
                 string queryAgregar = @"
-                    INSERT INTO PokemonUsuario (UsuarioId, PokemonId, HP)
-                    SELECT @UsuarioId, Id, HPBase
+                    INSERT INTO PokemonUsuario (UsuarioId, PokemonId, HP, Ataque, Defensa)
+                    SELECT @UsuarioId, Id, HPBase, AtaqueBase, DefensaBase
                     FROM Pokemones
                     WHERE Id = @PokemonId";
                 using (SqliteCommand command = new SqliteCommand(queryAgregar, connection))
@@ -107,6 +109,8 @@ namespace PokemonJuegoProyecto
                             p.Tipo AS 'Tipo',
                             pu.Nivel AS 'Nivel',
                             pu.HP AS 'HP',
+                            pu.Ataque AS 'Ataque',
+                            pu.Defensa AS 'Defensa',
                             pu.BatallasGanadasPK AS 'Victorias'
                         FROM PokemonUsuario pu
                         INNER JOIN Pokemones p ON pu.PokemonId = p.Id

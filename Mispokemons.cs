@@ -40,7 +40,7 @@ namespace PokemonJuegoProyecto
             comboBox1.DisplayMember = "Nombre";
             comboBox1.ValueMember = "Id";
 
-            int PuntosDisponibles = gestorDatos.ObtenerPtsMejora(idUsuario);
+            int PuntosDisponibles = gestorDatos.PtsMejorDisponible(idUsuario);
             LabelPtsNivel.Text = $"Puntos de mejora {PuntosDisponibles}";
         }
 
@@ -58,7 +58,7 @@ namespace PokemonJuegoProyecto
                 int idPokemon = Convert.ToInt32(comboBox1.SelectedValue);
                 GestorDatos gestorDatos = new GestorDatos();
                 gestorDatos.AgregarPokemonUsuario(idUsuario, idPokemon);
-                // Actualizar el DataGridView después de agregar el Pokémon
+
                 DataTable pokemonesActualizados = gestorDatos.PokemonPorUsuario(idUsuario);
                 ListaPokemon.DataSource = pokemonesActualizados;
                 MessageBox.Show("¡Pokémon agregado exitosamente!");
@@ -73,7 +73,7 @@ namespace PokemonJuegoProyecto
         private void bottonSN_Click(object sender, EventArgs e)
         {
             GestorDatos gestorDatos = new GestorDatos();
-            int PuntosDisponibles = gestorDatos.ObtenerPtsMejora(idUsuario);
+            int PuntosDisponibles = gestorDatos.PtsMejorDisponible(idUsuario);
 
             if(PuntosDisponibles > 0)
             {
@@ -81,25 +81,14 @@ namespace PokemonJuegoProyecto
                 {
                     int idPokemon = Convert.ToInt32(comboBox1.SelectedValue);
                     gestorDatos.SubirNivelPK(idUsuario, idPokemon);
-                    ListaPokemon.DataSource = gestorDatos.PokemonPorUsuario(idUsuario) ;
 
-                    PuntosDisponibles = gestorDatos.ObtenerPtsMejora(idUsuario);
-                    LabelPtsNivel.Text = $"Puntos de mejora: {PuntosDisponibles}";
+                    ListaPokemon.DataSource = gestorDatos.PokemonPorUsuario(idUsuario);
+                    PuntosDisponibles = gestorDatos.PtsMejorDisponible(idUsuario);
 
-                    MessageBox.Show("Haz mejora tu pokemon con exito");
-
+                    LabelPtsNivel.Text = $"Puntos de mejora {PuntosDisponibles}";
                 }
-                else
-                {
-                    MessageBox.Show("Por favor, seleccione un Pokémon para subir de nivel.");
-                }
-            }
-            else
-            {
-                MessageBox.Show("No tienes puntos de mejora disponibles.");
             }
         }
-
         private void LabelPtsNivel_Click(object sender, EventArgs e)
         {
 
