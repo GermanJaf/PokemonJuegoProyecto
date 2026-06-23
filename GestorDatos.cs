@@ -12,18 +12,21 @@ namespace PokemonJuegoProyecto
     {
         private string cadenaConexion = "Data Source=Pokedex.db";
 
-        public void AgregarPokemonUsuario(int idUsuario, int idPokemon, int hp)
+        public void AgregarPokemonUsuario(int idUsuario, int idPokemon)
         {
             using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
             {
                 connection.Open();
-                string queryAgregar = "INSERT INTO PokemonUsuario (UsuarioId, PokemonId, Nivel, HP, BatallasGanadasPK) VALUES (@UsuarioId, @PokemonId, @Nivel, @HP, 0)";
+                string queryAgregar = @"
+                    INSERT INTO PokemonUsuario (UsuarioId, PokemonId, HP)
+                    SELECT @UsuarioId, Id, HPBase
+                    FROM Pokemones
+                    WHERE Id = @PokemonId";
                 using (SqliteCommand command = new SqliteCommand(queryAgregar, connection))
                 {
                     command.Parameters.AddWithValue("@UsuarioId", idUsuario);
-                    command.Parameters.AddWithValue("@PokemonId", idPokemon);
-                    command.Parameters.AddWithValue("@HP", hp);
-                    command.ExecuteNonQuery();
+                    command.Parameters.AddWithValue("@PokemonId", idPokemon);    
+                    command.ExecuteNonQuery();          
                 }
             }
         }

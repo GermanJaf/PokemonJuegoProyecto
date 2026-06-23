@@ -35,6 +35,10 @@ namespace PokemonJuegoProyecto
 
             dgvPokemon.DataSource = pokemones;
             dgvPokemon.AllowUserToAddRows = false;
+
+            comboBox1.DataSource = gestorDatos.CatalagoPokemon();
+            comboBox1.DisplayMember = "Nombre";
+            comboBox1.ValueMember = "Id";
         }
 
         private void buttonVolverPI_Click(object sender, EventArgs e)
@@ -45,6 +49,20 @@ namespace PokemonJuegoProyecto
         }
 
         private void buttonAgregarPK_Click(object sender, EventArgs e)
+        {
+            if(comboBox1.SelectedValue != null)
+            {
+                int idPokemon = Convert.ToInt32(comboBox1.SelectedValue);
+                GestorDatos gestorDatos = new GestorDatos();
+                gestorDatos.AgregarPokemonUsuario(idUsuario, idPokemon);
+                // Actualizar el DataGridView después de agregar el Pokémon
+                DataTable pokemonesActualizados = gestorDatos.PokemonPorUsuario(idUsuario);
+                dgvPokemon.DataSource = pokemonesActualizados;
+                MessageBox.Show("¡Pokémon agregado exitosamente!");
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
