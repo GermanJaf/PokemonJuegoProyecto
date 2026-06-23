@@ -13,6 +13,10 @@ namespace PokemonJuegoProyecto
     public partial class Mispokemons : Form
     {
         private int idUsuario;
+        public Mispokemons()
+        {
+            InitializeComponent();
+        }
         public Mispokemons(int idUsuario)
         {
             InitializeComponent();
