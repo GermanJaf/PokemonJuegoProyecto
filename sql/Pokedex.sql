@@ -8,7 +8,8 @@ CREATE TABLE Usuarios(
        [Id] INTEGER PRIMARY KEY AUTOINCREMENT,
        [NombreUsuario] TEXT NOT NULL,
        [Contraseña] TEXT NOT NULL,
-       [BatallasGanadas] INTEGER DEFAULT 0
+       [BatallasGanadas] INTEGER DEFAULT 0,
+       [PuntosMejora] INTEGER DEFAULT 0
 );
 
 CREATE TABLE Ataques(
