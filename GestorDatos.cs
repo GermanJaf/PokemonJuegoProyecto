@@ -12,6 +12,52 @@ namespace PokemonJuegoProyecto
     {
         private string cadenaConexion = "Data Source=Pokedex.db";
 
+        public void SubirNivelPK(int idUsuario, int idPokemon)
+        {
+            using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
+            {
+                connection.Open();
+                string queryRestarPuntos = @"
+                    UPDATE Usuarios
+                    SET PuntosMejora = PuntosMejora - 1
+                    WHERE Id = @Id";
+                using (SqliteCommand command = new SqliteCommand(queryRestarPuntos, connection))
+                {
+                    command.Parameters.AddWithValue("@Id", idUsuario);
+                    command.ExecuteNonQuery();
+                }
+                string querySubirNivel = @"
+                    UPDATE PokemonUsuario
+                    SET Nivel = Nivel + 1,
+                        HP = HP + 10
+                    WHERE UsuarioId = @UsuarioId AND PokemonId = @PokemonId";
+                using (SqliteCommand command = new SqliteCommand(querySubirNivel, connection))
+                {
+                    command.Parameters.AddWithValue("@UsuarioId", idUsuario);
+                    command.Parameters.AddWithValue("@PokemonId", idPokemon);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+        public int ObtenerPtsMejora(int idUsuario)
+        {
+            int puntosMejora = 0;
+            using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
+            {
+                connection.Open();
+                string queryPuntosMejora = "SELECT PuntosMejora FROM Usuarios WHERE Id = @Id";
+                using (SqliteCommand command = new SqliteCommand(queryPuntosMejora, connection))
+                {
+                    command.Parameters.AddWithValue("@Id", idUsuario);
+                    object result = command.ExecuteScalar();
+                    if (result != null && result != DBNull.Value)
+                    {
+                        puntosMejora = Convert.ToInt32(result);
+                    }
+                }
+            }
+            return puntosMejora;
+        }
         public void AgregarPokemonUsuario(int idUsuario, int idPokemon)
         {
             using (SqliteConnection connection = new SqliteConnection(cadenaConexion))

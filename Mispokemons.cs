@@ -39,6 +39,9 @@ namespace PokemonJuegoProyecto
             comboBox1.DataSource = gestorDatos.CatalagoPokemon();
             comboBox1.DisplayMember = "Nombre";
             comboBox1.ValueMember = "Id";
+
+            int PuntosDisponibles = gestorDatos.ObtenerPtsMejora(idUsuario);
+            LabelPtsNivel.Text = $"Puntos de mejora {PuntosDisponibles}";
         }
 
         private void buttonVolverPI_Click(object sender, EventArgs e)
@@ -63,6 +66,41 @@ namespace PokemonJuegoProyecto
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bottonSN_Click(object sender, EventArgs e)
+        {
+            GestorDatos gestorDatos = new GestorDatos();
+            int PuntosDisponibles = gestorDatos.ObtenerPtsMejora(idUsuario);
+
+            if(PuntosDisponibles > 0)
+            {
+                if(comboBox1.SelectedValue != null)
+                {
+                    int idPokemon = Convert.ToInt32(comboBox1.SelectedValue);
+                    gestorDatos.SubirNivelPK(idUsuario, idPokemon);
+                    dgvPokemon.DataSource = gestorDatos.PokemonPorUsuario(idUsuario) ;
+
+                    PuntosDisponibles = gestorDatos.ObtenerPtsMejora(idUsuario);
+                    LabelPtsNivel.Text = $"Puntos de mejora: {PuntosDisponibles}";
+
+                    MessageBox.Show("Haz mejora tu pokemon con exito");
+
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, seleccione un Pokémon para subir de nivel.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("No tienes puntos de mejora disponibles.");
+            }
+        }
+
+        private void LabelPtsNivel_Click(object sender, EventArgs e)
         {
 
         }

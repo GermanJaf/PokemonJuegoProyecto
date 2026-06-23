@@ -32,6 +32,8 @@
             this.buttonVolverPI = new System.Windows.Forms.Button();
             this.buttonAgregarPK = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.LabelPtsNivel = new System.Windows.Forms.Label();
+            this.bottonSN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPokemon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,11 +79,35 @@
             this.comboBox1.TabIndex = 3;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // LabelPtsNivel
+            // 
+            this.LabelPtsNivel.AutoSize = true;
+            this.LabelPtsNivel.Font = new System.Drawing.Font("Noto Sans JP", 18F, System.Drawing.FontStyle.Bold);
+            this.LabelPtsNivel.Location = new System.Drawing.Point(1080, 356);
+            this.LabelPtsNivel.Name = "LabelPtsNivel";
+            this.LabelPtsNivel.Size = new System.Drawing.Size(109, 44);
+            this.LabelPtsNivel.TabIndex = 4;
+            this.LabelPtsNivel.Text = "label1";
+            this.LabelPtsNivel.Click += new System.EventHandler(this.LabelPtsNivel_Click);
+            // 
+            // bottonSN
+            // 
+            this.bottonSN.Font = new System.Drawing.Font("Noto Sans JP", 16F, System.Drawing.FontStyle.Bold);
+            this.bottonSN.Location = new System.Drawing.Point(1054, 415);
+            this.bottonSN.Name = "bottonSN";
+            this.bottonSN.Size = new System.Drawing.Size(159, 55);
+            this.bottonSN.TabIndex = 5;
+            this.bottonSN.Text = "Subir nivel";
+            this.bottonSN.UseVisualStyleBackColor = true;
+            this.bottonSN.Click += new System.EventHandler(this.bottonSN_Click);
+            // 
             // Mispokemons
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1307, 817);
+            this.Controls.Add(this.bottonSN);
+            this.Controls.Add(this.LabelPtsNivel);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.buttonAgregarPK);
             this.Controls.Add(this.buttonVolverPI);
@@ -91,6 +117,7 @@
             this.Load += new System.EventHandler(this.Mispokemons_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPokemon)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -100,5 +127,7 @@
         private System.Windows.Forms.Button buttonVolverPI;
         private System.Windows.Forms.Button buttonAgregarPK;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label LabelPtsNivel;
+        private System.Windows.Forms.Button bottonSN;
     }
 }
