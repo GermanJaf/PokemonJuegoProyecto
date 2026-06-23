@@ -23,7 +23,7 @@ namespace PokemonJuegoProyecto
             this.idUsuario = idUsuario;
         }
 
-        private void dgvPokemon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void ListaPokemon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
@@ -33,8 +33,8 @@ namespace PokemonJuegoProyecto
             GestorDatos gestorDatos = new GestorDatos();
             DataTable pokemones = gestorDatos.PokemonPorUsuario(idUsuario);
 
-            dgvPokemon.DataSource = pokemones;
-            dgvPokemon.AllowUserToAddRows = false;
+            ListaPokemon.DataSource = pokemones;
+            ListaPokemon.AllowUserToAddRows = false;
 
             comboBox1.DataSource = gestorDatos.CatalagoPokemon();
             comboBox1.DisplayMember = "Nombre";
@@ -60,7 +60,7 @@ namespace PokemonJuegoProyecto
                 gestorDatos.AgregarPokemonUsuario(idUsuario, idPokemon);
                 // Actualizar el DataGridView después de agregar el Pokémon
                 DataTable pokemonesActualizados = gestorDatos.PokemonPorUsuario(idUsuario);
-                dgvPokemon.DataSource = pokemonesActualizados;
+                ListaPokemon.DataSource = pokemonesActualizados;
                 MessageBox.Show("¡Pokémon agregado exitosamente!");
             }
         }
@@ -81,7 +81,7 @@ namespace PokemonJuegoProyecto
                 {
                     int idPokemon = Convert.ToInt32(comboBox1.SelectedValue);
                     gestorDatos.SubirNivelPK(idUsuario, idPokemon);
-                    dgvPokemon.DataSource = gestorDatos.PokemonPorUsuario(idUsuario) ;
+                    ListaPokemon.DataSource = gestorDatos.PokemonPorUsuario(idUsuario) ;
 
                     PuntosDisponibles = gestorDatos.ObtenerPtsMejora(idUsuario);
                     LabelPtsNivel.Text = $"Puntos de mejora: {PuntosDisponibles}";

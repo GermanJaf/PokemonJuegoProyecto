@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvPokemon = new System.Windows.Forms.DataGridView();
+            this.ListaPokemon = new System.Windows.Forms.DataGridView();
             this.buttonVolverPI = new System.Windows.Forms.Button();
             this.buttonAgregarPK = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.LabelPtsNivel = new System.Windows.Forms.Label();
             this.bottonSN = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPokemon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ListaPokemon)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvPokemon
+            // ListaPokemon
             // 
-            this.dgvPokemon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPokemon.Location = new System.Drawing.Point(33, 71);
-            this.dgvPokemon.Name = "dgvPokemon";
-            this.dgvPokemon.RowHeadersWidth = 51;
-            this.dgvPokemon.RowTemplate.Height = 24;
-            this.dgvPokemon.Size = new System.Drawing.Size(899, 700);
-            this.dgvPokemon.TabIndex = 0;
-            this.dgvPokemon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPokemon_CellContentClick);
+            this.ListaPokemon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ListaPokemon.Location = new System.Drawing.Point(33, 71);
+            this.ListaPokemon.Name = "ListaPokemon";
+            this.ListaPokemon.RowHeadersWidth = 51;
+            this.ListaPokemon.RowTemplate.Height = 24;
+            this.ListaPokemon.Size = new System.Drawing.Size(899, 700);
+            this.ListaPokemon.TabIndex = 0;
+            this.ListaPokemon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ListaPokemon_CellContentClick);
             // 
             // buttonVolverPI
             // 
@@ -111,11 +111,11 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.buttonAgregarPK);
             this.Controls.Add(this.buttonVolverPI);
-            this.Controls.Add(this.dgvPokemon);
+            this.Controls.Add(this.ListaPokemon);
             this.Name = "Mispokemons";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Mispokemons_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPokemon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ListaPokemon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,7 +123,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvPokemon;
+        private System.Windows.Forms.DataGridView ListaPokemon;
         private System.Windows.Forms.Button buttonVolverPI;
         private System.Windows.Forms.Button buttonAgregarPK;
         private System.Windows.Forms.ComboBox comboBox1;
