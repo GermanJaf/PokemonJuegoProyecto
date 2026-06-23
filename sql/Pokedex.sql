@@ -1,8 +1,8 @@
 ﻿DROP TABLE IF EXISTS [PokemonUsuario];
 DROP TABLE IF EXISTS [HistorialTorneos];
-DROP TABLE IF EXISTS [Usuarios];
-DROP TABLE IF EXISTS [Ataques];
 DROP TABLE IF EXISTS [Pokemones];
+DROP TABLE IF EXISTS [Ataques];
+DROP TABLE IF EXISTS [Usuarios];
 
 CREATE TABLE Usuarios(
        [Id] INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -26,7 +26,15 @@ CREATE TABLE Pokemones(
        [Tipo] TEXT NOT NULL,
        [HPBase] INTEGER NOT NULL,
        [AtaqueBase] INTEGER NOT NULL,
-       [DefensaBase] INTEGER NOT NULL
+       [DefensaBase] INTEGER NOT NULL,
+       [Ataque1Id] INTEGER,
+       [Ataque2Id] INTEGER,
+       [Ataque3Id] INTEGER,
+       [Ataque4Id] INTEGER,
+       FOREIGN KEY ([Ataque1Id]) REFERENCES Ataques([Id]),
+       FOREIGN KEY ([Ataque2Id]) REFERENCES Ataques([Id]),
+       FOREIGN KEY ([Ataque3Id]) REFERENCES Ataques([Id]),
+       FOREIGN KEY ([Ataque4Id]) REFERENCES Ataques([Id])
 );
 
 CREATE TABLE PokemonUsuario(
@@ -36,16 +44,8 @@ CREATE TABLE PokemonUsuario(
        [Nivel] INTEGER DEFAULT 1,
        [HP] INTEGER,
        [BatallasGanadasPK] INTEGER DEFAULT 0,
-       [Ataque1Id] INTEGER,
-       [Ataque2Id] INTEGER,
-       [Ataque3Id] INTEGER,
-       [Ataque4Id] INTEGER,
        FOREIGN KEY ([UsuarioId]) REFERENCES Usuarios([Id]),
-       FOREIGN KEY ([PokemonID]) REFERENCES Pokemones([Id]),
-       FOREIGN KEY ([Ataque1Id]) REFERENCES Ataques([Id]),
-       FOREIGN KEY ([Ataque2Id]) REFERENCES Ataques([Id]),
-       FOREIGN KEY ([Ataque3Id]) REFERENCES Ataques([Id]),
-       FOREIGN KEY ([Ataque4Id]) REFERENCES Ataques([Id])
+       FOREIGN KEY ([PokemonID]) REFERENCES Pokemones([Id])
 );
 
 CREATE TABLE HistorialTorneos(
@@ -76,16 +76,22 @@ INSERT INTO Ataques (Nombre, Tipo, Poder, Presicion) VALUES
 ('Hoja Afilada', 'Planta', 55, 95),
 ('Gruñido', 'Normal', 0, 100);
 
-INSERT INTO Pokemones (Nombre, Tipo, HPBase, AtaqueBase, DefensaBase) VALUES
-('Pikachu', 'Electrico', 35, 55, 40),
-('Charmander', 'Fuego', 39, 52, 43),
-('Squirtle', 'Agua', 44, 48, 65),
-('Bulbasaur', 'Planta', 45, 49, 49);
+INSERT INTO Pokemones (Nombre, Tipo, HPBase, AtaqueBase, DefensaBase, Ataque1Id, Ataque2Id, Ataque3Id, Ataque4Id) VALUES
+('Pikachu', 'Electrico', 35, 55, 40, 3, 4, 5, 12),
+('Charmander', 'Fuego', 39, 52, 43, 6, 7, 2, 12),
+('Squirtle', 'Agua', 44, 48, 65, 8, 9, 1, 12),
+('Bulbasaur', 'Planta', 45, 49, 49, 10, 11, 1, 12),
+('Eevee', 'Normal', 55, 55, 50, 1, 3, 2, 12),      
+('Psyduck', 'Agua', 50, 52, 48, 2, 8, 9, 12),       
+('Growlithe', 'Fuego', 55, 70, 45, 1, 6, 7, 12),    
+('Bellsprout', 'Planta', 50, 75, 35, 10, 11, 1, 12),
+('Meowth', 'Normal', 40, 45, 35, 2, 3, 1, 12),
+('Jigglypuff', 'Normal', 115, 45, 20, 1, 2, 3, 12);
 
-INSERT INTO PokemonUsuario (UsuarioId, PokemonID, Nivel, HP, Ataque1Id, Ataque2Id, Ataque3Id, Ataque4Id) VALUES
-(1, 2, 1, 35, 6, 7, 2, 12),
-(2, 1, 1, 35, 3, 4, 5, 12),
-(3, 3, 1, 43, 8, 9, 1, 12);
+INSERT INTO PokemonUsuario (UsuarioId, PokemonID, Nivel, HP) VALUES
+(1, 2, 1, 35),
+(2, 1, 1, 35),
+(3, 3, 1, 43);
 
 INSERT INTO HistorialTorneos (UsuarioId, PokemonID, FaseLograda) VALUES
 (1, 2, '16VO'),

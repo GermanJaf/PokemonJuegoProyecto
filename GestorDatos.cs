@@ -71,7 +71,7 @@ namespace PokemonJuegoProyecto
                 using (SqliteCommand command = new SqliteCommand(queryAgregar, connection))
                 {
                     command.Parameters.AddWithValue("@UsuarioId", idUsuario);
-                    command.Parameters.AddWithValue("@PokemonId", idPokemon);    
+                    command.Parameters.AddWithValue("@PokemonId", idPokemon);
                     command.ExecuteNonQuery();          
                 }
             }
