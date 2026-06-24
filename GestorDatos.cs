@@ -5,12 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Data.Sqlite;
 using SQLiteUtil;
+using System.Windows.Forms;
 
 namespace PokemonJuegoProyecto
 {
     public class GestorDatos
     {
-        private string cadenaConexion = "Data Source=Pokedex.db";
+        private SqliteConnection conn;
+
+        public GestorDatos()
+        {
+            conn = new SqliteConnection("Data Source=PokemonJuego.db");
+            conn.Open();
+        }
 
         public int PtsMejorDisponible(int idUsuario)
         {
@@ -159,34 +166,9 @@ namespace PokemonJuegoProyecto
 
         public Usuarios IniciarSesion(string Nombreusuario, string contraseña)
         {
-            Usuarios usuarioiniciado = null;
+            string queryIniciarSesion = "SELECT Id, NombreUsuario, BatallasGanadas FROM Usuarios WHERE NombreUsuario = @Nombreusuario AND Contraseña = @contraseña";
 
-            using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
-            {
-                connection.Open();
-
-                string query = "SELECT Id, NombreUsuario, BatallasGanadas FROM Usuarios WHERE NombreUsuario = @Nombreusuario AND Contraseña = @contraseña";
-                
-                using (SqliteCommand command = new SqliteCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@Nombreusuario", Nombreusuario);
-                    command.Parameters.AddWithValue("@contraseña", contraseña);
-
-                    using (SqliteDataReader reader = command.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            usuarioiniciado = new Usuarios
-                            {
-                                Id = Convert.ToInt32(reader["Id"]),
-                                NombreUsuarios = reader["NombreUsuario"].ToString(),
-                                BatallasGanadas = Convert.ToInt32(reader["BatallasGanadas"])
-                            };
-                        }
-                    }
-                }
-            }
-            return usuarioiniciado;
+            return conn.
         }
     }
 }   
