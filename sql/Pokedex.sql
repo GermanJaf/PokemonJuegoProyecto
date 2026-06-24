@@ -19,7 +19,7 @@ CREATE TABLE Ataques(
        [Poder] INTEGER NOT NULL,
        [Presicion] INTEGER NOT NULL
 );
-
+  
 CREATE TABLE Pokemones(
        [Id] INTEGER PRIMARY KEY AUTOINCREMENT,
        [Nombre] TEXT NOT NULL,

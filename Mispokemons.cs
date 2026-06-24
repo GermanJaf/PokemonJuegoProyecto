@@ -32,6 +32,11 @@ namespace PokemonJuegoProyecto
         {
             GestorDatos gestorDatos = new GestorDatos();
             ListaPokemon.DataSource = gestorDatos.PokemonesPorUsuario(idUsuario);
+
+            DataTable table = gestorDatos.ListaPokemon();
+            comboBox1.DataSource = table;
+            comboBox1.DisplayMember = "Nombre";
+            comboBox1.ValueMember = "Id";
         }
 
         private void buttonVolverPI_Click(object sender, EventArgs e)
@@ -43,7 +48,13 @@ namespace PokemonJuegoProyecto
 
         private void buttonAgregarPK_Click(object sender, EventArgs e)
         {
+            GestorDatos gestorDatos = new GestorDatos();
 
+            int idPokemon = Convert.ToInt32(comboBox1.SelectedValue);
+            string NombrePokemon = comboBox1.Text;
+
+            gestorDatos.AgregarPokemon(idUsuario, idPokemon);
+            MessageBox.Show($"{NombrePokemon} se agrego a tu equipo");
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
