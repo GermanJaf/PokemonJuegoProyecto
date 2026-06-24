@@ -35,7 +35,9 @@ namespace PokemonJuegoProyecto
 
         private void buttonVolverPI_Click(object sender, EventArgs e)
         {
-
+            PantallaInicio pantallaInicio = new PantallaInicio(idUsuario);
+            pantallaInicio.Show();
+            this.Hide();
         }
 
         private void buttonAgregarPK_Click(object sender, EventArgs e)
