@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace PokemonJuegoProyecto
 {
-    internal class Movimiento
+    public class Movimiento
     {
+        public int Id { get; }
+        public string Nombre { get; }
+        public string Tipo { get; }
+        public int Poder { get; }
+        public int Precision { get; }
+
+        public Ataque(int id, string nombre, string tipo, int poder, int precision)
+        {
+           Id = id;
+           Nombre = nombre;
+           Tipo = tipo;
+           Poder = poder;
+           Precision = precision;
+        }
     }
 }
