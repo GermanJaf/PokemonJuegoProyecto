@@ -77,6 +77,7 @@
     <Compile Include="Mispokemons.Designer.cs">
       <DependentUpon>Mispokemons.cs</DependentUpon>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Include="PantallaInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,18 +87,28 @@
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
+=======
+    <Compile Include="PantallaInicio.cs" />
+    <Compile Include="PantallaInicio.Designer.cs">
+      <DependentUpon>PantallaInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="GestorDatos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< Updated upstream
     <Compile Include="RegistroUs.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegistroUs.Designer.cs">
       <DependentUpon>RegistroUs.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> Stashed changes
     <Compile Include="SqlConnectionEstension.cs" />
     <Compile Include="Usuarios.cs" />
     <EmbeddedResource Include="Mispokemons.resx">
