@@ -11,14 +11,7 @@ namespace PokemonJuegoProyecto
 {
     public class GestorDatos
     {
-        private SqliteConnection conn;
-
-        public GestorDatos()
-        {
-            conn = new SqliteConnection("Data Source=PokemonJuego.db");
-            conn.Open();
-        }
-
+        private string cadenaConexion = "Data Source=PokemonJuego.db";
         public int PtsMejorDisponible(int idUsuario)
         {
             int puntosMejora = 0;
@@ -166,9 +159,34 @@ namespace PokemonJuegoProyecto
 
         public Usuarios IniciarSesion(string Nombreusuario, string contraseña)
         {
-            string queryIniciarSesion = "SELECT Id, NombreUsuario, BatallasGanadas FROM Usuarios WHERE NombreUsuario = @Nombreusuario AND Contraseña = @contraseña";
+            Usuarios usuarioiniciado = null;
 
-            return conn.
+            using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
+            {
+                connection.Open();
+
+                string query = "SELECT Id, NombreUsuario, BatallasGanadas FROM Usuarios WHERE NombreUsuarios = @Nombreusuario AND ContraseUsuarios = @contraseña";
+
+                using (SqliteCommand command = new SqliteCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Nombreusuario", Nombreusuario);
+                    command.Parameters.AddWithValue("@contraseña", contraseña);
+
+                    using (SqliteDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            usuarioiniciado = new Usuarios
+                            {
+                                Id = Convert.ToInt32(reader["Id"]),
+                                NombreUsuarios = reader["NombreUsuario"].ToString(),
+                                BatallasGanadas = Convert.ToInt32(reader["BatallasGanadas"])
+                            };
+                        }
+                    }
+                }
+            }
+            return usuarioiniciado;
         }
     }
 }   
