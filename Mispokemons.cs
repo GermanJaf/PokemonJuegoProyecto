@@ -25,12 +25,13 @@ namespace PokemonJuegoProyecto
 
         private void ListaPokemon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
         }
 
         private void Mispokemons_Load(object sender, EventArgs e)
         {
-
+            GestorDatos gestorDatos = new GestorDatos();
+            ListaPokemon.DataSource = gestorDatos.PokemonesPorUsuario(idUsuario);
         }
 
         private void buttonVolverPI_Click(object sender, EventArgs e)
