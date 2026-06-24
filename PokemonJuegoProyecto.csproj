@@ -97,6 +97,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PokeDaVI.cs" />
     <Compile Include="Pokemon.cs" />
     <Compile Include="PokeTipos.cs" />
     <Compile Include="Program.cs" />
