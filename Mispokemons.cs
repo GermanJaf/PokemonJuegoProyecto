@@ -22,6 +22,12 @@ namespace PokemonJuegoProyecto
             InitializeComponent();
             this.idUsuario = idUsuario;
         }
+        private void ActualizarPuntos()
+        {
+            GestorDatos gestorDatos = new GestorDatos();
+            int puntosMejora = gestorDatos.PuntosMejora(idUsuario);
+            LabelPtsNivel.Text = $"Puntos de mejora: {puntosMejora}";
+        }
 
         private void ListaPokemon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -37,6 +43,8 @@ namespace PokemonJuegoProyecto
             comboBox1.DataSource = table;
             comboBox1.DisplayMember = "Nombre";
             comboBox1.ValueMember = "Id";
+
+            ActualizarPuntos();
         }
 
         private void buttonVolverPI_Click(object sender, EventArgs e)
@@ -70,7 +78,27 @@ namespace PokemonJuegoProyecto
 
         private void bottonSN_Click(object sender, EventArgs e)
         {
+            if(ListaPokemon.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccione un Pokémon para mejorar.");
+                return;
+            }
 
+            int idListaElegido = Convert.ToInt32(ListaPokemon.CurrentRow.Cells["IdRegistro"].Value);
+            GestorDatos gestorDatos = new GestorDatos();
+
+            bool mejoraExitosa = gestorDatos.MejorarPk(idListaElegido, idUsuario);
+            if (mejoraExitosa)
+            {
+                ListaPokemon.DataSource = gestorDatos.PokemonesPorUsuario(idUsuario);
+                MessageBox.Show("Mejora realizada correctamente.");
+                ActualizarPuntos();
+
+            }
+            else
+            {
+                MessageBox.Show("No tienes suficientes puntos para mejorar este Pokémon.");
+            }
         }
         private void LabelPtsNivel_Click(object sender, EventArgs e)
         {

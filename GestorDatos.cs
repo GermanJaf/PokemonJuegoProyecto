@@ -19,6 +19,25 @@ namespace PokemonJuegoProyecto
             conn.Open();
         }
 
+        public DataTable RendimientoPokemon(int idUsuario)
+        {
+            DataTable listarendimiento = new DataTable();
+
+            string queryRendimiento = @"
+                SELECT p.Nombre AS Pokemon,
+                       pu.Nivel AS Nivel,
+                       pu.BatallasGanadasPk AS BatallasGanadas
+                FROM PokemonUsuario pu
+                INNER JOIN Pokemones p ON pu.PokemonId = p.Id
+                WHERE pu.UsuarioId = @idUsuario";
+
+            var rs = conn.ExecuteReader(queryRendimiento, ("@idUsuario", idUsuario));
+
+            listarendimiento.Load(rs);
+            rs.Close();
+
+            return listarendimiento;
+        }
         public bool MejorarPk(int idRegistro, int idUsuario)
         {
             int PuntosAct = PuntosMejora(idUsuario);
@@ -89,7 +108,7 @@ namespace PokemonJuegoProyecto
             DataTable tabla = new DataTable();
 
             string queryLista = @"
-                SELECT pu.Id AS RegistroId,
+                SELECT pu.Id AS IdRegistro,
                        p.Nombre AS Nombre,
                        pu.Nivel AS Nivel,
                        p.Tipo AS Tipo,

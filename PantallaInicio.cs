@@ -38,7 +38,9 @@ namespace PokemonJuegoProyecto
 
         private void buttonTorneo_Click(object sender, EventArgs e)
         {
-
+            PantallaTorneos pantallaTorneos = new PantallaTorneos(idUsuario);
+            pantallaTorneos.Show();
+            this.Hide();
         }
 
         private void buttonSalir_Click(object sender, EventArgs e)
