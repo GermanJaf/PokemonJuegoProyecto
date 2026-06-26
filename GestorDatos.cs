@@ -19,6 +19,43 @@ namespace PokemonJuegoProyecto
             conn.Open();
         }
 
+        public bool MejorarPk(int idRegistro, int idUsuario)
+        {
+            int PuntosAct = PuntosMejora(idUsuario);
+            if(PuntosAct <= 0)
+            {
+                return false;
+            }
+
+            string queryMejorar = @"
+               UPDATE PokemonUsuario
+                SET Nivel = Nivel + 1,
+                    HP = HP + 10,
+                    Ataque = Ataque + 5,
+                    Defensa = Defensa + 5
+                WHERE Id = @idRegistro";
+
+            conn.ExecuteNonQuery(queryMejorar, ("@idRegistro", idRegistro));
+
+            string queryCobrar = "UPDATE Usuarios SET PuntosMejora = PuntosMejora - 1 WHERE Id = @idUsuario";
+            conn.ExecuteNonQuery(queryCobrar, ("@idUsuario", idUsuario));
+
+            return true;
+        }
+        public int PuntosMejora(int idUsuario)
+        {
+            int Puntos = 0;
+            string queryPuntos = "SELECT PuntosMejora FROM Usuarios WHERE Id = @idUsuario";
+
+            var rs = conn.ExecuteReader(queryPuntos, ("@idUsuario", idUsuario));
+            if(rs.Read())
+            {
+                Puntos = rs.GetInt("PuntosMejora");
+            }
+            rs.Close();
+
+            return Puntos;
+        }
         public DataTable ListaPokemon()
         {
             DataTable lista = new DataTable();
@@ -42,6 +79,8 @@ namespace PokemonJuegoProyecto
                 defensa = rs.GetInt("DefensaBase");
             }
 
+            rs.Close();
+
             string queryAgregar = "INSERT INTO PokemonUsuario (UsuarioId, PokemonId, HP, Ataque, Defensa) VALUES (@idUsuario, @idPokemon, @hp, @ataque, @defensa)";
             conn.ExecuteNonQuery(queryAgregar, ("@idUsuario", idUsuario), ("@idPokemon", idPokemon), ("@hp", hp), ("@ataque", ataque), ("@defensa", defensa));
         }
@@ -50,7 +89,8 @@ namespace PokemonJuegoProyecto
             DataTable tabla = new DataTable();
 
             string queryLista = @"
-                SELECT p.Nombre AS Nombre,
+                SELECT pu.Id AS RegistroId,
+                       p.Nombre AS Nombre,
                        pu.Nivel AS Nivel,
                        p.Tipo AS Tipo,
                        pu.HP AS Vida,

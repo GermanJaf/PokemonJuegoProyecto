@@ -48,13 +48,19 @@ namespace PokemonJuegoProyecto
 
         private void buttonAgregarPK_Click(object sender, EventArgs e)
         {
+            if(comboBox1.SelectedValue == null)
+            {
+                MessageBox.Show("Seleccione un Pokémon para agregar.");
+                return;
+            }
+
+            int idPokemonSelected = Convert.ToInt32(comboBox1.SelectedValue);
+
             GestorDatos gestorDatos = new GestorDatos();
+            gestorDatos.AgregarPokemon(idUsuario, idPokemonSelected);
 
-            int idPokemon = Convert.ToInt32(comboBox1.SelectedValue);
-            string NombrePokemon = comboBox1.Text;
-
-            gestorDatos.AgregarPokemon(idUsuario, idPokemon);
-            MessageBox.Show($"{NombrePokemon} se agrego a tu equipo");
+            ListaPokemon.DataSource = gestorDatos.PokemonesPorUsuario(idUsuario);
+            MessageBox.Show("Pokémon agregado correctamente.");
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
