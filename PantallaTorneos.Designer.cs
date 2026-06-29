@@ -33,6 +33,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.BottonPRendimiento = new System.Windows.Forms.Button();
             this.BottonVolverPT = new System.Windows.Forms.Button();
+            this.buttonTorneo = new System.Windows.Forms.Button();
+            this.buttonPractica = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -88,11 +90,34 @@
             this.BottonVolverPT.UseVisualStyleBackColor = true;
             this.BottonVolverPT.Click += new System.EventHandler(this.BottonVolverPT_Click);
             // 
+            // buttonTorneo
+            // 
+            this.buttonTorneo.Font = new System.Drawing.Font("Noto Sans JP", 18F, System.Drawing.FontStyle.Bold);
+            this.buttonTorneo.Location = new System.Drawing.Point(369, 273);
+            this.buttonTorneo.Name = "buttonTorneo";
+            this.buttonTorneo.Size = new System.Drawing.Size(442, 108);
+            this.buttonTorneo.TabIndex = 5;
+            this.buttonTorneo.Text = "Torneo";
+            this.buttonTorneo.UseVisualStyleBackColor = true;
+            // 
+            // buttonPractica
+            // 
+            this.buttonPractica.Font = new System.Drawing.Font("Noto Sans JP", 18F, System.Drawing.FontStyle.Bold);
+            this.buttonPractica.Location = new System.Drawing.Point(369, 464);
+            this.buttonPractica.Name = "buttonPractica";
+            this.buttonPractica.Size = new System.Drawing.Size(438, 126);
+            this.buttonPractica.TabIndex = 6;
+            this.buttonPractica.Text = "Practica";
+            this.buttonPractica.UseVisualStyleBackColor = true;
+            this.buttonPractica.Click += new System.EventHandler(this.buttonPractica_Click);
+            // 
             // PantallaTorneos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1192, 804);
+            this.ClientSize = new System.Drawing.Size(1227, 833);
+            this.Controls.Add(this.buttonPractica);
+            this.Controls.Add(this.buttonTorneo);
             this.Controls.Add(this.BottonVolverPT);
             this.Controls.Add(this.BottonPRendimiento);
             this.Controls.Add(this.label3);
@@ -112,5 +137,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button BottonPRendimiento;
         private System.Windows.Forms.Button BottonVolverPT;
+        private System.Windows.Forms.Button buttonTorneo;
+        private System.Windows.Forms.Button buttonPractica;
     }
 }

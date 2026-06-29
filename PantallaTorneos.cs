@@ -41,5 +41,10 @@ namespace PokemonJuegoProyecto
             pantallaInicio.Show();
             this.Hide();
         }
+
+        private void buttonPractica_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
