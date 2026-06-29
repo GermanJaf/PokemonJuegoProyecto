@@ -37,6 +37,8 @@
             this.buttonSeleccionR = new System.Windows.Forms.Button();
             this.buttonInicarPractica = new System.Windows.Forms.Button();
             this.buttonVolverPractica = new System.Windows.Forms.Button();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -95,16 +97,18 @@
             this.buttonSeleccionU.TabIndex = 5;
             this.buttonSeleccionU.Text = "Seleccionar";
             this.buttonSeleccionU.UseVisualStyleBackColor = true;
+            this.buttonSeleccionU.Click += new System.EventHandler(this.buttonSeleccionU_Click);
             // 
             // buttonSeleccionR
             // 
             this.buttonSeleccionR.Font = new System.Drawing.Font("Noto Sans JP", 13.8F, System.Drawing.FontStyle.Bold);
-            this.buttonSeleccionR.Location = new System.Drawing.Point(931, 321);
+            this.buttonSeleccionR.Location = new System.Drawing.Point(917, 430);
             this.buttonSeleccionR.Name = "buttonSeleccionR";
             this.buttonSeleccionR.Size = new System.Drawing.Size(181, 43);
             this.buttonSeleccionR.TabIndex = 6;
             this.buttonSeleccionR.Text = "Seleccionar";
             this.buttonSeleccionR.UseVisualStyleBackColor = true;
+            this.buttonSeleccionR.Click += new System.EventHandler(this.buttonSeleccionR_Click);
             // 
             // buttonInicarPractica
             // 
@@ -115,6 +119,7 @@
             this.buttonInicarPractica.TabIndex = 7;
             this.buttonInicarPractica.Text = "PELEAR";
             this.buttonInicarPractica.UseVisualStyleBackColor = true;
+            this.buttonInicarPractica.Click += new System.EventHandler(this.buttonInicarPractica_Click);
             // 
             // buttonVolverPractica
             // 
@@ -127,11 +132,33 @@
             this.buttonVolverPractica.UseVisualStyleBackColor = true;
             this.buttonVolverPractica.Click += new System.EventHandler(this.buttonVolverPractica_Click);
             // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(917, 400);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(210, 24);
+            this.comboBox3.TabIndex = 10;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Noto Sans JP", 18F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(909, 333);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(217, 44);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Nivel del rival";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // VentanaPractica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1339, 790);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.buttonVolverPractica);
             this.Controls.Add(this.buttonInicarPractica);
             this.Controls.Add(this.buttonSeleccionR);
@@ -160,5 +187,7 @@
         private System.Windows.Forms.Button buttonSeleccionR;
         private System.Windows.Forms.Button buttonInicarPractica;
         private System.Windows.Forms.Button buttonVolverPractica;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label4;
     }
 }

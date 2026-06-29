@@ -19,6 +19,96 @@ namespace PokemonJuegoProyecto
             conn.Open();
         }
 
+        public Ataque[] AtaquedePokemones(int idPokemon)
+        {
+            Ataque[] ataques = new Ataque[4];
+
+            string queryAtaques = @"
+                SELECT a.Id, a.Nombre, a.Tipo, a.Poder, a.Presicion
+                FROM Pokemones p
+                JOIN Ataques a ON a.Id IN (p.Ataque1Id, p.Ataque2Id, p.Ataque3Id, p.Ataque4Id)
+                WHERE p.Id = $Id";
+
+            var rs = conn.ExecuteReader(queryAtaques, ("$Id", idPokemon));
+
+            int i = 0;
+            while(rs.Read() && i < 4)
+            {
+                ataques[i] = new Ataque(
+                    rs.GetInt("Id"),
+                    rs.GetString("Nombre"),
+                    rs.GetString("Tipo"),
+                    rs.GetInt("Poder"),
+                    rs.GetInt("Presicion")
+                    );
+                i++;
+            }
+            rs.Close();
+            return ataques;
+        }
+        public PokeDaVI PokemonRivalCombate(int idPokemon, int nivelElegido)
+        {
+            PokeDaVI rivalpokemon = null;
+
+            string queryPokemonR = @"
+               SELECT Id, Nombre, Tipo, HPBase, AtaqueBase, DefensaBase
+                FROM Pokemones
+                WHERE Id = @idPokemon";
+
+            var rs = conn.ExecuteReader(queryPokemonR, ("@idPokemon", idPokemon));
+            if(rs.Read())
+            {
+                int hpBase = rs.GetInt("HPBase");
+                int ataqueBase = rs.GetInt("AtaqueBase");
+                int defensaBase = rs.GetInt("DefensaBase");
+
+                int hpReal = hpBase + ((nivelElegido - 1) * 10);
+                int ataqueReal = ataqueBase + ((nivelElegido - 1) * 5);
+                int defensaReal = defensaBase + ((nivelElegido - 1) * 5);
+
+                rivalpokemon = new PokeDaVI(
+                    rs.GetInt("Id"),
+                    rs.GetString("Nombre"),
+                    rs.GetString("Tipo"),
+                    nivelElegido,
+                    hpReal,
+                    ataqueReal,
+                    defensaReal
+                );
+
+                rivalpokemon.MisAtaques = AtaquedePokemones(rs.GetInt("Id"));
+            }
+            rs.Close();
+            return rivalpokemon;
+        }
+        public PokeDaVI PokemonUsuarioCombate(int idRegistro)
+        {
+            PokeDaVI miPokemon = null;
+
+            string queryPokemonU = @"
+               SELECT p.Id, p.Nombre, p.Tipo, pu.Nivel, pu.HP, pu.Ataque, pu.Defensa
+                FROM PokemonUsuario pu
+                INNER JOIN Pokemones p ON pu.PokemonId = p.Id
+                WHERE pu.Id = @idRegistro";
+
+            var rs = conn.ExecuteReader(queryPokemonU, ("@idRegistro", idRegistro));
+            if (rs.Read())
+            {
+                miPokemon = new PokeDaVI(
+                    rs.GetInt("Id"),
+                    rs.GetString("Nombre"),
+                    rs.GetString("Tipo"),
+                    rs.GetInt("Nivel"),
+                    rs.GetInt("HP"),
+                    rs.GetInt("Ataque"),
+                    rs.GetInt("Defensa")
+                );
+
+                miPokemon.MisAtaques = AtaquedePokemones(rs.GetInt("Id"));
+            }
+            rs.Close();
+            return miPokemon;
+        }
         public DataTable PokemonUsuarioConNivel(int idUsuario)
         {
             DataTable listaconnivel = new DataTable();
