@@ -14,6 +14,14 @@ namespace PokemonJuegoProyecto
     {
         private PokeDaVI miPokemon;
         private PokeDaVI rivalPokemon;
+        private int IdRegistroUsuario;
+        public PantallaGameplay(PokeDaVI usuario, PokeDaVI rival, int idPokemonRegistro)
+        {
+            InitializeComponent();
+            miPokemon = usuario;
+            rivalPokemon = rival;
+            IdRegistroUsuario = idPokemonRegistro;
+        }
         private void ActualizarVida()
         {
             labelvidaUsuario.Text = $"{miPokemon.HPActual}/{miPokemon.HPMax}";
@@ -36,6 +44,9 @@ namespace PokemonJuegoProyecto
 
             if (rivalPokemon.Debilitado())
             {
+                GestorDatos gestorDatos = new GestorDatos();
+                gestorDatos.RegistrarVictorias(IdRegistroUsuario);
+
                 MessageBox.Show("Felicidades haz ganado");
                 this.Close();
                 return;
@@ -66,12 +77,6 @@ namespace PokemonJuegoProyecto
                 MessageBox.Show("Tu pokemon se ha debilitado, haz perdido la batalla");
                 this.Close();
             }
-        }
-        public PantallaGameplay(PokeDaVI usuario, PokeDaVI rival)
-        {
-            InitializeComponent();
-            miPokemon = usuario;
-            rivalPokemon = rival;
         }
 
         private void labelPokemonRival_Click(object sender, EventArgs e)

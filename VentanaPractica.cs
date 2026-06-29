@@ -106,7 +106,8 @@ namespace PokemonJuegoProyecto
                 MessageBox.Show("Debes seleccionar ambos Pokémon antes de iniciar la práctica.");
                 return;
             }
-            PantallaGameplay pantallaGameplay = new PantallaGameplay(miPokemon, rivalPokemon);
+            int IdRegistroUsuario = Convert.ToInt32(comboBox1.SelectedValue); 
+            PantallaGameplay pantallaGameplay = new PantallaGameplay(miPokemon, rivalPokemon, IdRegistroUsuario);
             pantallaGameplay.ShowDialog();
         }
     }

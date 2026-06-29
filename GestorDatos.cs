@@ -19,6 +19,12 @@ namespace PokemonJuegoProyecto
             conn.Open();
         }
 
+        public void RegistrarVictorias(int idRegistro)
+        {
+            string queryRegistro = "UPDATE PokemonUsuario SET BatallasGanadasPK = BatallasGanadasPK +1 WHERE Id = @idRegistro";
+
+            conn.ExecuteNonQuery(queryRegistro, ("@idRegistro", idRegistro));
+        }
         public Ataque[] AtaquedePokemones(int idPokemon)
         {
             Ataque[] ataques = new Ataque[4];
