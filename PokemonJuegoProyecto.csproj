@@ -72,6 +72,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ataque.cs" />
+    <Compile Include="PantallaConfigTorneo}.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaConfigTorneo}.Designer.cs">
+      <DependentUpon>PantallaConfigTorneo}.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaGameplay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     <Compile Include="VentanaPractica.Designer.cs">
       <DependentUpon>VentanaPractica.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PantallaConfigTorneo}.resx">
+      <DependentUpon>PantallaConfigTorneo}.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaGameplay.resx">
       <DependentUpon>PantallaGameplay.cs</DependentUpon>
     </EmbeddedResource>

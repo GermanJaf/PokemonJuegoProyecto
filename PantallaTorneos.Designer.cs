@@ -99,6 +99,7 @@
             this.buttonTorneo.TabIndex = 5;
             this.buttonTorneo.Text = "Torneo";
             this.buttonTorneo.UseVisualStyleBackColor = true;
+            this.buttonTorneo.Click += new System.EventHandler(this.buttonTorneo_Click);
             // 
             // buttonPractica
             // 

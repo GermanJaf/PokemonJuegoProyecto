@@ -144,9 +144,9 @@
             this.labelComentarios.AutoSize = true;
             this.labelComentarios.Location = new System.Drawing.Point(115, 329);
             this.labelComentarios.Name = "labelComentarios";
-            this.labelComentarios.Size = new System.Drawing.Size(44, 16);
+            this.labelComentarios.Size = new System.Drawing.Size(10, 16);
             this.labelComentarios.TabIndex = 10;
-            this.labelComentarios.Text = "label3";
+            this.labelComentarios.Text = ".";
             this.labelComentarios.Click += new System.EventHandler(this.labelComentarios_Click);
             // 
             // PantallaGameplay

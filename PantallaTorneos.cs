@@ -48,5 +48,10 @@ namespace PokemonJuegoProyecto
             ventanaPractica.Show();
             this.Hide();
         }
+
+        private void buttonTorneo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
