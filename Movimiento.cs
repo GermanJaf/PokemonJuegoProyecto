@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PokemonJuegoProyecto
 {
-    public class Movimiento
+    public class Ataque
     {
         public int Id { get; }
         public string Nombre { get; }
