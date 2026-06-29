@@ -106,9 +106,17 @@ namespace PokemonJuegoProyecto
                 MessageBox.Show("Debes seleccionar ambos Pokémon antes de iniciar la práctica.");
                 return;
             }
+            miPokemon.CuraMaxima();
+            rivalPokemon.CuraMaxima();
+
             int IdRegistroUsuario = Convert.ToInt32(comboBox1.SelectedValue); 
             PantallaGameplay pantallaGameplay = new PantallaGameplay(miPokemon, rivalPokemon, IdRegistroUsuario);
             pantallaGameplay.ShowDialog();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

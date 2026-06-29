@@ -38,6 +38,9 @@
             this.buttonVolver = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.buttonSeleccionPokemonT = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -91,21 +94,23 @@
             // 
             // buttonComenzarTorneo
             // 
-            this.buttonComenzarTorneo.Location = new System.Drawing.Point(454, 515);
+            this.buttonComenzarTorneo.Location = new System.Drawing.Point(786, 547);
             this.buttonComenzarTorneo.Name = "buttonComenzarTorneo";
             this.buttonComenzarTorneo.Size = new System.Drawing.Size(268, 48);
             this.buttonComenzarTorneo.TabIndex = 5;
             this.buttonComenzarTorneo.Text = "COMENZAR";
             this.buttonComenzarTorneo.UseVisualStyleBackColor = true;
+            this.buttonComenzarTorneo.Click += new System.EventHandler(this.buttonComenzarTorneo_Click);
             // 
             // buttonVolver
             // 
-            this.buttonVolver.Location = new System.Drawing.Point(454, 661);
+            this.buttonVolver.Location = new System.Drawing.Point(786, 636);
             this.buttonVolver.Name = "buttonVolver";
             this.buttonVolver.Size = new System.Drawing.Size(268, 48);
             this.buttonVolver.TabIndex = 6;
             this.buttonVolver.Text = "Volver";
             this.buttonVolver.UseVisualStyleBackColor = true;
+            this.buttonVolver.Click += new System.EventHandler(this.buttonVolver_Click);
             // 
             // comboBox1
             // 
@@ -114,6 +119,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(152, 24);
             this.comboBox1.TabIndex = 7;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -124,11 +130,42 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Selecciona el nivel de los pokemones";
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(157, 571);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(287, 24);
+            this.comboBox2.TabIndex = 9;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // buttonSeleccionPokemonT
+            // 
+            this.buttonSeleccionPokemonT.Location = new System.Drawing.Point(191, 620);
+            this.buttonSeleccionPokemonT.Name = "buttonSeleccionPokemonT";
+            this.buttonSeleccionPokemonT.Size = new System.Drawing.Size(210, 39);
+            this.buttonSeleccionPokemonT.TabIndex = 10;
+            this.buttonSeleccionPokemonT.Text = "Elegir";
+            this.buttonSeleccionPokemonT.UseVisualStyleBackColor = true;
+            this.buttonSeleccionPokemonT.Click += new System.EventHandler(this.buttonSeleccionPokemonT_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(201, 547);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(148, 16);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Selecciona tu pokemon";
+            // 
             // PantallaConfigTorneo_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 810);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.buttonSeleccionPokemonT);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.buttonVolver);
@@ -140,6 +177,7 @@
             this.Controls.Add(this.label1);
             this.Name = "PantallaConfigTorneo_";
             this.Text = "PantallaConfigTorneo_";
+            this.Load += new System.EventHandler(this.PantallaConfigTorneo__Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,5 +194,8 @@
         private System.Windows.Forms.Button buttonVolver;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button buttonSeleccionPokemonT;
+        private System.Windows.Forms.Label label4;
     }
 }
