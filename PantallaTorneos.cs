@@ -44,7 +44,9 @@ namespace PokemonJuegoProyecto
 
         private void buttonPractica_Click(object sender, EventArgs e)
         {
-
+            VentanaPractica ventanaPractica = new VentanaPractica(idUsuario);
+            ventanaPractica.Show();
+            this.Hide();
         }
     }
 }

@@ -19,6 +19,23 @@ namespace PokemonJuegoProyecto
             conn.Open();
         }
 
+        public DataTable PokemonUsuarioConNivel(int idUsuario)
+        {
+            DataTable listaconnivel = new DataTable();
+
+            string queryListaConNivel = @"
+               SELECT pu.Id AS RegistroId,
+                      p.Nombre || ' (Nivel ' || pu.Nivel || ')' AS PokemonConNivel
+                FROM PokemonUsuario pu
+                INNER JOIN Pokemones p ON pu.PokemonId = p.Id
+                WHERE pu.UsuarioId = @idUsuario";
+
+            var rs = conn.ExecuteReader(queryListaConNivel, ("@idUsuario", idUsuario));
+            listaconnivel.Load(rs);
+            rs.Close();
+                
+            return listaconnivel;
+        }
         public DataTable RendimientoPokemon(int idUsuario)
         {
             DataTable listarendimiento = new DataTable();
