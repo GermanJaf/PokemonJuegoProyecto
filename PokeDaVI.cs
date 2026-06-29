@@ -42,7 +42,8 @@ namespace PokemonJuegoProyecto
         }
         public int Atacar(PokeDaVI rival, Ataque ataqueUsado)
         {
-            double Atade = ataqueUsado.Poder * ((double)AtaqueBase / rival.DefensaBase);
+            double Niv = ((2.0 * (double)Nivel) / 5.0) + 2.0;
+            double Atade = Niv * ataqueUsado.Poder * ((double)AtaqueBase / rival.DefensaBase);
             double dañoBase = (Atade / 50.0) + 2;
 
             //STAB//
