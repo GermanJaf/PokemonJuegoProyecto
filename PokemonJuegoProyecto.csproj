@@ -119,6 +119,12 @@
     <Compile Include="PokeTipos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroUs.Designer.cs">
+      <DependentUpon>RegistroUs.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlConnectionEstension.cs" />
     <Compile Include="Usuarios.cs" />
     <Compile Include="VentanaPractica.cs">
@@ -157,6 +163,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistroUs.resx">
+      <DependentUpon>RegistroUs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VentanaPractica.resx">
       <DependentUpon>VentanaPractica.cs</DependentUpon>
     </EmbeddedResource>

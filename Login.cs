@@ -66,19 +66,8 @@ namespace PokemonJuegoProyecto
 
         private void NuevoUsuarioLogin_Click(object sender, EventArgs e)
         {
-            GestorDatos gestorDatos = new GestorDatos();
-
-            bool registroExitoso = gestorDatos.RegistrarUsuario(usuariologinbox.Text, contraseñalogintext.Text);
-
-            if (registroExitoso)
-            {
-                MessageBox.Show("Usuario registrado exitosamente. Ahora puedes iniciar sesión.");
-
-            }
-            else
-            {
-                MessageBox.Show("Error al registrar el usuario. Por favor, inténtalo de nuevo.");
-            }
+            RegistroUs ventanaRegistro = new RegistroUs();
+            ventanaRegistro.ShowDialog();
         }
     }
 }
