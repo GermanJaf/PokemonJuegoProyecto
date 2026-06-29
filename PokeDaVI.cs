@@ -16,7 +16,7 @@ namespace PokemonJuegoProyecto
         public int HPActual { get; private set; } 
         public int AtaqueBase { get; }
         public int DefensaBase { get; }
-
+        public Ataque[] MisAtaques { get; }
         public PokeDaVI(int id, string nombre, string tipo, int nivel, int hpMax, int ataqueBase, int defensaBase)
         {
             Id = id;
@@ -40,22 +40,20 @@ namespace PokemonJuegoProyecto
         {
             return HPActual <= 0;
         }
-        public int Atacar(Pokemon rival, Ataque ataqueUsado)
+        public int Atacar(PokeDaVI rival, Ataque ataqueUsado)
         {
             double Atade = ataqueUsado.Poder * ((double)AtaqueBase / rival.DefensaBase);
             double dañoBase = (Atade / 50.0) + 2;
 
             //STAB//
             double stab =  1.0;
-            if (ataqueUsado.tipo == Tipo)
+            if (ataqueUsado.Tipo == Tipo)
             {
                 stab = 1.5;
             }
 
             // Efectividad//
             double efectividad = PokeTipos.Efectividad(ataqueUsado.Tipo, rival.Tipo);
-
-            // Daño entre 85 a 100% //
 
             // Critico //
             Random rand = new Random();
@@ -67,6 +65,10 @@ namespace PokemonJuegoProyecto
                 Console.WriteLine("¡Un golpe crítico!");
             }
 
+            // Daño entre 85 a 100% //
+            int porat = rand.Next(85, 101);
+            double aleatorio = porat / 100 ;
+
             // Formula
             int dañoFinal = (int)(dañoBase * critico * aleatorio * stab * efectividad);
 
@@ -76,3 +78,7 @@ namespace PokemonJuegoProyecto
 
             return dañoFinal;
         }
+    }
+}
+
+
