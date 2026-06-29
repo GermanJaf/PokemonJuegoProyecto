@@ -34,7 +34,10 @@ namespace PokemonJuegoProyecto
             HPActual -= cantidad;
             if (HPActual < 0) HPActual = 0;
         }
-
+        public void CuraMaxima()
+        {
+            HPActual = HPMax;
+        }
         // Debilitado//
         public bool Debilitado()
         {
