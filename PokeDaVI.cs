@@ -40,8 +40,10 @@ namespace PokemonJuegoProyecto
         {
             return HPActual <= 0;
         }
-        public int Atacar(PokeDaVI rival, Ataque ataqueUsado)
+        public int Atacar(PokeDaVI rival, Ataque ataqueUsado, out string mensajeGameplay)
         {
+            mensajeGameplay = "";
+            
             double Atade = ataqueUsado.Poder * ((double)AtaqueBase / rival.DefensaBase);
             double dañoBase = (Atade / 50.0) + 2;
 
@@ -62,7 +64,7 @@ namespace PokemonJuegoProyecto
             if (num == 10)
             {
                 critico = 1.5;
-                Console.WriteLine("¡Un golpe crítico!");
+                mensajeGameplay += "¡Un golpe crítico!";
             }
 
             // Daño entre 85 a 100% //
@@ -72,9 +74,11 @@ namespace PokemonJuegoProyecto
             // Formula
             int dañoFinal = (int)(dañoBase * critico * aleatorio * stab * efectividad);
 
-            if (efectividad == 2.0) Console.WriteLine("¡Es súper eficaz!");
+            if (efectividad == 2.0) mensajeGameplay += "¡Es súper eficaz!"; 
 
-            else if (efectividad == 0.5) Console.WriteLine("No es muy eficaz...");
+            else if (efectividad == 0.5) mensajeGameplay += "No es muy eficaz...";
+
+            else if (efectividad == 0.0) mensajeGameplay += "No tiene efectos...";
 
             return dañoFinal;
         }

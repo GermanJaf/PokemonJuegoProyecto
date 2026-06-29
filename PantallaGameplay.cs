@@ -36,8 +36,13 @@ namespace PokemonJuegoProyecto
 
             Ataque ataqueUsado = miPokemon.MisAtaques[AtaqueSeleccion];
 
-            int dañoRealizado = miPokemon.Atacar(rivalPokemon, ataqueUsado);
+            string mensajeInGame;
+
+            int dañoRealizado = miPokemon.Atacar(rivalPokemon, ataqueUsado, out mensajeInGame);
             rivalPokemon.RecibirDaño(dañoRealizado);
+
+            labelComentarios.Text = mensajeInGame;
+
             MessageBox.Show($"{miPokemon.Nombre} uso {ataqueUsado.Nombre} y causo {dañoRealizado} puntos de daño");
 
             ActualizarVida();
@@ -66,7 +71,12 @@ namespace PokemonJuegoProyecto
 
             Ataque ataqueUsadoR = rivalPokemon.MisAtaques[AtaqueAleatorio];
 
-            int dañoRealizadoR = rivalPokemon.Atacar(miPokemon, ataqueUsadoR);
+            string mensajeInGameRival;
+
+            int dañoRealizadoR = rivalPokemon.Atacar(miPokemon, ataqueUsadoR, out mensajeInGameRival);
+
+            labelComentarios.Text = mensajeInGameRival;
+
             miPokemon.RecibirDaño(dañoRealizadoR);
             MessageBox.Show($"{rivalPokemon.Nombre} rival uso {ataqueUsadoR.Nombre} y te ha hecho {dañoRealizadoR} puntos de daño");
 
@@ -142,6 +152,11 @@ namespace PokemonJuegoProyecto
         private void button4_Click(object sender, EventArgs e)
         {
             EjecutarDaño(3);
+        }
+
+        private void labelComentarios_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
