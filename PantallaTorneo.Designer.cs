@@ -39,6 +39,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.btnAbandonar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelPokemonRival
@@ -145,11 +146,24 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // btnAbandonar
+            // 
+            this.btnAbandonar.BackColor = System.Drawing.Color.Red;
+            this.btnAbandonar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAbandonar.Location = new System.Drawing.Point(667, 35);
+            this.btnAbandonar.Name = "btnAbandonar";
+            this.btnAbandonar.Size = new System.Drawing.Size(133, 35);
+            this.btnAbandonar.TabIndex = 11;
+            this.btnAbandonar.Text = "ABANDONAR";
+            this.btnAbandonar.UseVisualStyleBackColor = false;
+            this.btnAbandonar.Click += new System.EventHandler(this.btnAbandonar_Click);
+            // 
             // PantallaTorneo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1259, 593);
+            this.Controls.Add(this.btnAbandonar);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -181,5 +195,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnAbandonar;
     }
 }

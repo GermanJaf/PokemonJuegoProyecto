@@ -154,5 +154,11 @@ namespace PokemonJuegoProyecto
         {
             EjecutarDaño(3);
         }
+
+        private void btnAbandonar_Click(object sender, EventArgs e)
+        {
+            this.Owner.Show();
+            this.Close();
+        }
     }
 }

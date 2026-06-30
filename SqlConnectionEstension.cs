@@ -23,7 +23,7 @@ namespace SQLiteUtil
             var cmd = conn.CreateCommand();
             cmd.CommandText = commandText;
 
-            foreach (var (name, value) in parameters)
+            foreach (var (name, value) in parameters)w
             {
                 cmd.Parameters.AddWithValue(name, value);
             }
