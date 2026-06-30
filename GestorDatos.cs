@@ -13,6 +13,12 @@ namespace PokemonJuegoProyecto
     public class GestorDatos
 
     {
+        private SqliteConnection conn;
+        public GestorDatos()
+        {
+            conn = new SqliteConnection("Data Source=Pokedex.db");
+            conn.Open();
+        }
         public bool ExisteUsuario(string nombreUsuario)
         {
             string query = "SELECT COUNT(*) FROM Usuarios WHERE NombreUsuario = @usuario";
@@ -26,12 +32,6 @@ namespace PokemonJuegoProyecto
             rs.Close();
 
             return conteo > 0;
-        }
-        private SqliteConnection conn;
-        public GestorDatos()
-        {
-            conn = new SqliteConnection("Data Source=Pokedex.db");
-            conn.Open();
         }
 
         public void RegistrarVictorias(int idRegistro)
