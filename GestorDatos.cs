@@ -11,7 +11,22 @@ using System.Data;
 namespace PokemonJuegoProyecto
 {
     public class GestorDatos
+
     {
+        public bool ExisteUsuario(string nombreUsuario)
+        {
+            string query = "SELECT COUNT(*) FROM Usuarios WHERE NombreUsuario = @usuario";
+            var rs = conn.ExecuteReader(query, ("@usuario", nombreUsuario));
+
+            int conteo = 0;
+            if (rs.Read())
+            {
+                conteo = rs.GetInt32(0);
+            }
+            rs.Close();
+
+            return conteo > 0;
+        }
         private SqliteConnection conn;
         public GestorDatos()
         {
