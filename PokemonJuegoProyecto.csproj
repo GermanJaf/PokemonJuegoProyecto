@@ -90,6 +90,12 @@
     <Compile Include="PantallaRendimientoPK.Designer.cs">
       <DependentUpon>PantallaRendimientoPK.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaTorneo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaTorneo.Designer.cs">
+      <DependentUpon>PantallaTorneo.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaTorneos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaRendimientoPK.resx">
       <DependentUpon>PantallaRendimientoPK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaTorneo.resx">
+      <DependentUpon>PantallaTorneo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaTorneos.resx">
       <DependentUpon>PantallaTorneos.cs</DependentUpon>
