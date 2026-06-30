@@ -35,6 +35,11 @@ namespace PokemonJuegoProyecto
             if (HPActual < 0) HPActual = 0;
         }
 
+        public void CuraMaxima()
+        {
+            HPActual = HPMax;
+        }
+
         // Debilitado//
         public bool Debilitado()
         {
@@ -43,7 +48,8 @@ namespace PokemonJuegoProyecto
         public int Atacar(PokeDaVI rival, Ataque ataqueUsado, out string mensajeGameplay)
         {
             mensajeGameplay = "";
-            
+
+            double Niv = ((2.0 * (double)Nivel) / 5.0) + 2.0;
             double Atade = ataqueUsado.Poder * ((double)AtaqueBase / rival.DefensaBase);
             double dañoBase = (Atade / 50.0) + 2;
 

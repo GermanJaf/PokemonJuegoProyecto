@@ -51,7 +51,9 @@ namespace PokemonJuegoProyecto
 
         private void buttonTorneo_Click(object sender, EventArgs e)
         {
-
+            PantallaConfigTorneo_ pantallaConfigTorneo = new PantallaConfigTorneo_(idUsuario);
+            pantallaConfigTorneo.Show();
+            this.Hide();
         }
     }
 }

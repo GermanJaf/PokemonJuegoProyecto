@@ -158,5 +158,10 @@ namespace PokemonJuegoProyecto
         {
 
         }
+
+        private void button5Retirarse_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
