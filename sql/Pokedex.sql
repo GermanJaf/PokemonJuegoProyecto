@@ -61,8 +61,7 @@ CREATE TABLE HistorialTorneos(
 
 INSERT INTO Usuarios (NombreUsuario, Contraseña, BatallasGanadas) VALUES
 ('RodrigoFlores', '123456', 2),
-('PabloRuz', 'digital67', 9),
-('DiegoInurreta', 'contraseña', 1);
+('PabloRuz', 'digital67', 9);
 
 INSERT INTO Ataques (Nombre, Tipo, Poder, Presicion) VALUES
 ('Placaje', 'Normal', 40, 100),
@@ -168,10 +167,8 @@ INSERT INTO Pokemones (Nombre, Tipo, HPBase, AtaqueBase, DefensaBase, Ataque1Id,
 
 INSERT INTO PokemonUsuario (UsuarioId, PokemonID, Nivel, HP, Ataque, Defensa) VALUES
 (1, 2, 1, 39, 52, 43),
-(2, 1, 1, 35, 55, 40),
-(3, 3, 1, 44, 48, 65);
+(2, 1, 1, 35, 55, 40);
 
 INSERT INTO HistorialTorneos (UsuarioId, PokemonID, FaseLograda) VALUES
 (1, 2, '16VO'),
-(2, 1, 'Semifinales'),
-(3, 3, 'Campeon');
+(2, 1, 'Semifinales');

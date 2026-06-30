@@ -13,6 +13,8 @@ namespace PokemonJuegoProyecto
     public partial class PantallaConfigTorneo_ : Form
     {
         private int idUsuario;
+        private PokeDaVI miPokemonTorneo;
+
         public PantallaConfigTorneo_(int idusuario)
         {
             InitializeComponent();
@@ -93,7 +95,16 @@ namespace PokemonJuegoProyecto
 
         private void buttonSeleccionPokemonT_Click(object sender, EventArgs e)
         {
+            if(comboBox2.SelectedValue == null)
+            {
+                return;
+            }
 
+            int idRegistro = Convert.ToInt32(comboBox2.SelectedValue);
+
+            GestorDatos gestorDatos = new GestorDatos();
+            miPokemonTorneo = gestorDatos.PokemonUsuarioCombate(idRegistro);
+            MessageBox.Show($"Haz seleccionado {miPokemonTorneo.Nombre} con el nivel {miPokemonTorneo.Nivel} para este torneo");
         }
     }
 }

@@ -81,7 +81,6 @@ namespace PokemonJuegoProyecto
             GestorDatos gestorDatos = new GestorDatos();
             miPokemon = gestorDatos.PokemonUsuarioCombate(idRegistro);
             MessageBox.Show($"Has seleccionado a {miPokemon.Nombre} con nivel {miPokemon.Nivel}");
-
         }
 
         private void buttonSeleccionR_Click(object sender, EventArgs e)
