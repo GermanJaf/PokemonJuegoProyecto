@@ -74,7 +74,7 @@ namespace PokemonJuegoProyecto
             {
                 MessageBox.Show("Por favor seleccione una dificultad");
                 return;
-            }else if(checkseleccionados == 1)
+            }else if(checkseleccionados > 1)
             {
                 MessageBox.Show("ERROR: Solo puedes escoger uno");
                 return;
@@ -85,7 +85,20 @@ namespace PokemonJuegoProyecto
                 MessageBox.Show("Favor de escoger un nivel");
                 return;
             }
+
+            if(miPokemonTorneo == null)
+            {
+                MessageBox.Show("Favor de escoger un pokemon. No se le olvide presioanr Elegir para que se seleccione");
+                return;
+            }
+
             int nivelElegidoTorneo = Convert.ToInt32(comboBox1.SelectedItem);
+            int idRegistro = Convert.ToInt32(comboBox2.SelectedValue);
+
+            PantallGameplayaTorneo pantallaTorneo = new PantallGameplayaTorneo(miPokemonTorneo, idRegistro, cantidadOponentes, nivelElegidoTorneo);
+            this.Hide();
+            pantallaTorneo.ShowDialog();
+            this.Show();
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)

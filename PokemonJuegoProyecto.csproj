@@ -78,11 +78,11 @@
     <Compile Include="PantallaConfigTorneo.Designer.cs">
       <DependentUpon>PantallaConfigTorneo.cs</DependentUpon>
     </Compile>
-    <Compile Include="PantallaGameplay.cs">
+    <Compile Include="PantallaGameplayPractica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PantallaGameplay.Designer.cs">
-      <DependentUpon>PantallaGameplay.cs</DependentUpon>
+    <Compile Include="PantallaGameplayPractica.Designer.cs">
+      <DependentUpon>PantallaGameplayPractica.cs</DependentUpon>
     </Compile>
     <Compile Include="PantallaRendimientoPK.cs">
       <SubType>Form</SubType>
@@ -90,11 +90,11 @@
     <Compile Include="PantallaRendimientoPK.Designer.cs">
       <DependentUpon>PantallaRendimientoPK.cs</DependentUpon>
     </Compile>
-    <Compile Include="PantallaTorneo.cs">
+    <Compile Include="PantallGameplayaTorneo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PantallaTorneo.Designer.cs">
-      <DependentUpon>PantallaTorneo.cs</DependentUpon>
+    <Compile Include="PantallGameplayaTorneo.Designer.cs">
+      <DependentUpon>PantallGameplayaTorneo.cs</DependentUpon>
     </Compile>
     <Compile Include="PantallaTorneos.cs">
       <SubType>Form</SubType>
@@ -142,14 +142,14 @@
     <EmbeddedResource Include="PantallaConfigTorneo.resx">
       <DependentUpon>PantallaConfigTorneo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PantallaGameplay.resx">
-      <DependentUpon>PantallaGameplay.cs</DependentUpon>
+    <EmbeddedResource Include="PantallaGameplayPractica.resx">
+      <DependentUpon>PantallaGameplayPractica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaRendimientoPK.resx">
       <DependentUpon>PantallaRendimientoPK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PantallaTorneo.resx">
-      <DependentUpon>PantallaTorneo.cs</DependentUpon>
+    <EmbeddedResource Include="PantallGameplayaTorneo.resx">
+      <DependentUpon>PantallGameplayaTorneo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaTorneos.resx">
       <DependentUpon>PantallaTorneos.cs</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace PokemonJuegoProyecto
 {
-    partial class PantallaGameplay
+    partial class PantallaGameplayPractica
     {
         /// <summary>
         /// Required designer variable.

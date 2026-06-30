@@ -109,7 +109,7 @@ namespace PokemonJuegoProyecto
             rivalPokemon.CuraMaxima();
 
             int IdRegistroUsuario = Convert.ToInt32(comboBox1.SelectedValue); 
-            PantallaGameplay pantallaGameplay = new PantallaGameplay(miPokemon, rivalPokemon, IdRegistroUsuario);
+            PantallaGameplayPractica pantallaGameplay = new PantallaGameplayPractica(miPokemon, rivalPokemon, IdRegistroUsuario);
             pantallaGameplay.ShowDialog();
         }
 

@@ -10,19 +10,17 @@ using System.Windows.Forms;
 
 namespace PokemonJuegoProyecto
 {
-    public partial class PantallaTorneo : Form
+    public partial class PantallaGameplayPractica : Form
     {
-
         private PokeDaVI miPokemon;
         private PokeDaVI rivalPokemon;
         private int IdRegistroUsuario;
-        private int pocionesRestantes = 3;
-        public PantallaTorneo(PokeDaVI usuario, PokeDaVI rival, int idPokemonRegistro)
+        public PantallaGameplayPractica(PokeDaVI usuario, PokeDaVI rival, int idPokemonRegistro)
         {
             InitializeComponent();
             miPokemon = usuario;
             rivalPokemon = rival;
-            IdRegistroUsuario= idPokemonRegistro;
+            IdRegistroUsuario = idPokemonRegistro;
         }
         private void ActualizarVida()
         {
@@ -42,6 +40,8 @@ namespace PokemonJuegoProyecto
 
             int dañoRealizado = miPokemon.Atacar(rivalPokemon, ataqueUsado, out mensajeInGame);
             rivalPokemon.RecibirDaño(dañoRealizado);
+
+            labelComentarios.Text = mensajeInGame;
 
             MessageBox.Show($"{miPokemon.Nombre} uso {ataqueUsado.Nombre} y causo {dañoRealizado} puntos de daño");
 
@@ -75,7 +75,7 @@ namespace PokemonJuegoProyecto
 
             int dañoRealizadoR = rivalPokemon.Atacar(miPokemon, ataqueUsadoR, out mensajeInGameRival);
 
-
+            labelComentarios.Text = mensajeInGameRival;
 
             miPokemon.RecibirDaño(dañoRealizadoR);
             MessageBox.Show($"{rivalPokemon.Nombre} rival uso {ataqueUsadoR.Nombre} y te ha hecho {dañoRealizadoR} puntos de daño");
@@ -88,6 +88,27 @@ namespace PokemonJuegoProyecto
                 this.Close();
             }
         }
+
+        private void labelPokemonRival_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelPokemonUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelvidaRival_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelvidaUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void PantallaGameplay_Load(object sender, EventArgs e)
         {
             labelPokemonUsuario.Text = miPokemon.Nombre;
@@ -97,42 +118,20 @@ namespace PokemonJuegoProyecto
             {
                 button1.Text = miPokemon.MisAtaques[0].Nombre;
             }
-            if (miPokemon.MisAtaques[1] != null)
+            if(miPokemon.MisAtaques[1] != null)
             {
                 button2.Text = miPokemon.MisAtaques[1].Nombre;
             }
-            if (miPokemon.MisAtaques[2] != null)
+            if(miPokemon.MisAtaques[2] != null)
             {
                 button3.Text = miPokemon.MisAtaques[2].Nombre;
             }
-            if (miPokemon.MisAtaques[3] != null)
+            if(miPokemon.MisAtaques[3] != null)
             {
                 button4.Text = miPokemon.MisAtaques[3].Nombre;
             }
-            btnSanar.Text = $"Sanar ({pocionesRestantes})";
-            ActualizarVida();
-        }
 
-        private void btnSanar_Click(object sender, EventArgs e)
-        {
-            if (pocionesRestantes <= 0)
-            {
-                return;
-            } 
-            if (miPokemon.HPActual>= miPokemon.HPMax)
-            {
-                MessageBox.Show("Tu pokémon ya tiene la vida al máximo.");
-                return;
-            }
-            int cantidadCurar = 50;
-            miPokemon.RecibirDaño(-cantidadCurar);
-            if (pocionesRestantes ==0)
-            {
-                btnSanar.Enabled = false;
-            }
-            MessageBox.Show($"¡Has curado a {miPokemon.Nombre}! Recupero {cantidadCurar}HP.");
             ActualizarVida();
-            TurnoRival();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -155,9 +154,13 @@ namespace PokemonJuegoProyecto
             EjecutarDaño(3);
         }
 
-        private void btnAbandonar_Click(object sender, EventArgs e)
+        private void labelComentarios_Click(object sender, EventArgs e)
         {
-            this.Owner.Show();
+
+        }
+
+        private void button5Retirarse_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

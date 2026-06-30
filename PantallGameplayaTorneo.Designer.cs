@@ -1,6 +1,6 @@
 ﻿namespace PokemonJuegoProyecto
 {
-    partial class PantallaTorneo
+    partial class PantallGameplayaTorneo
     {
         /// <summary>
         /// Required designer variable.
@@ -40,6 +40,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnAbandonar = new System.Windows.Forms.Button();
+            this.lblCantidadHP = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelPokemonRival
@@ -86,6 +87,7 @@
             this.labelvidaRival.Size = new System.Drawing.Size(44, 16);
             this.labelvidaRival.TabIndex = 4;
             this.labelvidaRival.Text = "label5";
+            this.labelvidaRival.Click += new System.EventHandler(this.labelvidaRival_Click);
             // 
             // labelvidaUsuario
             // 
@@ -95,22 +97,23 @@
             this.labelvidaUsuario.Size = new System.Drawing.Size(44, 16);
             this.labelvidaUsuario.TabIndex = 5;
             this.labelvidaUsuario.Text = "label6";
+            this.labelvidaUsuario.Click += new System.EventHandler(this.labelvidaUsuario_Click);
             // 
             // btnSanar
             // 
-            this.btnSanar.Location = new System.Drawing.Point(458, 251);
+            this.btnSanar.Location = new System.Drawing.Point(61, 413);
             this.btnSanar.Name = "btnSanar";
-            this.btnSanar.Size = new System.Drawing.Size(75, 23);
+            this.btnSanar.Size = new System.Drawing.Size(155, 51);
             this.btnSanar.TabIndex = 6;
-            this.btnSanar.Text = "Sanar (3)";
+            this.btnSanar.Text = "Sanar";
             this.btnSanar.UseVisualStyleBackColor = true;
             this.btnSanar.Click += new System.EventHandler(this.btnSanar_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(195, 341);
+            this.button1.Location = new System.Drawing.Point(303, 334);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 79);
+            this.button1.Size = new System.Drawing.Size(260, 79);
             this.button1.TabIndex = 7;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -118,9 +121,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(202, 476);
+            this.button2.Location = new System.Drawing.Point(310, 469);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 79);
+            this.button2.Size = new System.Drawing.Size(253, 79);
             this.button2.TabIndex = 8;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -128,9 +131,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(423, 341);
+            this.button3.Location = new System.Drawing.Point(718, 334);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(148, 79);
+            this.button3.Size = new System.Drawing.Size(253, 79);
             this.button3.TabIndex = 9;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
@@ -138,9 +141,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(423, 476);
+            this.button4.Location = new System.Drawing.Point(718, 469);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(148, 79);
+            this.button4.Size = new System.Drawing.Size(253, 79);
             this.button4.TabIndex = 10;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
@@ -150,7 +153,7 @@
             // 
             this.btnAbandonar.BackColor = System.Drawing.Color.Red;
             this.btnAbandonar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAbandonar.Location = new System.Drawing.Point(667, 35);
+            this.btnAbandonar.Location = new System.Drawing.Point(1048, 429);
             this.btnAbandonar.Name = "btnAbandonar";
             this.btnAbandonar.Size = new System.Drawing.Size(133, 35);
             this.btnAbandonar.TabIndex = 11;
@@ -158,11 +161,21 @@
             this.btnAbandonar.UseVisualStyleBackColor = false;
             this.btnAbandonar.Click += new System.EventHandler(this.btnAbandonar_Click);
             // 
+            // lblCantidadHP
+            // 
+            this.lblCantidadHP.AutoSize = true;
+            this.lblCantidadHP.Location = new System.Drawing.Point(110, 397);
+            this.lblCantidadHP.Name = "lblCantidadHP";
+            this.lblCantidadHP.Size = new System.Drawing.Size(44, 16);
+            this.lblCantidadHP.TabIndex = 12;
+            this.lblCantidadHP.Text = "label1";
+            // 
             // PantallaTorneo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1259, 593);
+            this.Controls.Add(this.lblCantidadHP);
             this.Controls.Add(this.btnAbandonar);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -177,6 +190,7 @@
             this.Controls.Add(this.labelPokemonRival);
             this.Name = "PantallaTorneo";
             this.Text = "PantallaTorneo";
+            this.Load += new System.EventHandler(this.PantallaTorneo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,5 +210,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnAbandonar;
+        private System.Windows.Forms.Label lblCantidadHP;
     }
 }

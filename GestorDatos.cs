@@ -19,6 +19,21 @@ namespace PokemonJuegoProyecto
             conn = new SqliteConnection("Data Source=Pokedex.db");
             conn.Open();
         }
+        public PokeDaVI PokemonAleatorio(int nivelElegidoTorneo)
+        {
+            int idRandom = 1;
+
+            string queryPKAleatorio = "SELECT Id FROM Pokemones ORDER BY RANDOM() LIMIT 1";
+
+            var rs = conn.ExecuteReader(queryPKAleatorio);
+            if (rs.Read())
+            {
+                idRandom = Convert.ToInt32(rs["Id"]);
+            }
+            rs.Close();
+
+            return PokemonRivalCombate(idRandom, nivelElegidoTorneo);
+        }
         public bool ExisteUsuario(string nombreUsuario)
         {
             string query = "SELECT COUNT(*) FROM Usuarios WHERE NombreUsuario = @usuario";
@@ -33,7 +48,6 @@ namespace PokemonJuegoProyecto
 
             return conteo > 0;
         }
-
         public void RegistrarVictorias(int idRegistro)
         {
             string queryRegistro = "UPDATE PokemonUsuario SET BatallasGanadasPK = BatallasGanadasPK +1 WHERE Id = @idRegistro";
