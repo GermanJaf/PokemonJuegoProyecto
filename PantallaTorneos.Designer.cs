@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.BottonPRendimiento = new System.Windows.Forms.Button();
+            this.BtnHistorial = new System.Windows.Forms.Button();
             this.BottonVolverPT = new System.Windows.Forms.Button();
             this.buttonTorneo = new System.Windows.Forms.Button();
             this.buttonPractica = new System.Windows.Forms.Button();
@@ -40,10 +40,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Noto Sans JP", 18F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(25, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1155, 88);
+            this.label1.Size = new System.Drawing.Size(1124, 72);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido a los torneos, en este apartado pondras a prueba tu capacidad de \r\ngan" +
     "ar un torneo pokemon.\r\n";
@@ -68,20 +68,20 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "label3";
             // 
-            // BottonPRendimiento
+            // BtnHistorial
             // 
-            this.BottonPRendimiento.Font = new System.Drawing.Font("Arial Narrow", 16.2F);
-            this.BottonPRendimiento.Location = new System.Drawing.Point(550, 127);
-            this.BottonPRendimiento.Name = "BottonPRendimiento";
-            this.BottonPRendimiento.Size = new System.Drawing.Size(444, 52);
-            this.BottonPRendimiento.TabIndex = 3;
-            this.BottonPRendimiento.Text = "Ver Rendimientos Pokemons";
-            this.BottonPRendimiento.UseVisualStyleBackColor = true;
-            this.BottonPRendimiento.Click += new System.EventHandler(this.BottonPRendimiento_Click);
+            this.BtnHistorial.Font = new System.Drawing.Font("Arial Narrow", 16.2F);
+            this.BtnHistorial.Location = new System.Drawing.Point(550, 127);
+            this.BtnHistorial.Name = "BtnHistorial";
+            this.BtnHistorial.Size = new System.Drawing.Size(444, 52);
+            this.BtnHistorial.TabIndex = 3;
+            this.BtnHistorial.Text = "Ver Historial de torneos";
+            this.BtnHistorial.UseVisualStyleBackColor = true;
+            this.BtnHistorial.Click += new System.EventHandler(this.BottonPRendimiento_Click);
             // 
             // BottonVolverPT
             // 
-            this.BottonVolverPT.Font = new System.Drawing.Font("Noto Sans JP", 18F, System.Drawing.FontStyle.Bold);
+            this.BottonVolverPT.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.BottonVolverPT.Location = new System.Drawing.Point(432, 741);
             this.BottonVolverPT.Name = "BottonVolverPT";
             this.BottonVolverPT.Size = new System.Drawing.Size(277, 51);
@@ -92,7 +92,7 @@
             // 
             // buttonTorneo
             // 
-            this.buttonTorneo.Font = new System.Drawing.Font("Noto Sans JP", 18F, System.Drawing.FontStyle.Bold);
+            this.buttonTorneo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.buttonTorneo.Location = new System.Drawing.Point(369, 273);
             this.buttonTorneo.Name = "buttonTorneo";
             this.buttonTorneo.Size = new System.Drawing.Size(442, 108);
@@ -103,7 +103,7 @@
             // 
             // buttonPractica
             // 
-            this.buttonPractica.Font = new System.Drawing.Font("Noto Sans JP", 18F, System.Drawing.FontStyle.Bold);
+            this.buttonPractica.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.buttonPractica.Location = new System.Drawing.Point(369, 464);
             this.buttonPractica.Name = "buttonPractica";
             this.buttonPractica.Size = new System.Drawing.Size(438, 126);
@@ -120,7 +120,7 @@
             this.Controls.Add(this.buttonPractica);
             this.Controls.Add(this.buttonTorneo);
             this.Controls.Add(this.BottonVolverPT);
-            this.Controls.Add(this.BottonPRendimiento);
+            this.Controls.Add(this.BtnHistorial);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -136,7 +136,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button BottonPRendimiento;
+        private System.Windows.Forms.Button BtnHistorial;
         private System.Windows.Forms.Button BottonVolverPT;
         private System.Windows.Forms.Button buttonTorneo;
         private System.Windows.Forms.Button buttonPractica;

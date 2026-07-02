@@ -13,12 +13,31 @@ namespace PokemonJuegoProyecto
     public class GestorDatos
 
     {
+ 
         private SqliteConnection conn;
         public GestorDatos()
         {
             conn = new SqliteConnection("Data Source=Pokedex.db");
             conn.Open();
+            
         }
+        public void RegistrarBatalla(int usuarioId, string pokUser, int nivUser, string pokRival, int nivRival, string resultado, string vidaFinal)
+        {
+            string query = @"INSERT INTO HistorialTorneos
+                          (UsuarioId,PokemonUsuario, NivelUsuario, PokemonRival, NivelRival, Resultado, VidaFinal) 
+                          VALUES (@usuarioId, @pokUser, @nivUser, @pokRival, @nivRival, @resultado, @vidaFinal)";
+            conn.ExecuteNonQuery(query,
+                ("@usuarioId", usuarioId),
+                ("@pokUser", pokUser),
+                ("@nivUser", nivUser),
+                ("@pokRival", pokRival),
+                ("@nivRival", nivRival),
+                ("@resultado", resultado),
+                ("@vidaFinal", vidaFinal));
+
+        }
+
+
         public PokeDaVI PokemonAleatorio(int nivelElegidoTorneo)
         {
             int idRandom = 1;
@@ -157,7 +176,6 @@ namespace PokemonJuegoProyecto
 
             var rs = conn.ExecuteReader(queryListaConNivel, ("@idUsuario", idUsuario));
             listaconnivel.Load(rs);
-            rs.Close();
                 
             return listaconnivel;
         }
@@ -166,12 +184,16 @@ namespace PokemonJuegoProyecto
             DataTable listarendimiento = new DataTable();
 
             string queryRendimiento = @"
-                SELECT p.Nombre AS Pokemon,
-                       pu.Nivel AS Nivel,
-                       pu.BatallasGanadasPk AS BatallasGanadas
-                FROM PokemonUsuario pu
-                INNER JOIN Pokemones p ON pu.PokemonId = p.Id
-                WHERE pu.UsuarioId = @idUsuario";
+        SELECT PokemonUsuario AS [Mi Pokémon],
+               NivelUsuario AS [Nivel],
+               PokemonRival AS [Pokémon Rival],
+               NivelRival AS [Nivel Rival],
+               Resultado AS [Resultado],
+               VidaFinal AS [Vida Final]
+        FROM HistorialTorneos
+        WHERE UsuarioId = @idUsuario
+        ORDER BY Id DESC";
+
 
             var rs = conn.ExecuteReader(queryRendimiento, ("@idUsuario", idUsuario));
 

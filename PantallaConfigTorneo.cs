@@ -44,7 +44,7 @@ namespace PokemonJuegoProyecto
 
         private void buttonVolver_Click(object sender, EventArgs e)
         {
-            PantallaTorneos pantallaTorneos = new PantallaTorneos();
+            PantallaTorneos pantallaTorneos = new PantallaTorneos(idUsuario);
             pantallaTorneos.Show();
             this.Hide();
         }
