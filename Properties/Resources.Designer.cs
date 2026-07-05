@@ -123,6 +123,36 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FONDONUEVAPRACTICA {
+            get {
+                object obj = ResourceManager.GetObject("FONDONUEVAPRACTICA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FONDONUEVAPRACTICA1 {
+            get {
+                object obj = ResourceManager.GetObject("FONDONUEVAPRACTICA1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FONDONUEVAPRACTICA2 {
+            get {
+                object obj = ResourceManager.GetObject("FONDONUEVAPRACTICA2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FONDOPOKEMENU {
             get {
                 object obj = ResourceManager.GetObject("FONDOPOKEMENU", resourceCulture);
@@ -346,6 +376,16 @@ namespace PokemonJuegoProyecto.Properties {
         internal static System.Drawing.Bitmap pikac {
             get {
                 object obj = ResourceManager.GetObject("pikac", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PIKACHU2D {
+            get {
+                object obj = ResourceManager.GetObject("PIKACHU2D", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

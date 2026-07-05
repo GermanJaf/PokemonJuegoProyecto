@@ -39,19 +39,22 @@
             this.buttonVolverPractica = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(118, 80);
+            this.label1.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(134, 61);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(658, 58);
+            this.label1.Size = new System.Drawing.Size(566, 50);
             this.label1.TabIndex = 0;
             this.label1.Text = "¡Bienvenido al Modo Práctica!\r\n Elige a tu oponente y prepárate para medir tus fu" +
     "erzas";
@@ -62,11 +65,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Stencil", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(170, 176);
+            this.label2.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(97, 176);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 29);
+            this.label2.Size = new System.Drawing.Size(181, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tu Pokémon";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -75,11 +78,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Stencil", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(554, 176);
+            this.label3.Font = new System.Drawing.Font("Stencil", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(553, 176);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 29);
+            this.label3.Size = new System.Drawing.Size(207, 30);
             this.label3.TabIndex = 2;
             this.label3.Text = "Pokémon Rival";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -90,10 +93,10 @@
             this.comboBox1.ForeColor = System.Drawing.Color.Black;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.IntegralHeight = false;
-            this.comboBox1.Location = new System.Drawing.Point(177, 366);
+            this.comboBox1.Location = new System.Drawing.Point(93, 366);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(154, 21);
+            this.comboBox1.Size = new System.Drawing.Size(195, 21);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -102,23 +105,23 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.IntegralHeight = false;
             this.comboBox2.ItemHeight = 13;
-            this.comboBox2.Location = new System.Drawing.Point(576, 366);
+            this.comboBox2.Location = new System.Drawing.Point(558, 366);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(154, 21);
+            this.comboBox2.Size = new System.Drawing.Size(185, 21);
             this.comboBox2.TabIndex = 4;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // buttonSeleccionU
             // 
-            this.buttonSeleccionU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(82)))), ((int)(((byte)(65)))));
+            this.buttonSeleccionU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(170)))), ((int)(((byte)(26)))));
             this.buttonSeleccionU.FlatAppearance.BorderSize = 0;
             this.buttonSeleccionU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSeleccionU.Font = new System.Drawing.Font("SimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSeleccionU.Location = new System.Drawing.Point(177, 391);
+            this.buttonSeleccionU.Location = new System.Drawing.Point(93, 391);
             this.buttonSeleccionU.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSeleccionU.Name = "buttonSeleccionU";
-            this.buttonSeleccionU.Size = new System.Drawing.Size(154, 35);
+            this.buttonSeleccionU.Size = new System.Drawing.Size(185, 47);
             this.buttonSeleccionU.TabIndex = 5;
             this.buttonSeleccionU.Text = "Seleccionar";
             this.buttonSeleccionU.UseVisualStyleBackColor = false;
@@ -126,14 +129,14 @@
             // 
             // buttonSeleccionR
             // 
-            this.buttonSeleccionR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(82)))), ((int)(((byte)(65)))));
+            this.buttonSeleccionR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(170)))), ((int)(((byte)(26)))));
             this.buttonSeleccionR.FlatAppearance.BorderSize = 0;
             this.buttonSeleccionR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSeleccionR.Font = new System.Drawing.Font("SimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSeleccionR.Location = new System.Drawing.Point(576, 391);
+            this.buttonSeleccionR.Location = new System.Drawing.Point(558, 391);
             this.buttonSeleccionR.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSeleccionR.Name = "buttonSeleccionR";
-            this.buttonSeleccionR.Size = new System.Drawing.Size(154, 35);
+            this.buttonSeleccionR.Size = new System.Drawing.Size(185, 47);
             this.buttonSeleccionR.TabIndex = 6;
             this.buttonSeleccionR.Text = "Seleccionar";
             this.buttonSeleccionR.UseVisualStyleBackColor = false;
@@ -141,14 +144,14 @@
             // 
             // buttonInicarPractica
             // 
-            this.buttonInicarPractica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.buttonInicarPractica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(31)))), ((int)(((byte)(30)))));
             this.buttonInicarPractica.FlatAppearance.BorderSize = 0;
             this.buttonInicarPractica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInicarPractica.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonInicarPractica.Location = new System.Drawing.Point(269, 512);
+            this.buttonInicarPractica.Location = new System.Drawing.Point(193, 495);
             this.buttonInicarPractica.Margin = new System.Windows.Forms.Padding(2);
             this.buttonInicarPractica.Name = "buttonInicarPractica";
-            this.buttonInicarPractica.Size = new System.Drawing.Size(121, 51);
+            this.buttonInicarPractica.Size = new System.Drawing.Size(180, 51);
             this.buttonInicarPractica.TabIndex = 7;
             this.buttonInicarPractica.Text = "PELEAR";
             this.buttonInicarPractica.UseVisualStyleBackColor = false;
@@ -156,14 +159,14 @@
             // 
             // buttonVolverPractica
             // 
-            this.buttonVolverPractica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.buttonVolverPractica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(31)))), ((int)(((byte)(30)))));
             this.buttonVolverPractica.FlatAppearance.BorderSize = 0;
             this.buttonVolverPractica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonVolverPractica.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonVolverPractica.Location = new System.Drawing.Point(493, 512);
+            this.buttonVolverPractica.Location = new System.Drawing.Point(454, 495);
             this.buttonVolverPractica.Margin = new System.Windows.Forms.Padding(2);
             this.buttonVolverPractica.Name = "buttonVolverPractica";
-            this.buttonVolverPractica.Size = new System.Drawing.Size(121, 51);
+            this.buttonVolverPractica.Size = new System.Drawing.Size(181, 51);
             this.buttonVolverPractica.TabIndex = 8;
             this.buttonVolverPractica.Text = "VOLVER";
             this.buttonVolverPractica.UseVisualStyleBackColor = false;
@@ -173,10 +176,10 @@
             // 
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.IntegralHeight = false;
-            this.comboBox3.Location = new System.Drawing.Point(375, 440);
+            this.comboBox3.Location = new System.Drawing.Point(340, 373);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(158, 21);
+            this.comboBox3.Size = new System.Drawing.Size(156, 21);
             this.comboBox3.TabIndex = 10;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
@@ -185,7 +188,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(373, 416);
+            this.label4.Location = new System.Drawing.Point(336, 349);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(160, 22);
@@ -193,25 +196,36 @@
             this.label4.Text = "Nivel del rival";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
+            // pictureBox1
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Stencil", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(40, 9);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(161, 29);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Tu Pokémon";
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::PokemonJuegoProyecto.Properties.Resources.PIKACHU2D;
+            this.pictureBox1.Location = new System.Drawing.Point(717, 413);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(85, 46);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::PokemonJuegoProyecto.Properties.Resources.PIKACHU2D;
+            this.pictureBox2.Location = new System.Drawing.Point(253, 413);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(85, 46);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
             // 
             // VentanaPractica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PokemonJuegoProyecto.Properties.Resources.FONDOPRACTICA4;
-            this.ClientSize = new System.Drawing.Size(898, 601);
-            this.Controls.Add(this.label5);
+            this.BackgroundImage = global::PokemonJuegoProyecto.Properties.Resources.FONDONUEVAPRACTICA2;
+            this.ClientSize = new System.Drawing.Size(831, 576);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.buttonVolverPractica);
@@ -227,6 +241,8 @@
             this.Name = "VentanaPractica";
             this.Text = "VentanaPractica";
             this.Load += new System.EventHandler(this.VentanaPractica_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,6 +261,7 @@
         private System.Windows.Forms.Button buttonVolverPractica;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
