@@ -69,5 +69,10 @@ namespace PokemonJuegoProyecto
             RegistroUs ventanaRegistro = new RegistroUs();
             ventanaRegistro.ShowDialog();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
