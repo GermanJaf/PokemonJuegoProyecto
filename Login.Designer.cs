@@ -35,63 +35,77 @@
             this.contraseñalogintext = new System.Windows.Forms.TextBox();
             this.iniciologinbotton = new System.Windows.Forms.Button();
             this.NuevoUsuarioLogin = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Pokeuady
             // 
             this.Pokeuady.AutoSize = true;
-            this.Pokeuady.Font = new System.Drawing.Font("Algerian", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pokeuady.Location = new System.Drawing.Point(80, 49);
+            this.Pokeuady.BackColor = System.Drawing.Color.Transparent;
+            this.Pokeuady.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pokeuady.Location = new System.Drawing.Point(104, 77);
+            this.Pokeuady.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Pokeuady.Name = "Pokeuady";
-            this.Pokeuady.Size = new System.Drawing.Size(272, 53);
+            this.Pokeuady.Size = new System.Drawing.Size(131, 22);
             this.Pokeuady.TabIndex = 0;
-            this.Pokeuady.Text = "PokeUADY";
+            this.Pokeuady.Text = "UADY BATTLE\r\n";
             this.Pokeuady.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Pokeuady.Click += new System.EventHandler(this.label1_Click);
             // 
             // usuariolabel
             // 
             this.usuariolabel.AutoSize = true;
-            this.usuariolabel.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usuariolabel.Location = new System.Drawing.Point(28, 144);
+            this.usuariolabel.BackColor = System.Drawing.Color.Transparent;
+            this.usuariolabel.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usuariolabel.Location = new System.Drawing.Point(21, 111);
+            this.usuariolabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usuariolabel.Name = "usuariolabel";
-            this.usuariolabel.Size = new System.Drawing.Size(75, 27);
+            this.usuariolabel.Size = new System.Drawing.Size(77, 19);
             this.usuariolabel.TabIndex = 1;
             this.usuariolabel.Text = "Usuario";
             this.usuariolabel.Click += new System.EventHandler(this.usuario_Click);
             // 
             // usuariologinbox
             // 
-            this.usuariologinbox.Location = new System.Drawing.Point(33, 174);
+            this.usuariologinbox.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usuariologinbox.Location = new System.Drawing.Point(25, 132);
+            this.usuariologinbox.Margin = new System.Windows.Forms.Padding(2);
             this.usuariologinbox.Name = "usuariologinbox";
-            this.usuariologinbox.Size = new System.Drawing.Size(319, 22);
+            this.usuariologinbox.Size = new System.Drawing.Size(234, 22);
             this.usuariologinbox.TabIndex = 2;
             this.usuariologinbox.TextChanged += new System.EventHandler(this.usuariologinbox_TextChanged);
             // 
             // contraseñalabel
             // 
             this.contraseñalabel.AutoSize = true;
-            this.contraseñalabel.Font = new System.Drawing.Font("Arial Narrow", 13.8F);
-            this.contraseñalabel.Location = new System.Drawing.Point(28, 226);
+            this.contraseñalabel.BackColor = System.Drawing.Color.Transparent;
+            this.contraseñalabel.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contraseñalabel.Location = new System.Drawing.Point(21, 176);
+            this.contraseñalabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.contraseñalabel.Name = "contraseñalabel";
-            this.contraseñalabel.Size = new System.Drawing.Size(106, 27);
+            this.contraseñalabel.Size = new System.Drawing.Size(109, 19);
             this.contraseñalabel.TabIndex = 3;
             this.contraseñalabel.Text = "Contraseña";
             // 
             // contraseñalogintext
             // 
-            this.contraseñalogintext.Location = new System.Drawing.Point(33, 256);
+            this.contraseñalogintext.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contraseñalogintext.Location = new System.Drawing.Point(25, 197);
+            this.contraseñalogintext.Margin = new System.Windows.Forms.Padding(2);
             this.contraseñalogintext.Name = "contraseñalogintext";
             this.contraseñalogintext.PasswordChar = '*';
-            this.contraseñalogintext.Size = new System.Drawing.Size(310, 22);
+            this.contraseñalogintext.Size = new System.Drawing.Size(234, 22);
             this.contraseñalogintext.TabIndex = 4;
             this.contraseñalogintext.TextChanged += new System.EventHandler(this.contraseñalogintext_TextChanged);
             // 
             // iniciologinbotton
             // 
-            this.iniciologinbotton.Location = new System.Drawing.Point(114, 326);
+            this.iniciologinbotton.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iniciologinbotton.Location = new System.Drawing.Point(25, 248);
+            this.iniciologinbotton.Margin = new System.Windows.Forms.Padding(2);
             this.iniciologinbotton.Name = "iniciologinbotton";
-            this.iniciologinbotton.Size = new System.Drawing.Size(162, 37);
+            this.iniciologinbotton.Size = new System.Drawing.Size(131, 29);
             this.iniciologinbotton.TabIndex = 5;
             this.iniciologinbotton.Text = "INICIAR SESION";
             this.iniciologinbotton.UseVisualStyleBackColor = true;
@@ -99,19 +113,33 @@
             // 
             // NuevoUsuarioLogin
             // 
-            this.NuevoUsuarioLogin.Location = new System.Drawing.Point(114, 391);
+            this.NuevoUsuarioLogin.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NuevoUsuarioLogin.Location = new System.Drawing.Point(169, 248);
+            this.NuevoUsuarioLogin.Margin = new System.Windows.Forms.Padding(2);
             this.NuevoUsuarioLogin.Name = "NuevoUsuarioLogin";
-            this.NuevoUsuarioLogin.Size = new System.Drawing.Size(161, 44);
+            this.NuevoUsuarioLogin.Size = new System.Drawing.Size(132, 29);
             this.NuevoUsuarioLogin.TabIndex = 6;
-            this.NuevoUsuarioLogin.Text = "CREAR USUARIO NUEVO";
+            this.NuevoUsuarioLogin.Text = "CREAR USUARIO \r\n";
             this.NuevoUsuarioLogin.UseVisualStyleBackColor = true;
             this.NuevoUsuarioLogin.Click += new System.EventHandler(this.NuevoUsuarioLogin_Click);
             // 
-            // Form1
+            // pictureBox1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::PokemonJuegoProyecto.Properties.Resources.POKELOGO;
+            this.pictureBox1.Location = new System.Drawing.Point(12, -11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 110);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Login
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 583);
+            this.BackgroundImage = global::PokemonJuegoProyecto.Properties.Resources.INICIOPOKEMON;
+            this.ClientSize = new System.Drawing.Size(324, 474);
             this.Controls.Add(this.NuevoUsuarioLogin);
             this.Controls.Add(this.iniciologinbotton);
             this.Controls.Add(this.contraseñalogintext);
@@ -119,8 +147,11 @@
             this.Controls.Add(this.usuariologinbox);
             this.Controls.Add(this.usuariolabel);
             this.Controls.Add(this.Pokeuady);
-            this.Name = "Form1";
+            this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "Login";
             this.Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,6 +166,7 @@
         private System.Windows.Forms.TextBox contraseñalogintext;
         private System.Windows.Forms.Button iniciologinbotton;
         private System.Windows.Forms.Button NuevoUsuarioLogin;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
