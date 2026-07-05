@@ -118,17 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TORNEOXD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TORNEOXD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PERSONAJE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PERSONAJE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="INICIOPOKEMON" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\INICIOPOKEMON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TORNEOXD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TORNEOXD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="marco1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marco1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pikac" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pikac.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pokedexxxxx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pokedexxxxx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="POKELOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POKELOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FONDOPRACTICA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDOPRACTICA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FONDOPRACTICA3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDOPRACTICA3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TIERRA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TIERRA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,17 +157,23 @@
   <data name="FONDOINICIOPOKE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FONDOINICIOPOKE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FONDOPRACTICA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDOPRACTICA1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FONDO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FONDO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FONDOPOKEMENUU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FONDOPOKEMENUU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FONDO ELECCION" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDO ELECCION.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MADERA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MADERA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TORNEOXD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TORNEOXD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="REGISTROFONDO (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\REGISTROFONDO (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,11 +184,17 @@
   <data name="REGISTROFONDO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\REGISTROFONDO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Gemini_Generated_Image_3d2cqo3d2cqo3d2c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gemini_Generated_Image_3d2cqo3d2cqo3d2c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FONDOPOKEMENU1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FONDOPOKEMENU1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FONDOINICIOPOKE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FONDOINICIOPOKE1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MADERA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MADERA1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inviernooo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inviernooo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="marcador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\marcador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,11 +211,14 @@
   <data name="inviernooo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\inviernooo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pokedexxxxx" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pokedexxxxx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="marcador1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marcador1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="POKELOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\POKELOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pikac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikac.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FONDOPRACTICA2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDOPRACTICA2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,28 +226,16 @@
   <data name="CIELO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CIELO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FONDOINICIOPOKE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDOINICIOPOKE1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="marco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\marco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TORNEOXD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TORNEOXD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gemini_Generated_Image_3d2cqo3d2cqo3d2c" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gemini_Generated_Image_3d2cqo3d2cqo3d2c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MADERA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MADERA1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="inviernooo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\inviernooo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="marcador1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\marcador1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="marco1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\marco1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FONDO ELECCION" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FONDO ELECCION.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FONDOPRACTICA4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDOPRACTICA4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

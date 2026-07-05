@@ -33,11 +33,13 @@ namespace PokemonJuegoProyecto
             comboBox1.DataSource = ListasUsuario;
             comboBox1.DisplayMember = "PokemonConNivel";
             comboBox1.ValueMember = "RegistroId";
+            comboBox1.MaxDropDownItems = 8;
 
             DataTable ListaRival = gestorDatos.ListaPokemon();
             comboBox2.DataSource = ListaRival;
             comboBox2.DisplayMember = "Nombre";
             comboBox2.ValueMember = "Id";
+            comboBox2.MaxDropDownItems = 8;
 
             comboBox3.Items.Clear();
             for(int i = 1; i <= 100; i++)
@@ -45,6 +47,7 @@ namespace PokemonJuegoProyecto
                 comboBox3.Items.Add(i);
             }
             comboBox3.SelectedIndex = 0;
+            comboBox3.MaxDropDownItems = 8;
         }
 
         private void buttonVolverPractica_Click(object sender, EventArgs e)
@@ -114,6 +117,26 @@ namespace PokemonJuegoProyecto
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

@@ -317,5 +317,20 @@
   <ItemGroup>
     <None Include="Resources\FONDO ELECCION.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPRACTICA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPRACTICA1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPRACTICA2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPRACTICA3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPRACTICA4.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

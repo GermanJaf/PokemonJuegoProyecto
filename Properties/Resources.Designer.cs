@@ -153,6 +153,56 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FONDOPRACTICA {
+            get {
+                object obj = ResourceManager.GetObject("FONDOPRACTICA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FONDOPRACTICA1 {
+            get {
+                object obj = ResourceManager.GetObject("FONDOPRACTICA1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FONDOPRACTICA2 {
+            get {
+                object obj = ResourceManager.GetObject("FONDOPRACTICA2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FONDOPRACTICA3 {
+            get {
+                object obj = ResourceManager.GetObject("FONDOPRACTICA3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FONDOPRACTICA4 {
+            get {
+                object obj = ResourceManager.GetObject("FONDOPRACTICA4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gemini_Generated_Image_3d2cqo3d2cqo3d2c {
             get {
                 object obj = ResourceManager.GetObject("Gemini_Generated_Image_3d2cqo3d2cqo3d2c", resourceCulture);

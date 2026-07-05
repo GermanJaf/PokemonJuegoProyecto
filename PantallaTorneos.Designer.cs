@@ -85,7 +85,7 @@
             this.BtnHistorial.Name = "BtnHistorial";
             this.BtnHistorial.Size = new System.Drawing.Size(246, 36);
             this.BtnHistorial.TabIndex = 3;
-            this.BtnHistorial.Text = "Ver Historial de torneos";
+            this.BtnHistorial.Text = "Ver Historial de Torneos";
             this.BtnHistorial.UseVisualStyleBackColor = false;
             this.BtnHistorial.Click += new System.EventHandler(this.BottonPRendimiento_Click);
             // 
@@ -105,10 +105,10 @@
             // 
             this.buttonTorneo.BackColor = System.Drawing.SystemColors.Info;
             this.buttonTorneo.Font = new System.Drawing.Font("SimSun", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTorneo.Location = new System.Drawing.Point(47, 245);
+            this.buttonTorneo.Location = new System.Drawing.Point(371, 243);
             this.buttonTorneo.Margin = new System.Windows.Forms.Padding(2);
             this.buttonTorneo.Name = "buttonTorneo";
-            this.buttonTorneo.Size = new System.Drawing.Size(267, 62);
+            this.buttonTorneo.Size = new System.Drawing.Size(272, 62);
             this.buttonTorneo.TabIndex = 5;
             this.buttonTorneo.Text = "Torneo";
             this.buttonTorneo.UseVisualStyleBackColor = false;
@@ -118,10 +118,10 @@
             // 
             this.buttonPractica.BackColor = System.Drawing.SystemColors.Info;
             this.buttonPractica.Font = new System.Drawing.Font("SimSun", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPractica.Location = new System.Drawing.Point(373, 245);
+            this.buttonPractica.Location = new System.Drawing.Point(47, 243);
             this.buttonPractica.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPractica.Name = "buttonPractica";
-            this.buttonPractica.Size = new System.Drawing.Size(266, 62);
+            this.buttonPractica.Size = new System.Drawing.Size(267, 62);
             this.buttonPractica.TabIndex = 6;
             this.buttonPractica.Text = "Práctica";
             this.buttonPractica.UseVisualStyleBackColor = false;
