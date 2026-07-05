@@ -125,6 +125,11 @@
     <Compile Include="PokeTipos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RegistroUs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,13 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="RegistroUs.resx">
       <DependentUpon>RegistroUs.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +205,117 @@
     <PackageReference Include="System.Data.SQLite.EF6">
       <Version>2.0.3</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INICIOPOKEMON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POKELOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REGISTROFONDO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REGISTROFONDO %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REGISTROFONDO %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERSONAJE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOINICIOPOKE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOINICIOPOKE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPOKEMENU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPOKEMENUU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPOKEMENU1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POKEBALL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokemon_sprite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POKEDEX ARRIBA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikac.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rojo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokedexxxxx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NUBES.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TIERRA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CIELO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inviernooo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marcador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inviernooo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MADERA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TORNEOXD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TORNEOXD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_3d2cqo3d2cqo3d2c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MADERA1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inviernooo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marcador1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marco1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDO ELECCION.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
