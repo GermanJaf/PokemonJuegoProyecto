@@ -54,5 +54,10 @@ namespace PokemonJuegoProyecto
             login.Show();
             this.Hide();
         }
+
+        private void PantallaInicio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
