@@ -47,25 +47,29 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxTuPokemon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTuPokemon)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(202, 48);
+            this.label1.Font = new System.Drawing.Font("Rockwell", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(102, 28);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 52);
+            this.label1.Size = new System.Drawing.Size(599, 84);
             this.label1.TabIndex = 0;
-            this.label1.Text = "}JJJJ\r\n\r\n";
+            this.label1.Text = "¡Bienvenido al Modo Torneo!\r\nSelecciona a tu Pokémon, el nivel del rival y define" +
+    " \r\nla dificultad del desafío para demostrar tu potencial.\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // checkBoxDFacil
             // 
@@ -291,12 +295,23 @@
             this.pictureBox6.TabIndex = 18;
             this.pictureBox6.TabStop = false;
             // 
+            // pictureBoxTuPokemon
+            // 
+            this.pictureBoxTuPokemon.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxTuPokemon.Location = new System.Drawing.Point(627, 248);
+            this.pictureBoxTuPokemon.Name = "pictureBoxTuPokemon";
+            this.pictureBoxTuPokemon.Size = new System.Drawing.Size(84, 68);
+            this.pictureBoxTuPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxTuPokemon.TabIndex = 19;
+            this.pictureBoxTuPokemon.TabStop = false;
+            // 
             // PantallaConfigTorneo_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PokemonJuegoProyecto.Properties.Resources.TORNEOPANTALLA;
             this.ClientSize = new System.Drawing.Size(836, 580);
+            this.Controls.Add(this.pictureBoxTuPokemon);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -318,7 +333,8 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PantallaConfigTorneo_";
-            this.Text = "PantallaConfigTorneo_";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Configuració de Torneos";
             this.Load += new System.EventHandler(this.PantallaConfigTorneo__Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -326,6 +342,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTuPokemon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -352,5 +369,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBoxTuPokemon;
     }
 }

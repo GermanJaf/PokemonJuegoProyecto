@@ -22,7 +22,7 @@ namespace PokemonJuegoProyecto.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace PokemonJuegoProyecto.Properties {
         ///   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PokemonJuegoProyecto.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace PokemonJuegoProyecto.Properties {
         ///   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,47 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap azul {
+        public static System.Drawing.Bitmap aron {
+            get {
+                object obj = ResourceManager.GetObject("aron", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap aron_frente {
+            get {
+                object obj = ResourceManager.GetObject("aron_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap axew {
+            get {
+                object obj = ResourceManager.GetObject("axew", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap axew_frente {
+            get {
+                object obj = ResourceManager.GetObject("axew_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap azul {
             get {
                 object obj = ResourceManager.GetObject("azul", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +113,147 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Chorizord {
+        public static System.Drawing.Bitmap bagon {
+            get {
+                object obj = ResourceManager.GetObject("bagon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap bagon_frente {
+            get {
+                object obj = ResourceManager.GetObject("bagon_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap beldum {
+            get {
+                object obj = ResourceManager.GetObject("beldum", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap beldum_frente {
+            get {
+                object obj = ResourceManager.GetObject("beldum_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap bulbasaur {
+            get {
+                object obj = ResourceManager.GetObject("bulbasaur", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap bulbasaur_frente {
+            get {
+                object obj = ResourceManager.GetObject("bulbasaur_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap caterpie {
+            get {
+                object obj = ResourceManager.GetObject("caterpie", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap caterpie_frente {
+            get {
+                object obj = ResourceManager.GetObject("caterpie_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap charmander {
+            get {
+                object obj = ResourceManager.GetObject("charmander", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap charmander_frente {
+            get {
+                object obj = ResourceManager.GetObject("charmander_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap chikorita {
+            get {
+                object obj = ResourceManager.GetObject("chikorita", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap chikorita_frente {
+            get {
+                object obj = ResourceManager.GetObject("chikorita_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap chimchar {
+            get {
+                object obj = ResourceManager.GetObject("chimchar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap chimchar_frente {
+            get {
+                object obj = ResourceManager.GetObject("chimchar_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Chorizord {
             get {
                 object obj = ResourceManager.GetObject("Chorizord", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +263,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CIELO {
+        public static System.Drawing.Bitmap CIELO {
             get {
                 object obj = ResourceManager.GetObject("CIELO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +273,87 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FONDO {
+        public static System.Drawing.Bitmap cranidos {
+            get {
+                object obj = ResourceManager.GetObject("cranidos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap cranidos_frente {
+            get {
+                object obj = ResourceManager.GetObject("cranidos_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap cyndaquil {
+            get {
+                object obj = ResourceManager.GetObject("cyndaquil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap cyndaquil_frente {
+            get {
+                object obj = ResourceManager.GetObject("cyndaquil_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dratini {
+            get {
+                object obj = ResourceManager.GetObject("dratini", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dratini_frente {
+            get {
+                object obj = ResourceManager.GetObject("dratini_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap eevee {
+            get {
+                object obj = ResourceManager.GetObject("eevee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap eevee_frente {
+            get {
+                object obj = ResourceManager.GetObject("eevee_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FONDO {
             get {
                 object obj = ResourceManager.GetObject("FONDO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +363,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FONDO_ELECCION {
+        public static System.Drawing.Bitmap FONDO_ELECCION {
             get {
                 object obj = ResourceManager.GetObject("FONDO ELECCION", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +373,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FONDOINICIOPOKE {
+        public static System.Drawing.Bitmap FONDOINICIOPOKE {
             get {
                 object obj = ResourceManager.GetObject("FONDOINICIOPOKE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +383,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FONDOINICIOPOKE1 {
+        public static System.Drawing.Bitmap FONDOINICIOPOKE1 {
             get {
                 object obj = ResourceManager.GetObject("FONDOINICIOPOKE1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +393,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FONDONUEVAPRACTICA {
+        public static System.Drawing.Bitmap FONDONUEVAPRACTICA {
             get {
                 object obj = ResourceManager.GetObject("FONDONUEVAPRACTICA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +403,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FONDONUEVAPRACTICA1 {
+        public static System.Drawing.Bitmap FONDONUEVAPRACTICA1 {
             get {
                 object obj = ResourceManager.GetObject("FONDONUEVAPRACTICA1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +413,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FONDONUEVAPRACTICA2 {
+        public static System.Drawing.Bitmap FONDONUEVAPRACTICA2 {
             get {
                 object obj = ResourceManager.GetObject("FONDONUEVAPRACTICA2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +423,27 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FONDOPOKEMENU {
+        public static System.Drawing.Bitmap FONDOPOKEDE {
+            get {
+                object obj = ResourceManager.GetObject("FONDOPOKEDE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FONDOPOKEDEX {
+            get {
+                object obj = ResourceManager.GetObject("FONDOPOKEDEX", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FONDOPOKEMENU {
             get {
                 object obj = ResourceManager.GetObject("FONDOPOKEMENU", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +453,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FONDOPOKEMENU1 {
+        public static System.Drawing.Bitmap FONDOPOKEMENU1 {
             get {
                 object obj = ResourceManager.GetObject("FONDOPOKEMENU1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +463,47 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FONDOPOKEMENUU {
+        public static System.Drawing.Bitmap FONDOPOKEMENUA {
+            get {
+                object obj = ResourceManager.GetObject("FONDOPOKEMENUA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FONDOPOKEMENUA1 {
+            get {
+                object obj = ResourceManager.GetObject("FONDOPOKEMENUA1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FONDOPOKEMENUdo {
+            get {
+                object obj = ResourceManager.GetObject("FONDOPOKEMENUdo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FONDOPOKEMENUdo1 {
+            get {
+                object obj = ResourceManager.GetObject("FONDOPOKEMENUdo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FONDOPOKEMENUU {
             get {
                 object obj = ResourceManager.GetObject("FONDOPOKEMENUU", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +513,17 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FONDOPRACTICA {
+        public static System.Drawing.Bitmap FONDOPOKEMENUxd {
+            get {
+                object obj = ResourceManager.GetObject("FONDOPOKEMENUxd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FONDOPRACTICA {
             get {
                 object obj = ResourceManager.GetObject("FONDOPRACTICA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +533,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FONDOPRACTICA1 {
+        public static System.Drawing.Bitmap FONDOPRACTICA1 {
             get {
                 object obj = ResourceManager.GetObject("FONDOPRACTICA1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +543,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FONDOPRACTICA2 {
+        public static System.Drawing.Bitmap FONDOPRACTICA2 {
             get {
                 object obj = ResourceManager.GetObject("FONDOPRACTICA2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +553,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FONDOPRACTICA3 {
+        public static System.Drawing.Bitmap FONDOPRACTICA3 {
             get {
                 object obj = ResourceManager.GetObject("FONDOPRACTICA3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +563,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FONDOPRACTICA4 {
+        public static System.Drawing.Bitmap FONDOPRACTICA4 {
             get {
                 object obj = ResourceManager.GetObject("FONDOPRACTICA4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,7 +573,27 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Gemini_Generated_Image_3d2cqo3d2cqo3d2c {
+        public static System.Drawing.Bitmap gastly {
+            get {
+                object obj = ResourceManager.GetObject("gastly", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap gastly_frente {
+            get {
+                object obj = ResourceManager.GetObject("gastly_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Gemini_Generated_Image_3d2cqo3d2cqo3d2c {
             get {
                 object obj = ResourceManager.GetObject("Gemini_Generated_Image_3d2cqo3d2cqo3d2c", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,7 +603,67 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap image_removebg_preview {
+        public static System.Drawing.Bitmap geodude {
+            get {
+                object obj = ResourceManager.GetObject("geodude", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap geodude_frente {
+            get {
+                object obj = ResourceManager.GetObject("geodude_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap gible {
+            get {
+                object obj = ResourceManager.GetObject("gible", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap gible_frente {
+            get {
+                object obj = ResourceManager.GetObject("gible_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap houndour {
+            get {
+                object obj = ResourceManager.GetObject("houndour", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap houndour_frente {
+            get {
+                object obj = ResourceManager.GetObject("houndour_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap image_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("image-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -263,7 +673,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap INICIOPOKEMON {
+        public static System.Drawing.Bitmap INICIOPOKEMON {
             get {
                 object obj = ResourceManager.GetObject("INICIOPOKEMON", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -273,7 +683,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap inviernooo {
+        public static System.Drawing.Bitmap inviernooo {
             get {
                 object obj = ResourceManager.GetObject("inviernooo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -283,7 +693,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap inviernooo1 {
+        public static System.Drawing.Bitmap inviernooo1 {
             get {
                 object obj = ResourceManager.GetObject("inviernooo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -293,7 +703,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap inviernooo2 {
+        public static System.Drawing.Bitmap inviernooo2 {
             get {
                 object obj = ResourceManager.GetObject("inviernooo2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -303,7 +713,47 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MADERA {
+        public static System.Drawing.Bitmap larvitar {
+            get {
+                object obj = ResourceManager.GetObject("larvitar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap larvitar_frente {
+            get {
+                object obj = ResourceManager.GetObject("larvitar_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap machop {
+            get {
+                object obj = ResourceManager.GetObject("machop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap machop_frente {
+            get {
+                object obj = ResourceManager.GetObject("machop_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap MADERA {
             get {
                 object obj = ResourceManager.GetObject("MADERA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -313,7 +763,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MADERA1 {
+        public static System.Drawing.Bitmap MADERA1 {
             get {
                 object obj = ResourceManager.GetObject("MADERA1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -323,7 +773,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap marcador {
+        public static System.Drawing.Bitmap marcador {
             get {
                 object obj = ResourceManager.GetObject("marcador", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -333,7 +783,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap marcador1 {
+        public static System.Drawing.Bitmap marcador1 {
             get {
                 object obj = ResourceManager.GetObject("marcador1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -343,7 +793,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap marco {
+        public static System.Drawing.Bitmap marco {
             get {
                 object obj = ResourceManager.GetObject("marco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -353,7 +803,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap marco1 {
+        public static System.Drawing.Bitmap marco1 {
             get {
                 object obj = ResourceManager.GetObject("marco1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -363,7 +813,27 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MEWTO {
+        public static System.Drawing.Bitmap mareep {
+            get {
+                object obj = ResourceManager.GetObject("mareep", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap mareep_frente {
+            get {
+                object obj = ResourceManager.GetObject("mareep_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap MEWTO {
             get {
                 object obj = ResourceManager.GetObject("MEWTO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -373,7 +843,27 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NUBES {
+        public static System.Drawing.Bitmap mudkip {
+            get {
+                object obj = ResourceManager.GetObject("mudkip", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap mudkip_frente {
+            get {
+                object obj = ResourceManager.GetObject("mudkip_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap NUBES {
             get {
                 object obj = ResourceManager.GetObject("NUBES", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -383,7 +873,27 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PERSONAJE {
+        public static System.Drawing.Bitmap oshawott {
+            get {
+                object obj = ResourceManager.GetObject("oshawott", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap oshawott_frente {
+            get {
+                object obj = ResourceManager.GetObject("oshawott_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap PERSONAJE {
             get {
                 object obj = ResourceManager.GetObject("PERSONAJE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -393,7 +903,47 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pikac {
+        public static System.Drawing.Bitmap phanpy {
+            get {
+                object obj = ResourceManager.GetObject("phanpy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap phanpy_frente {
+            get {
+                object obj = ResourceManager.GetObject("phanpy_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap pidgey {
+            get {
+                object obj = ResourceManager.GetObject("pidgey", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap pidgey_frente {
+            get {
+                object obj = ResourceManager.GetObject("pidgey_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap pikac {
             get {
                 object obj = ResourceManager.GetObject("pikac", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -403,7 +953,27 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PIKACHU2D {
+        public static System.Drawing.Bitmap pikachu {
+            get {
+                object obj = ResourceManager.GetObject("pikachu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap pikachu_frente {
+            get {
+                object obj = ResourceManager.GetObject("pikachu_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap PIKACHU2D {
             get {
                 object obj = ResourceManager.GetObject("PIKACHU2D", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -413,7 +983,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PIKACHU2D1 {
+        public static System.Drawing.Bitmap PIKACHU2D1 {
             get {
                 object obj = ResourceManager.GetObject("PIKACHU2D1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -423,7 +993,27 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap POKEBALL {
+        public static System.Drawing.Bitmap piplup {
+            get {
+                object obj = ResourceManager.GetObject("piplup", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap piplup_frente {
+            get {
+                object obj = ResourceManager.GetObject("piplup_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap POKEBALL {
             get {
                 object obj = ResourceManager.GetObject("POKEBALL", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -433,7 +1023,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap POKEDEX_ARRIBA {
+        public static System.Drawing.Bitmap POKEDEX_ARRIBA {
             get {
                 object obj = ResourceManager.GetObject("POKEDEX ARRIBA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -443,7 +1033,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pokedexxxxx {
+        public static System.Drawing.Bitmap pokedexxxxx {
             get {
                 object obj = ResourceManager.GetObject("pokedexxxxx", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -453,7 +1043,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap POKELOGO {
+        public static System.Drawing.Bitmap POKELOGO {
             get {
                 object obj = ResourceManager.GetObject("POKELOGO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -463,7 +1053,67 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap REGISTROFONDO {
+        public static System.Drawing.Bitmap poochyena {
+            get {
+                object obj = ResourceManager.GetObject("poochyena", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap poochyena_frente {
+            get {
+                object obj = ResourceManager.GetObject("poochyena_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ralts {
+            get {
+                object obj = ResourceManager.GetObject("ralts", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ralts_frente {
+            get {
+                object obj = ResourceManager.GetObject("ralts_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap rattata {
+            get {
+                object obj = ResourceManager.GetObject("rattata", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap rattata_frente {
+            get {
+                object obj = ResourceManager.GetObject("rattata_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap REGISTROFONDO {
             get {
                 object obj = ResourceManager.GetObject("REGISTROFONDO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -473,7 +1123,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap REGISTROFONDO__2_ {
+        public static System.Drawing.Bitmap REGISTROFONDO__2_ {
             get {
                 object obj = ResourceManager.GetObject("REGISTROFONDO (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -483,7 +1133,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap REGISTROFONDO__2_1 {
+        public static System.Drawing.Bitmap REGISTROFONDO__2_1 {
             get {
                 object obj = ResourceManager.GetObject("REGISTROFONDO (2)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -493,7 +1143,27 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rojo {
+        public static System.Drawing.Bitmap riolu {
+            get {
+                object obj = ResourceManager.GetObject("riolu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap riolu_frente {
+            get {
+                object obj = ResourceManager.GetObject("riolu_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap rojo {
             get {
                 object obj = ResourceManager.GetObject("rojo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -503,7 +1173,207 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TIERRA {
+        public static System.Drawing.Bitmap sandile {
+            get {
+                object obj = ResourceManager.GetObject("sandile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap sandile_frente {
+            get {
+                object obj = ResourceManager.GetObject("sandile_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap sandshrew {
+            get {
+                object obj = ResourceManager.GetObject("sandshrew", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap sandshrew_frente {
+            get {
+                object obj = ResourceManager.GetObject("sandshrew_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap shinx {
+            get {
+                object obj = ResourceManager.GetObject("shinx", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap shinx_frente {
+            get {
+                object obj = ResourceManager.GetObject("shinx_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap snivy {
+            get {
+                object obj = ResourceManager.GetObject("snivy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap snivy_frente {
+            get {
+                object obj = ResourceManager.GetObject("snivy_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap snorunt {
+            get {
+                object obj = ResourceManager.GetObject("snorunt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap snorunt_frente {
+            get {
+                object obj = ResourceManager.GetObject("snorunt_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap snover {
+            get {
+                object obj = ResourceManager.GetObject("snover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap snover_frente {
+            get {
+                object obj = ResourceManager.GetObject("snover_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap squirtle {
+            get {
+                object obj = ResourceManager.GetObject("squirtle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap squirtle_frente {
+            get {
+                object obj = ResourceManager.GetObject("squirtle_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap swinub {
+            get {
+                object obj = ResourceManager.GetObject("swinub", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap swinub_frente {
+            get {
+                object obj = ResourceManager.GetObject("swinub_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap teddiursa {
+            get {
+                object obj = ResourceManager.GetObject("teddiursa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap teddiursa_frente {
+            get {
+                object obj = ResourceManager.GetObject("teddiursa_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap tepig {
+            get {
+                object obj = ResourceManager.GetObject("tepig", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap tepig_frente {
+            get {
+                object obj = ResourceManager.GetObject("tepig_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap TIERRA {
             get {
                 object obj = ResourceManager.GetObject("TIERRA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -513,7 +1383,47 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TORNEOPANTALLA {
+        public static System.Drawing.Bitmap togepi {
+            get {
+                object obj = ResourceManager.GetObject("togepi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap togepi_frente {
+            get {
+                object obj = ResourceManager.GetObject("togepi_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap torchic {
+            get {
+                object obj = ResourceManager.GetObject("torchic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap torchic_frente {
+            get {
+                object obj = ResourceManager.GetObject("torchic_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap TORNEOPANTALLA {
             get {
                 object obj = ResourceManager.GetObject("TORNEOPANTALLA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -523,7 +1433,7 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TORNEOXD {
+        public static System.Drawing.Bitmap TORNEOXD {
             get {
                 object obj = ResourceManager.GetObject("TORNEOXD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -533,9 +1443,169 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TORNEOXD1 {
+        public static System.Drawing.Bitmap TORNEOXD1 {
             get {
                 object obj = ResourceManager.GetObject("TORNEOXD1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap totodile {
+            get {
+                object obj = ResourceManager.GetObject("totodile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap totodile_frente {
+            get {
+                object obj = ResourceManager.GetObject("totodile_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap trapinch {
+            get {
+                object obj = ResourceManager.GetObject("trapinch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap trapinch_frente {
+            get {
+                object obj = ResourceManager.GetObject("trapinch_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap treecko {
+            get {
+                object obj = ResourceManager.GetObject("treecko", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap treecko_frente {
+            get {
+                object obj = ResourceManager.GetObject("treecko_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap turtwig {
+            get {
+                object obj = ResourceManager.GetObject("turtwig", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap turtwig_frente {
+            get {
+                object obj = ResourceManager.GetObject("turtwig_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap venipede {
+            get {
+                object obj = ResourceManager.GetObject("venipede", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap venipede_frente {
+            get {
+                object obj = ResourceManager.GetObject("venipede_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap vulpix {
+            get {
+                object obj = ResourceManager.GetObject("vulpix", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap vulpix_frente {
+            get {
+                object obj = ResourceManager.GetObject("vulpix_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap zorua {
+            get {
+                object obj = ResourceManager.GetObject("zorua", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap zorua_frente {
+            get {
+                object obj = ResourceManager.GetObject("zorua_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap zubat {
+            get {
+                object obj = ResourceManager.GetObject("zubat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap zubat_frente {
+            get {
+                object obj = ResourceManager.GetObject("zubat_frente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

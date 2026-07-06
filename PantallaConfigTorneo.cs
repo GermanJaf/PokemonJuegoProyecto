@@ -120,6 +120,7 @@ namespace PokemonJuegoProyecto
             GestorDatos gestorDatos = new GestorDatos();
             miPokemonTorneo = gestorDatos.PokemonUsuarioCombate(idRegistro);
             MessageBox.Show($"Haz seleccionado {miPokemonTorneo.Nombre} con el nivel {miPokemonTorneo.Nivel} para este torneo");
+            GestorVisual.CargarImagenPokemon(pictureBoxTuPokemon, miPokemonTorneo.Nombre, true);
         }
 
         private void label5_Click(object sender, EventArgs e)

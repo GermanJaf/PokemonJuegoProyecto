@@ -84,6 +84,7 @@ namespace PokemonJuegoProyecto
             GestorDatos gestorDatos = new GestorDatos();
             miPokemon = gestorDatos.PokemonUsuarioCombate(idRegistro);
             MessageBox.Show($"Has seleccionado a {miPokemon.Nombre} con nivel {miPokemon.Nivel}");
+            GestorVisual.CargarImagenPokemon(pictureBoxPokemonUsuario, miPokemon.Nombre, true);
         }
 
         private void buttonSeleccionR_Click(object sender, EventArgs e)
@@ -99,6 +100,7 @@ namespace PokemonJuegoProyecto
             GestorDatos gestorDatos = new GestorDatos();
             rivalPokemon = gestorDatos.PokemonRivalCombate(idPokemon, nivelElegido);
             MessageBox.Show($"Has seleccionado a {rivalPokemon.Nombre} con nivel {nivelElegido}");
+            GestorVisual.CargarImagenPokemon(pictureBoxPokemonRival, rivalPokemon.Nombre, true);
         }
 
         private void buttonInicarPractica_Click(object sender, EventArgs e)

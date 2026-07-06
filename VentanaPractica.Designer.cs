@@ -43,10 +43,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPokemonUsuario = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPokemonRival = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPokemonUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPokemonRival)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -244,12 +248,33 @@
             this.pictureBox4.TabIndex = 14;
             this.pictureBox4.TabStop = false;
             // 
+            // pictureBoxPokemonUsuario
+            // 
+            this.pictureBoxPokemonUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxPokemonUsuario.Location = new System.Drawing.Point(139, 244);
+            this.pictureBoxPokemonUsuario.Name = "pictureBoxPokemonUsuario";
+            this.pictureBoxPokemonUsuario.Size = new System.Drawing.Size(100, 96);
+            this.pictureBoxPokemonUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxPokemonUsuario.TabIndex = 15;
+            this.pictureBoxPokemonUsuario.TabStop = false;
+            // 
+            // pictureBoxPokemonRival
+            // 
+            this.pictureBoxPokemonRival.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxPokemonRival.Location = new System.Drawing.Point(600, 244);
+            this.pictureBoxPokemonRival.Name = "pictureBoxPokemonRival";
+            this.pictureBoxPokemonRival.Size = new System.Drawing.Size(100, 96);
+            this.pictureBoxPokemonRival.TabIndex = 16;
+            this.pictureBoxPokemonRival.TabStop = false;
+            // 
             // VentanaPractica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PokemonJuegoProyecto.Properties.Resources.FONDONUEVAPRACTICA2;
             this.ClientSize = new System.Drawing.Size(831, 576);
+            this.Controls.Add(this.pictureBoxPokemonRival);
+            this.Controls.Add(this.pictureBoxPokemonUsuario);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -267,12 +292,15 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VentanaPractica";
-            this.Text = "VentanaPractica";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Configuración de Prácticas";
             this.Load += new System.EventHandler(this.VentanaPractica_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPokemonUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPokemonRival)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,5 +323,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBoxPokemonUsuario;
+        private System.Windows.Forms.PictureBox pictureBoxPokemonRival;
     }
 }

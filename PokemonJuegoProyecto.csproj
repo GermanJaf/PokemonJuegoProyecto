@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ataque.cs" />
+    <Compile Include="GestorVisual.cs" />
     <Compile Include="PantallaConfigTorneo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,7 +170,7 @@
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -343,6 +344,127 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PIKACHU2D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MEWTO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TORNEOPANTALLA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PIKACHU2D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chorizord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\aron.gif" />
+    <Content Include="Resources\aron_frente.gif" />
+    <Content Include="Resources\axew.gif" />
+    <Content Include="Resources\axew_frente.gif" />
+    <Content Include="Resources\bagon.gif" />
+    <Content Include="Resources\bagon_frente.gif" />
+    <Content Include="Resources\beldum.gif" />
+    <Content Include="Resources\beldum_frente.gif" />
+    <Content Include="Resources\bulbasaur.gif" />
+    <Content Include="Resources\bulbasaur_frente.gif" />
+    <Content Include="Resources\caterpie.gif" />
+    <Content Include="Resources\caterpie_frente.gif" />
+    <Content Include="Resources\charmander.gif" />
+    <Content Include="Resources\charmander_frente.gif" />
+    <Content Include="Resources\chikorita.gif" />
+    <Content Include="Resources\chikorita_frente.gif" />
+    <Content Include="Resources\chimchar.gif" />
+    <Content Include="Resources\chimchar_frente.gif" />
+    <Content Include="Resources\cranidos.gif" />
+    <Content Include="Resources\cranidos_frente.gif" />
+    <Content Include="Resources\cyndaquil.gif" />
+    <Content Include="Resources\cyndaquil_frente.gif" />
+    <Content Include="Resources\dratini.gif" />
+    <Content Include="Resources\dratini_frente.gif" />
+    <Content Include="Resources\eevee.gif" />
+    <Content Include="Resources\eevee_frente.gif" />
+    <None Include="Resources\FONDOPOKEMENUxd.png" />
+    <None Include="Resources\FONDOPOKEMENUA1.png" />
+    <None Include="Resources\FONDOPOKEMENUA.png" />
+    <None Include="Resources\FONDOPOKEMENUdo1.png" />
+    <None Include="Resources\FONDOPOKEMENUdo.png" />
+    <None Include="Resources\FONDOPOKEDE.png" />
+    <None Include="Resources\FONDOPOKEDEX.png" />
+    <Content Include="Resources\gastly.gif" />
+    <Content Include="Resources\gastly_frente.gif" />
+    <Content Include="Resources\geodude.gif" />
+    <Content Include="Resources\geodude_frente.gif" />
+    <Content Include="Resources\gible.gif" />
+    <Content Include="Resources\gible_frente.gif" />
+    <Content Include="Resources\houndour.gif" />
+    <Content Include="Resources\houndour_frente.gif" />
+    <Content Include="Resources\larvitar.gif" />
+    <Content Include="Resources\larvitar_frente.gif" />
+    <Content Include="Resources\machop.gif" />
+    <Content Include="Resources\machop_frente.gif" />
+    <Content Include="Resources\mareep.gif" />
+    <Content Include="Resources\mareep_frente.gif" />
+    <Content Include="Resources\mudkip.gif" />
+    <Content Include="Resources\mudkip_frente.gif" />
+    <Content Include="Resources\oshawott.gif" />
+    <Content Include="Resources\oshawott_frente.gif" />
+    <Content Include="Resources\phanpy.gif" />
+    <Content Include="Resources\phanpy_frente.gif" />
+    <Content Include="Resources\pidgey.gif" />
+    <Content Include="Resources\pidgey_frente.gif" />
+    <Content Include="Resources\pikachu.gif" />
+    <Content Include="Resources\pikachu_frente.gif" />
+    <Content Include="Resources\piplup.gif" />
+    <Content Include="Resources\piplup_frente.gif" />
+    <Content Include="Resources\poochyena.gif" />
+    <Content Include="Resources\poochyena_frente.gif" />
+    <Content Include="Resources\ralts.gif" />
+    <Content Include="Resources\ralts_frente.gif" />
+    <Content Include="Resources\rattata.gif" />
+    <Content Include="Resources\rattata_frente.gif" />
+    <Content Include="Resources\riolu.gif" />
+    <Content Include="Resources\riolu_frente.gif" />
+    <Content Include="Resources\sandile.gif" />
+    <Content Include="Resources\sandile_frente.gif" />
+    <Content Include="Resources\sandshrew.gif" />
+    <Content Include="Resources\sandshrew_frente.gif" />
+    <Content Include="Resources\shinx .gif" />
+    <Content Include="Resources\shinx_frente.gif" />
+    <Content Include="Resources\snivy.gif" />
+    <Content Include="Resources\snivy_frente.gif" />
+    <Content Include="Resources\snorunt.gif" />
+    <Content Include="Resources\snorunt_frente.gif" />
+    <Content Include="Resources\snover.gif" />
+    <Content Include="Resources\snover_frente.gif" />
+    <Content Include="Resources\squirtle.gif" />
+    <Content Include="Resources\squirtle_frente.gif" />
+    <Content Include="Resources\swinub.gif" />
+    <Content Include="Resources\swinub_frente.gif" />
+    <Content Include="Resources\teddiursa.gif" />
+    <Content Include="Resources\teddiursa_frente.gif" />
+    <Content Include="Resources\tepig.gif" />
+    <Content Include="Resources\tepig_frente.gif" />
+    <Content Include="Resources\togepi.gif" />
+    <Content Include="Resources\togepi_frente.gif" />
+    <Content Include="Resources\torchic.gif" />
+    <Content Include="Resources\torchic_frente.gif" />
+    <Content Include="Resources\totodile.gif" />
+    <Content Include="Resources\totodile_frente.gif" />
+    <Content Include="Resources\trapinch.gif" />
+    <Content Include="Resources\trapinch_frente.gif" />
+    <Content Include="Resources\treecko.gif" />
+    <Content Include="Resources\treecko_frente.gif" />
+    <Content Include="Resources\turtwig.gif" />
+    <Content Include="Resources\turtwig_frente.gif" />
+    <Content Include="Resources\venipede.gif" />
+    <Content Include="Resources\venipede_frente.gif" />
+    <Content Include="Resources\vulpix.gif" />
+    <Content Include="Resources\vulpix_frente.gif" />
+    <Content Include="Resources\zorua.gif" />
+    <Content Include="Resources\zorua_frente.gif" />
+    <Content Include="Resources\zubat.gif" />
+    <Content Include="Resources\zubat_frente.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

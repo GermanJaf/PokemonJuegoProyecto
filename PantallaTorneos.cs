@@ -65,5 +65,10 @@ namespace PokemonJuegoProyecto
         {
 
         }
+
+        private void PantallaTorneos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

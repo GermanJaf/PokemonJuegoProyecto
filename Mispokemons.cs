@@ -61,6 +61,19 @@ namespace PokemonJuegoProyecto
                 MessageBox.Show("Seleccione un Pokémon para agregar.");
                 return;
             }
+            string nombreBase = comboBox1.Text.Trim().ToLower();
+            string nombreBuscado = nombreBase + "_front";
+            object recurso = Properties.Resources.ResourceManager.GetObject(nombreBuscado);
+            if (recurso == null)
+            {
+                MessageBox.Show("No encontré ninguna imagen con el nombre: '" + nombreBuscado + "' en los Recursos.");
+            }
+            else
+            {
+                pbPreview.Image = (Image)recurso;
+                pbPreview.SizeMode = PictureBoxSizeMode.Zoom;
+                pbPreview.Visible = true;
+            }
 
             int idPokemonSelected = Convert.ToInt32(comboBox1.SelectedValue);
 
