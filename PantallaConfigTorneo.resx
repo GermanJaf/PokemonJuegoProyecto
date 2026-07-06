@@ -117,15 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Bienvenido al modo torneos, en este modo podras a prueba tus habilidades.
-
-En este modo tu podras escoger a cuentos pokemones te enfrentar hasta llegar con el final
-
-Ten en cuenta que por cada torneo completado hayas logrado hacer, ganaras un punto de mejora
-para poder subir el nivel a cualquier pokemon tengas.
-
-SUERTE!!
-</value>
-  </data>
 </root>

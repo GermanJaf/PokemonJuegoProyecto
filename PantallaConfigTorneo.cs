@@ -29,12 +29,14 @@ namespace PokemonJuegoProyecto
                 comboBox1.Items.Add(i);
             }
             comboBox1.SelectedIndex = 0;
+            comboBox1.MaxDropDownItems = 8;
 
             GestorDatos gestorDatos = new GestorDatos();
             DataTable ListaUsuarioT = gestorDatos.PokemonUsuarioConNivel(idUsuario);
             comboBox2.DataSource = ListaUsuarioT;
             comboBox2.DisplayMember = "PokemonConNivel";
             comboBox2.ValueMember = "RegistroId";
+            comboBox2.MaxDropDownItems = 8;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -118,6 +120,11 @@ namespace PokemonJuegoProyecto
             GestorDatos gestorDatos = new GestorDatos();
             miPokemonTorneo = gestorDatos.PokemonUsuarioCombate(idRegistro);
             MessageBox.Show($"Haz seleccionado {miPokemonTorneo.Nombre} con el nivel {miPokemonTorneo.Nivel} para este torneo");
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
