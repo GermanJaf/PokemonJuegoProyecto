@@ -43,6 +43,7 @@ namespace PokemonJuegoProyecto
             comboBox1.DataSource = table;
             comboBox1.DisplayMember = "Nombre";
             comboBox1.ValueMember = "Id";
+            comboBox1.MaxDropDownItems = 8;
 
             ActualizarPuntos();
         }

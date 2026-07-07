@@ -55,6 +55,8 @@
             // 
             // buttonVolverPI
             // 
+            this.buttonVolverPI.BackColor = System.Drawing.Color.Transparent;
+            this.buttonVolverPI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonVolverPI.Font = new System.Drawing.Font("SimSun", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVolverPI.Location = new System.Drawing.Point(31, 418);
             this.buttonVolverPI.Margin = new System.Windows.Forms.Padding(2);
@@ -62,17 +64,18 @@
             this.buttonVolverPI.Size = new System.Drawing.Size(263, 86);
             this.buttonVolverPI.TabIndex = 1;
             this.buttonVolverPI.Text = "Volver";
-            this.buttonVolverPI.UseVisualStyleBackColor = true;
+            this.buttonVolverPI.UseVisualStyleBackColor = false;
             this.buttonVolverPI.Click += new System.EventHandler(this.buttonVolverPI_Click);
             // 
             // buttonAgregarPK
             // 
             this.buttonAgregarPK.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAgregarPK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAgregarPK.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAgregarPK.Location = new System.Drawing.Point(19, 73);
+            this.buttonAgregarPK.Location = new System.Drawing.Point(31, 73);
             this.buttonAgregarPK.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAgregarPK.Name = "buttonAgregarPK";
-            this.buttonAgregarPK.Size = new System.Drawing.Size(265, 42);
+            this.buttonAgregarPK.Size = new System.Drawing.Size(263, 42);
             this.buttonAgregarPK.TabIndex = 2;
             this.buttonAgregarPK.Text = "Agregar pokemon";
             this.buttonAgregarPK.UseVisualStyleBackColor = false;
@@ -81,6 +84,8 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.IntegralHeight = false;
+            this.comboBox1.ItemHeight = 13;
             this.comboBox1.Location = new System.Drawing.Point(92, 343);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
@@ -92,12 +97,12 @@
             // 
             this.LabelPtsNivel.AutoSize = true;
             this.LabelPtsNivel.BackColor = System.Drawing.Color.Transparent;
-            this.LabelPtsNivel.Font = new System.Drawing.Font("Stencil", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelPtsNivel.Font = new System.Drawing.Font("Stencil", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelPtsNivel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.LabelPtsNivel.Location = new System.Drawing.Point(514, 9);
+            this.LabelPtsNivel.Location = new System.Drawing.Point(414, 22);
             this.LabelPtsNivel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelPtsNivel.Name = "LabelPtsNivel";
-            this.LabelPtsNivel.Size = new System.Drawing.Size(116, 34);
+            this.LabelPtsNivel.Size = new System.Drawing.Size(85, 25);
             this.LabelPtsNivel.TabIndex = 4;
             this.LabelPtsNivel.Text = "label1";
             this.LabelPtsNivel.Click += new System.EventHandler(this.LabelPtsNivel_Click);
@@ -152,7 +157,7 @@
             this.Controls.Add(this.ListaPokemon);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Mispokemons";
-            this.Text = "Form1";
+            this.Text = "Pokédex";
             this.Load += new System.EventHandler(this.Mispokemons_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ListaPokemon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPreview)).EndInit();

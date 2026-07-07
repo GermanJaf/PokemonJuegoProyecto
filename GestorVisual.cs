@@ -21,7 +21,7 @@ namespace PokemonJuegoProyecto
 
             try
             {
-                object obj = Properties.Resources.ResourceManager.GetObject(nombreRecurso);
+                object obj = PokemonJuegoProyecto.Properties.Resources.ResourceManager.GetObject(nombreRecurso);
                 if (obj != null)
                 {
                     picBox.Image = (Image)obj;
@@ -29,6 +29,18 @@ namespace PokemonJuegoProyecto
                 }
             }
             catch { }
+        }
+        public static void CargarIconoTipo(PictureBox picBox, string tipoPokemon)
+        {
+            string nombreIcono = "tipo_" + tipoPokemon.ToLower().Trim();
+
+            object obj = PokemonJuegoProyecto.Properties.Resources.ResourceManager.GetObject(nombreIcono);
+
+            if (obj != null)
+            {
+                picBox.Image = (Image)obj;
+                picBox.SizeMode = PictureBoxSizeMode.Zoom;
+            }
         }
     }
 }

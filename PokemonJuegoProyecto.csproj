@@ -73,6 +73,7 @@
   <ItemGroup>
     <Compile Include="Ataque.cs" />
     <Compile Include="GestorVisual.cs" />
+    <Compile Include="MotorCombate.cs" />
     <Compile Include="PantallaConfigTorneo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -364,6 +365,7 @@
     <Content Include="Resources\axew_frente.gif" />
     <Content Include="Resources\bagon.gif" />
     <Content Include="Resources\bagon_frente.gif" />
+    <None Include="Resources\BATALLAPOKEMON.png" />
     <Content Include="Resources\beldum.gif" />
     <Content Include="Resources\beldum_frente.gif" />
     <Content Include="Resources\bulbasaur.gif" />
@@ -391,12 +393,17 @@
     <None Include="Resources\FONDOPOKEMENUdo.png" />
     <None Include="Resources\FONDOPOKEDE.png" />
     <None Include="Resources\FONDOPOKEDEX.png" />
+    <None Include="Resources\FONDORENDIMI.png" />
+    <None Include="Resources\FONDORENDIMI1.png" />
+    <None Include="Resources\FONDORENDIMIENTO.png" />
+    <None Include="Resources\FONDORENDIMIENTO1.png" />
     <Content Include="Resources\gastly.gif" />
     <Content Include="Resources\gastly_frente.gif" />
     <Content Include="Resources\geodude.gif" />
     <Content Include="Resources\geodude_frente.gif" />
     <Content Include="Resources\gible.gif" />
     <Content Include="Resources\gible_frente.gif" />
+    <None Include="Resources\hitmonchan.gif" />
     <Content Include="Resources\houndour.gif" />
     <Content Include="Resources\houndour_frente.gif" />
     <Content Include="Resources\larvitar.gif" />
