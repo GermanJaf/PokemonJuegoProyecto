@@ -59,12 +59,12 @@
             // 
             this.labelPokemonUsuario.AutoSize = true;
             this.labelPokemonUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.labelPokemonUsuario.Font = new System.Drawing.Font("DecoType Naskh", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPokemonUsuario.Font = new System.Drawing.Font("Bodoni MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPokemonUsuario.ForeColor = System.Drawing.Color.Black;
-            this.labelPokemonUsuario.Location = new System.Drawing.Point(448, 317);
+            this.labelPokemonUsuario.Location = new System.Drawing.Point(448, 333);
             this.labelPokemonUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPokemonUsuario.Name = "labelPokemonUsuario";
-            this.labelPokemonUsuario.Size = new System.Drawing.Size(110, 37);
+            this.labelPokemonUsuario.Size = new System.Drawing.Size(97, 38);
             this.labelPokemonUsuario.TabIndex = 0;
             this.labelPokemonUsuario.Text = "label1";
             this.labelPokemonUsuario.Click += new System.EventHandler(this.labelPokemonUsuario_Click);
@@ -73,12 +73,12 @@
             // 
             this.labelPokemonRival.AutoSize = true;
             this.labelPokemonRival.BackColor = System.Drawing.Color.Transparent;
-            this.labelPokemonRival.Font = new System.Drawing.Font("Colonna MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPokemonRival.Font = new System.Drawing.Font("Bodoni MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPokemonRival.ForeColor = System.Drawing.Color.Black;
-            this.labelPokemonRival.Location = new System.Drawing.Point(14, 68);
+            this.labelPokemonRival.Location = new System.Drawing.Point(83, 68);
             this.labelPokemonRival.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPokemonRival.Name = "labelPokemonRival";
-            this.labelPokemonRival.Size = new System.Drawing.Size(97, 34);
+            this.labelPokemonRival.Size = new System.Drawing.Size(97, 38);
             this.labelPokemonRival.TabIndex = 1;
             this.labelPokemonRival.Text = "label2";
             this.labelPokemonRival.Click += new System.EventHandler(this.labelPokemonRival_Click);
@@ -274,9 +274,9 @@
             // pictureBoxTipoJugador
             // 
             this.pictureBoxTipoJugador.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxTipoJugador.Location = new System.Drawing.Point(372, 329);
+            this.pictureBoxTipoJugador.Location = new System.Drawing.Point(406, 325);
             this.pictureBoxTipoJugador.Name = "pictureBoxTipoJugador";
-            this.pictureBoxTipoJugador.Size = new System.Drawing.Size(39, 37);
+            this.pictureBoxTipoJugador.Size = new System.Drawing.Size(48, 46);
             this.pictureBoxTipoJugador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxTipoJugador.TabIndex = 17;
             this.pictureBoxTipoJugador.TabStop = false;
@@ -284,9 +284,9 @@
             // pictureBoxTipoRival
             // 
             this.pictureBoxTipoRival.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxTipoRival.Location = new System.Drawing.Point(253, 48);
+            this.pictureBoxTipoRival.Location = new System.Drawing.Point(40, 60);
             this.pictureBoxTipoRival.Name = "pictureBoxTipoRival";
-            this.pictureBoxTipoRival.Size = new System.Drawing.Size(40, 41);
+            this.pictureBoxTipoRival.Size = new System.Drawing.Size(48, 46);
             this.pictureBoxTipoRival.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxTipoRival.TabIndex = 18;
             this.pictureBoxTipoRival.TabStop = false;
