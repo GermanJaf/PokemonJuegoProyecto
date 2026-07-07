@@ -181,8 +181,6 @@ namespace PokemonJuegoProyecto
 
             if(confirmar == DialogResult.Yes)
             {
-                GestorDatos gestor = new GestorDatos();
-                gestor.RegistrarBatalla( "Abandonado");
                 this.Close();
             }
         }
