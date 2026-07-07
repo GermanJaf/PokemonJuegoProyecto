@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Microsoft.Data.Sqlite;
+using SQLiteUtil;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Data.Sqlite;
-using SQLiteUtil;
 using System.Windows.Forms;
-using System.Data;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace PokemonJuegoProyecto
 {
@@ -21,17 +22,21 @@ namespace PokemonJuegoProyecto
             conn.Open();
             
         }
-        public void RegistrarBatalla(int usuarioId, int pokemonId, string faseLograda)
+        public void RegistrarBatalla(int usuarioId, int pokemonId, int nivelUsuario, string pokemonRival, int nivelRival, string resultado)
         {
-            string query = @"INSERT INTO HistorialTorneos (UsuarioId, PokemonID, FaseLograda) 
-                    VALUES (@usuarioId, @pokemonId, @faseLograda)";
+            string query = @"INSERT INTO HistorialTorneos
+                  (UsuarioId, PokemonId, NivelUsuario, PokemonRival, NivelRival, Resultado) 
+                  VALUES (@usuarioId, @pokemonId, @nivelUsuario, @pokemonRival, @nivelRival, @resultado)";
+
             conn.ExecuteNonQuery(query,
                 ("@usuarioId", usuarioId),
                 ("@pokemonId", pokemonId),
-                ("@faseLograda", faseLograda));
+                ("@nivelUsuario", nivelUsuario),
+                ("@pokemonRival", pokemonRival),
+                ("@nivelRival", nivelRival),
+                ("@resultado", resultado));
+
         }
-
-
         public PokeDaVI PokemonAleatorio(int nivelElegidoTorneo)
         {
             int idRandom = 1;
@@ -176,19 +181,19 @@ namespace PokemonJuegoProyecto
         public DataTable RendimientoPokemon(int idUsuario)
         {
             DataTable listarendimiento = new DataTable();
-
             string queryRendimiento = @"
         SELECT p.Nombre AS [Mi Pokémon],
-               pu.Nivel AS [Nivel]
-               ht.FaseLograda As [Fase Lograda]
+               ht.NivelUsuario AS [Nivel],
+               ht.PokemonRival AS [Pokémon Rival],
+               ht.NivelRival AS [Nivel Rival],
+               ht.Resultado AS [Resultado]
+
         FROM HistorialTorneos ht
-        INNER JOIN Pokemones p ON ht.PokemonID = p.Id
-        INNER JOIN PokemonUsuario pu ON pu.PokemonId = p.Id AND pu.UsuarioId = ht.UsuarioId
+        INNER JOIN Pokemones p ON ht.PokemonId = p.Id
         WHERE ht.UsuarioId = @idUsuario
         ORDER BY ht.rowid DESC";
 
             var rs = conn.ExecuteReader(queryRendimiento, ("@idUsuario", idUsuario));
-
             listarendimiento.Load(rs);
             rs.Close();
 

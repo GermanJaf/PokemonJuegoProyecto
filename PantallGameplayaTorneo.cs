@@ -30,13 +30,13 @@ namespace PokemonJuegoProyecto
             rivalesRestantes = cantidadRivales;
             nivelTorneo = nivel;
 
-            if(cantidadRivales == 3)
+            if (cantidadRivales == 3)
             {
                 pocionesRestantes = 1;
-            }else if(cantidadRivales == 6)
+            } else if (cantidadRivales == 6)
             {
                 pocionesRestantes = 2;
-            }else if(cantidadRivales == 9)
+            } else if (cantidadRivales == 9)
             {
                 pocionesRestantes = 3;
             }
@@ -83,7 +83,7 @@ namespace PokemonJuegoProyecto
 
                 rivalesRestantes--;
 
-                if(rivalesRestantes > 0)
+                if (rivalesRestantes > 0)
                 {
                     MessageBox.Show("Felicidades haz superado al rival. AHORA VA EL SIGUIENTE");
                     GeneradorRival();
@@ -91,6 +91,15 @@ namespace PokemonJuegoProyecto
                 else
                 {
                     MessageBox.Show("FELICIDADES HAZ GANADO EL TORNEO");
+                    GestorDatos gestor = new GestorDatos();
+                    gestor.RegistrarBatalla(
+
+                        IdRegistroUsuario,
+                        miPokemon.Id,
+                        miPokemon.Nivel,
+                        rivalPokemon.Nombre,
+                        rivalPokemon.Nivel,
+                        "Ganada");
                     this.Close();
                 }
                 return;
@@ -122,6 +131,16 @@ namespace PokemonJuegoProyecto
             if (miPokemon.Debilitado())
             {
                 MessageBox.Show("Tu pokemon se ha debilitado, haz perdido la batalla");
+                GestorDatos gestor = new GestorDatos();
+                gestor.RegistrarBatalla(
+
+                    IdRegistroUsuario,
+                    miPokemon.Id,
+                    miPokemon.Nivel,
+                    rivalPokemon.Nombre,
+                    rivalPokemon.Nivel,
+                    "Perdido");
+
                 this.Close();
             }
         }
@@ -131,8 +150,8 @@ namespace PokemonJuegoProyecto
             if (pocionesRestantes <= 0)
             {
                 return;
-            } 
-            if (miPokemon.HPActual>= miPokemon.HPMax)
+            }
+            if (miPokemon.HPActual >= miPokemon.HPMax)
             {
                 MessageBox.Show("Tu pokémon ya tiene la vida al máximo.");
                 return;
@@ -143,7 +162,7 @@ namespace PokemonJuegoProyecto
 
             pocionesRestantes--;
 
-            if (pocionesRestantes ==0)
+            if (pocionesRestantes == 0)
             {
                 btnSanar.Enabled = false;
             }
@@ -179,8 +198,17 @@ namespace PokemonJuegoProyecto
         {
             DialogResult confirmar = MessageBox.Show("Realmente quieres salir?", "Abandonar torneo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            if(confirmar == DialogResult.Yes)
+            if (confirmar == DialogResult.Yes)
             {
+                GestorDatos gestor = new GestorDatos();
+                gestor.RegistrarBatalla(
+
+                    IdRegistroUsuario,
+                    miPokemon.Id,
+                    miPokemon.Nivel,
+                    rivalPokemon.Nombre,
+                    rivalPokemon.Nivel,
+                    "Abandonada");
                 this.Close();
             }
         }
