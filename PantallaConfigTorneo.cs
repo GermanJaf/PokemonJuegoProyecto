@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace PokemonJuegoProyecto
 {
@@ -105,7 +106,14 @@ namespace PokemonJuegoProyecto
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox1.SelectedItem != null)
+            {
+                DataRowView row = (DataRowView)comboBox1.SelectedItem;
 
+                string nombrePokemon = row["Nombre"].ToString();
+
+                GestorVisual.CargarImagenPokemon(pictureBoxTuPokemon, nombrePokemon, true);
+            }
         }
 
         private void buttonSeleccionPokemonT_Click(object sender, EventArgs e)
@@ -120,10 +128,14 @@ namespace PokemonJuegoProyecto
             GestorDatos gestorDatos = new GestorDatos();
             miPokemonTorneo = gestorDatos.PokemonUsuarioCombate(idRegistro);
             MessageBox.Show($"Haz seleccionado {miPokemonTorneo.Nombre} con el nivel {miPokemonTorneo.Nivel} para este torneo");
-            GestorVisual.CargarImagenPokemon(pictureBoxTuPokemon, miPokemonTorneo.Nombre, true);
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxTuPokemon_Click(object sender, EventArgs e)
         {
 
         }

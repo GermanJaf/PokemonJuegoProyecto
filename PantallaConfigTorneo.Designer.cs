@@ -304,6 +304,7 @@
             this.pictureBoxTuPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxTuPokemon.TabIndex = 19;
             this.pictureBoxTuPokemon.TabStop = false;
+            this.pictureBoxTuPokemon.Click += new System.EventHandler(this.pictureBoxTuPokemon_Click);
             // 
             // PantallaConfigTorneo_
             // 

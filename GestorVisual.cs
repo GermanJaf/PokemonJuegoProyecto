@@ -30,16 +30,18 @@ namespace PokemonJuegoProyecto
             }
             catch { }
         }
-        public static void CargarIconoTipo(PictureBox picBox, string tipoPokemon)
+        public static void CargarIconoTipo(PictureBox pb, string tipo)
         {
-            string nombreIcono = "tipo_" + tipoPokemon.ToLower().Trim();
+            var imagen = Properties.Resources.ResourceManager.GetObject(tipo);
 
-            object obj = PokemonJuegoProyecto.Properties.Resources.ResourceManager.GetObject(nombreIcono);
-
-            if (obj != null)
+            if (imagen != null)
             {
-                picBox.Image = (Image)obj;
-                picBox.SizeMode = PictureBoxSizeMode.Zoom;
+                pb.Image = (Image)imagen;
+                pb.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            else
+            {
+                pb.BackColor = Color.Magenta;
             }
         }
     }

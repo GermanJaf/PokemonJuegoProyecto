@@ -73,6 +73,16 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Agua {
+            get {
+                object obj = ResourceManager.GetObject("Agua", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap aron {
             get {
                 object obj = ResourceManager.GetObject("aron", resourceCulture);
@@ -166,6 +176,16 @@ namespace PokemonJuegoProyecto.Properties {
         public static System.Drawing.Bitmap beldum_frente {
             get {
                 object obj = ResourceManager.GetObject("beldum_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Bicho {
+            get {
+                object obj = ResourceManager.GetObject("Bicho", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -653,6 +673,16 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Dragón {
+            get {
+                object obj = ResourceManager.GetObject("Dragón", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap dratini {
             get {
                 object obj = ResourceManager.GetObject("dratini", resourceCulture);
@@ -686,6 +716,26 @@ namespace PokemonJuegoProyecto.Properties {
         public static System.Drawing.Bitmap eevee_frente {
             get {
                 object obj = ResourceManager.GetObject("eevee_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Eléctrico {
+            get {
+                object obj = ResourceManager.GetObject("Eléctrico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Fantasma {
+            get {
+                object obj = ResourceManager.GetObject("Fantasma", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1033,6 +1083,16 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Hielo {
+            get {
+                object obj = ResourceManager.GetObject("Hielo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap hitmonchan {
             get {
                 object obj = ResourceManager.GetObject("hitmonchan", resourceCulture);
@@ -1126,6 +1186,16 @@ namespace PokemonJuegoProyecto.Properties {
         public static System.Drawing.Bitmap larvitar_frente {
             get {
                 object obj = ResourceManager.GetObject("larvitar_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Lucha {
+            get {
+                object obj = ResourceManager.GetObject("Lucha", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1256,6 +1326,16 @@ namespace PokemonJuegoProyecto.Properties {
         public static System.Drawing.Bitmap mudkip_frente {
             get {
                 object obj = ResourceManager.GetObject("mudkip_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Normal {
+            get {
+                object obj = ResourceManager.GetObject("Normal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1413,6 +1493,16 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Planta {
+            get {
+                object obj = ResourceManager.GetObject("Planta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap POKEBALL {
             get {
                 object obj = ResourceManager.GetObject("POKEBALL", resourceCulture);
@@ -1466,6 +1556,16 @@ namespace PokemonJuegoProyecto.Properties {
         public static System.Drawing.Bitmap poochyena_frente {
             get {
                 object obj = ResourceManager.GetObject("poochyena_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Psíquico {
+            get {
+                object obj = ResourceManager.GetObject("Psíquico", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1633,6 +1733,16 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Siniestro {
+            get {
+                object obj = ResourceManager.GetObject("Siniestro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap snivy {
             get {
                 object obj = ResourceManager.GetObject("snivy", resourceCulture);
@@ -1773,9 +1883,9 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap TIERRA {
+        public static System.Drawing.Bitmap Tierra {
             get {
-                object obj = ResourceManager.GetObject("TIERRA", resourceCulture);
+                object obj = ResourceManager.GetObject("Tierra", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1933,6 +2043,16 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Veneno {
+            get {
+                object obj = ResourceManager.GetObject("Veneno", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap venipede {
             get {
                 object obj = ResourceManager.GetObject("venipede", resourceCulture);
@@ -1946,6 +2066,16 @@ namespace PokemonJuegoProyecto.Properties {
         public static System.Drawing.Bitmap venipede_frente {
             get {
                 object obj = ResourceManager.GetObject("venipede_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Volador {
+            get {
+                object obj = ResourceManager.GetObject("Volador", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
