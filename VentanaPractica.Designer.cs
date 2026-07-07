@@ -257,6 +257,7 @@
             this.pictureBoxPokemonUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxPokemonUsuario.TabIndex = 15;
             this.pictureBoxPokemonUsuario.TabStop = false;
+            this.pictureBoxPokemonUsuario.Click += new System.EventHandler(this.pictureBoxPokemonUsuario_Click);
             // 
             // pictureBoxPokemonRival
             // 

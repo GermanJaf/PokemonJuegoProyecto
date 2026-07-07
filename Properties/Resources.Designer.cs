@@ -63,6 +63,16 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap _9 {
+            get {
+                object obj = ResourceManager.GetObject("9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap aron {
             get {
                 object obj = ResourceManager.GetObject("aron", resourceCulture);
@@ -203,9 +213,9 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap btn_drágon_iluminado {
+        public static System.Drawing.Bitmap btn_dragón_iluminado {
             get {
-                object obj = ResourceManager.GetObject("btn_drágon_iluminado", resourceCulture);
+                object obj = ResourceManager.GetObject("btn_dragón_iluminado", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +223,9 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap btn_drágon_normal {
+        public static System.Drawing.Bitmap btn_dragón_normal {
             get {
-                object obj = ResourceManager.GetObject("btn_drágon_normal", resourceCulture);
+                object obj = ResourceManager.GetObject("btn_dragón_normal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +233,9 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap btn_eléctrico_iluminado {
+        public static System.Drawing.Bitmap btn_electrico_iluminado {
             get {
-                object obj = ResourceManager.GetObject("btn_eléctrico_iluminado", resourceCulture);
+                object obj = ResourceManager.GetObject("btn_electrico_iluminado", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +243,9 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap btn_eléctrico_normal {
+        public static System.Drawing.Bitmap btn_electrico_normal {
             get {
-                object obj = ResourceManager.GetObject("btn_eléctrico_normal", resourceCulture);
+                object obj = ResourceManager.GetObject("btn_electrico_normal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,9 +363,9 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap btn_normal_normal_png {
+        public static System.Drawing.Bitmap btn_normal_normal {
             get {
-                object obj = ResourceManager.GetObject("btn_normal_normal.png", resourceCulture);
+                object obj = ResourceManager.GetObject("btn_normal_normal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -936,6 +946,16 @@ namespace PokemonJuegoProyecto.Properties {
         public static System.Drawing.Bitmap FONDORENDIMIENTO1 {
             get {
                 object obj = ResourceManager.GetObject("FONDORENDIMIENTO1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Fuego {
+            get {
+                object obj = ResourceManager.GetObject("Fuego", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

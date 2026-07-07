@@ -117,6 +117,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(20, 433);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
@@ -132,6 +133,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(20, 505);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
@@ -147,6 +149,7 @@
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(236, 433);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
@@ -162,6 +165,7 @@
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(236, 507);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
@@ -173,6 +177,7 @@
             // 
             // labelComentarios
             // 
+            this.labelComentarios.BackColor = System.Drawing.Color.Transparent;
             this.labelComentarios.Location = new System.Drawing.Point(11, 389);
             this.labelComentarios.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelComentarios.Name = "labelComentarios";
@@ -187,6 +192,7 @@
             this.button5Retirarse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5Retirarse.FlatAppearance.BorderSize = 0;
             this.button5Retirarse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5Retirarse.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5Retirarse.Location = new System.Drawing.Point(445, 433);
             this.button5Retirarse.Margin = new System.Windows.Forms.Padding(2);
             this.button5Retirarse.Name = "button5Retirarse";
@@ -199,10 +205,10 @@
             // listBoxLog
             // 
             this.listBoxLog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBoxLog.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxLog.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxLog.FormattingEnabled = true;
             this.listBoxLog.IntegralHeight = false;
-            this.listBoxLog.ItemHeight = 22;
+            this.listBoxLog.ItemHeight = 16;
             this.listBoxLog.Location = new System.Drawing.Point(688, 6);
             this.listBoxLog.Name = "listBoxLog";
             this.listBoxLog.Size = new System.Drawing.Size(213, 574);
@@ -213,7 +219,7 @@
             this.pictureBoxJugador.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxJugador.Location = new System.Drawing.Point(90, 280);
             this.pictureBoxJugador.Name = "pictureBoxJugador";
-            this.pictureBoxJugador.Size = new System.Drawing.Size(162, 159);
+            this.pictureBoxJugador.Size = new System.Drawing.Size(160, 160);
             this.pictureBoxJugador.TabIndex = 13;
             this.pictureBoxJugador.TabStop = false;
             // 
@@ -235,6 +241,7 @@
             this.panelBarraRival.Name = "panelBarraRival";
             this.panelBarraRival.Size = new System.Drawing.Size(145, 22);
             this.panelBarraRival.TabIndex = 0;
+            this.panelBarraRival.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBarraRival_Paint_1);
             // 
             // panelFondoUsuario
             // 
@@ -248,17 +255,19 @@
             // panelBarraUsuario
             // 
             this.panelBarraUsuario.BackColor = System.Drawing.Color.DarkGreen;
+            this.panelBarraUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBarraUsuario.Location = new System.Drawing.Point(0, 0);
             this.panelBarraUsuario.Name = "panelBarraUsuario";
             this.panelBarraUsuario.Size = new System.Drawing.Size(145, 22);
             this.panelBarraUsuario.TabIndex = 16;
+            this.panelBarraUsuario.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBarraUsuario_Paint);
             // 
             // pictureBoxRival
             // 
             this.pictureBoxRival.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxRival.Location = new System.Drawing.Point(396, 68);
+            this.pictureBoxRival.Location = new System.Drawing.Point(455, 68);
             this.pictureBoxRival.Name = "pictureBoxRival";
-            this.pictureBoxRival.Size = new System.Drawing.Size(162, 159);
+            this.pictureBoxRival.Size = new System.Drawing.Size(160, 160);
             this.pictureBoxRival.TabIndex = 16;
             this.pictureBoxRival.TabStop = false;
             // 
@@ -268,6 +277,7 @@
             this.pictureBoxTipoJugador.Location = new System.Drawing.Point(372, 329);
             this.pictureBoxTipoJugador.Name = "pictureBoxTipoJugador";
             this.pictureBoxTipoJugador.Size = new System.Drawing.Size(39, 37);
+            this.pictureBoxTipoJugador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxTipoJugador.TabIndex = 17;
             this.pictureBoxTipoJugador.TabStop = false;
             // 
@@ -277,6 +287,7 @@
             this.pictureBoxTipoRival.Location = new System.Drawing.Point(253, 48);
             this.pictureBoxTipoRival.Name = "pictureBoxTipoRival";
             this.pictureBoxTipoRival.Size = new System.Drawing.Size(40, 41);
+            this.pictureBoxTipoRival.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxTipoRival.TabIndex = 18;
             this.pictureBoxTipoRival.TabStop = false;
             // 
@@ -303,6 +314,7 @@
             this.Controls.Add(this.labelPokemonRival);
             this.Controls.Add(this.labelPokemonUsuario);
             this.Controls.Add(this.pictureBoxJugador);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PantallaGameplayPractica";
             this.Text = "PantallaGameplay";

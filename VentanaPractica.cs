@@ -142,5 +142,10 @@ namespace PokemonJuegoProyecto
         {
 
         }
+
+        private void pictureBoxPokemonUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

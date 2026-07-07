@@ -62,19 +62,6 @@ namespace PokemonJuegoProyecto
                 MessageBox.Show("Seleccione un Pokémon para agregar.");
                 return;
             }
-            string nombreBase = comboBox1.Text.Trim().ToLower();
-            string nombreBuscado = nombreBase + "_front";
-            object recurso = Properties.Resources.ResourceManager.GetObject(nombreBuscado);
-            if (recurso == null)
-            {
-                MessageBox.Show("No encontré ninguna imagen con el nombre: '" + nombreBuscado + "' en los Recursos.");
-            }
-            else
-            {
-                pbPreview.Image = (Image)recurso;
-                pbPreview.SizeMode = PictureBoxSizeMode.Zoom;
-                pbPreview.Visible = true;
-            }
 
             int idPokemonSelected = Convert.ToInt32(comboBox1.SelectedValue);
 
@@ -87,7 +74,14 @@ namespace PokemonJuegoProyecto
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox1.SelectedItem != null)
+            {
+                DataRowView row = (DataRowView)comboBox1.SelectedItem;
 
+                string nombrePokemon = row["Nombre"].ToString();
+
+                GestorVisual.CargarImagenPokemon(pbPreview, nombrePokemon, true);
+            }
         }
 
         private void bottonSN_Click(object sender, EventArgs e)
@@ -115,6 +109,11 @@ namespace PokemonJuegoProyecto
             }
         }
         private void LabelPtsNivel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbPreview_Click(object sender, EventArgs e)
         {
 
         }

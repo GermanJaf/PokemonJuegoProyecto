@@ -31,12 +31,13 @@ namespace PokemonJuegoProyecto
 
             labelvidaRival.Text = $"{porcentajeRival}%";
 
-            panelFondoRival.Width = motor.CalcularAnchoBarra(miPokemon.HPActual, miPokemon.HPMax, 122);
-            panelFondoRival.BackColor = motor.ObtenerColorVida(miPokemon.HPActual, miPokemon.HPMax);
+            panelFondoUsuario.Width = motor.CalcularAnchoBarra(miPokemon.HPActual, miPokemon.HPMax, 145);
+            panelBarraUsuario.BackColor = motor.ObtenerColorVida(miPokemon.HPActual, miPokemon.HPMax);
 
-            panelFondoRival.Width = motor.CalcularAnchoBarra(rivalPokemon.HPActual, rivalPokemon.HPMax, 128);
-            panelFondoRival.BackColor = motor.ObtenerColorVida(rivalPokemon.HPActual, rivalPokemon.HPMax);
+            panelFondoRival.Width = motor.CalcularAnchoBarra(rivalPokemon.HPActual, rivalPokemon.HPMax, 145);
+            panelBarraRival.BackColor = motor.ObtenerColorVida(rivalPokemon.HPActual, rivalPokemon.HPMax);
         }
+
         private void EjecutarDaño(int AtaqueSeleccion)
         {
             button1.Enabled = false;
@@ -165,21 +166,15 @@ namespace PokemonJuegoProyecto
 
             ActualizarVida();
 
-            ConfigurarBoton(button1, miPokemon.MisAtaques[0]);
-            ConfigurarBoton(button2, miPokemon.MisAtaques[1]);
-            ConfigurarBoton(button3, miPokemon.MisAtaques[2]);
-            ConfigurarBoton(button4, miPokemon.MisAtaques[3]);
+            AsignarImagenInicial(button1, miPokemon.MisAtaques[0]);
+            AsignarImagenInicial(button2, miPokemon.MisAtaques[1]);
+            AsignarImagenInicial(button3, miPokemon.MisAtaques[2]);
+            AsignarImagenInicial(button4, miPokemon.MisAtaques[3]);
 
             GestorVisual.CargarImagenPokemon(pictureBoxJugador, miPokemon.Nombre, false);
-            GestorVisual.CargarIconoTipo(pictureBoxTipoJugador, miPokemon.Tipo);
-
             GestorVisual.CargarImagenPokemon(pictureBoxRival, rivalPokemon.Nombre, true);
+            GestorVisual.CargarIconoTipo(pictureBoxTipoJugador, miPokemon.Tipo);
             GestorVisual.CargarIconoTipo(pictureBoxTipoRival, rivalPokemon.Tipo);
-        
-            Font fuenteFixed = new Font("Fixedsys", 20, FontStyle.Regular);
-
-            labelPokemonUsuario.Font = fuenteFixed;
-            labelPokemonRival.Font = fuenteFixed;
 
             button5Retirarse.BackgroundImage = Properties.Resources.btn_huir_normal;
             button5Retirarse.BackgroundImageLayout = ImageLayout.Stretch;
@@ -224,7 +219,7 @@ namespace PokemonJuegoProyecto
 
         private void button5_MouseLeave(object sender, EventArgs e)
         {
-            // Regresa a la imagen normal
+  
             button5Retirarse.BackgroundImage = Properties.Resources.btn_huir_normal;
         }
 
@@ -241,39 +236,50 @@ namespace PokemonJuegoProyecto
         private void Boton_MouseEnter(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            if (btn.Tag is Ataque atk)
-            {
-                string nombreImg = motor.ObtenerNombreImagenBoton(atk.Tipo, true);
-                btn.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nombreImg);
-            }
+            Ataque atk = (Ataque)btn.Tag;
+
+            string nombreImg = motor.ObtenerNombreImagenBoton(atk.Tipo, true);
+            btn.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nombreImg);
         }
 
         private void Boton_MouseLeave(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            if (btn.Tag is Ataque atk)
-            {
-                string nombreImg = motor.ObtenerNombreImagenBoton(atk.Tipo, false);
-                btn.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nombreImg);
-            }
-        }
+            Ataque atk = (Ataque)btn.Tag;
 
-        private void ConfigurarBoton(Button btn, Ataque atk)
+            string nombreImg = motor.ObtenerNombreImagenBoton(atk.Tipo, false);
+            btn.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nombreImg);
+        }
+        private void AsignarImagenInicial(Button btn, Ataque atk)
         {
             if (atk != null)
             {
+                btn.Visible = true;
                 btn.Tag = atk;
                 btn.Text = atk.Nombre;
-                btn.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(motor.ObtenerNombreImagenBoton(atk.Tipo, false));
-                btn.BackgroundImageLayout = ImageLayout.Stretch;
 
+                string nombre = motor.ObtenerNombreImagenBoton(atk.Tipo, false);
+                btn.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nombre);
+
+                btn.MouseEnter -= Boton_MouseEnter;
                 btn.MouseEnter += Boton_MouseEnter;
+                btn.MouseLeave -= Boton_MouseLeave;
                 btn.MouseLeave += Boton_MouseLeave;
             }
             else
             {
                 btn.Visible = false;
             }
+        }
+
+        private void panelBarraUsuario_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelBarraRival_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

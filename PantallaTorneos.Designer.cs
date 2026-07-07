@@ -91,14 +91,15 @@
             // 
             // BottonVolverPT
             // 
-            this.BottonVolverPT.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.BottonVolverPT.Location = new System.Drawing.Point(324, 602);
+            this.BottonVolverPT.BackColor = System.Drawing.SystemColors.Info;
+            this.BottonVolverPT.Font = new System.Drawing.Font("SimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BottonVolverPT.Location = new System.Drawing.Point(260, 458);
             this.BottonVolverPT.Margin = new System.Windows.Forms.Padding(2);
             this.BottonVolverPT.Name = "BottonVolverPT";
-            this.BottonVolverPT.Size = new System.Drawing.Size(208, 41);
+            this.BottonVolverPT.Size = new System.Drawing.Size(168, 41);
             this.BottonVolverPT.TabIndex = 4;
             this.BottonVolverPT.Text = "Volver";
-            this.BottonVolverPT.UseVisualStyleBackColor = true;
+            this.BottonVolverPT.UseVisualStyleBackColor = false;
             this.BottonVolverPT.Click += new System.EventHandler(this.BottonVolverPT_Click);
             // 
             // buttonTorneo

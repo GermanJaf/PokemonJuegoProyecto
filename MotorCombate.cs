@@ -17,15 +17,18 @@ namespace PokemonJuegoProyecto
             log.TopIndex = log.Items.Count - 1; // Para que el scroll baje solo
         }
 
-        public string ObtenerNombreImagenBoton(string tipo, bool iluminado)
+        public string ObtenerNombreImagenBoton(string tipo, bool seleccionado)
         {
-            string estado = iluminado ? "_iluminado" : "_normal";
-            return $"btn_{tipo.ToLower()}{estado}";
-        }
+            string nombreBase = "btn_" + tipo.ToLower();
 
-        public void EscribirSeparador(ListBox log)
-        {
-            log.Items.Add("-----------------------------");
+            if (seleccionado)
+            {
+                return nombreBase + "_iluminado";
+            }
+            else
+            {
+                return nombreBase + "_normal";
+            }
         }
 
         public int CalcularAnchoBarra(int hpActual, int hpMax, int anchoMaximo)
@@ -56,6 +59,22 @@ namespace PokemonJuegoProyecto
                 return Color.Yellow;              // Amarillo (entre 20% y 50%)
             else
                 return Color.Red;                 // Rojo (crítico, menos de 20%)
+        }
+        public static void CargarIconoTipo(PictureBox pb, string tipo)
+        {
+            object recurso = Properties.Resources.ResourceManager.GetObject(tipo);
+
+            if (recurso == null)
+            {
+                MessageBox.Show("¡ERROR! No existe ninguna imagen en Resources que se llame exactamente: " + tipo);
+                pb.BackColor = Color.Black;
+            }
+            else
+            {
+                pb.Image = (Image)recurso;
+                pb.SizeMode = PictureBoxSizeMode.Zoom;
+                MessageBox.Show("¡Imagen encontrada y cargada correctamente!");
+            }
         }
     }
 }

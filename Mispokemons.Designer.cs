@@ -135,11 +135,12 @@
             // pbPreview
             // 
             this.pbPreview.BackColor = System.Drawing.Color.Transparent;
-            this.pbPreview.Location = new System.Drawing.Point(65, 148);
+            this.pbPreview.Location = new System.Drawing.Point(79, 145);
             this.pbPreview.Name = "pbPreview";
-            this.pbPreview.Size = new System.Drawing.Size(200, 157);
+            this.pbPreview.Size = new System.Drawing.Size(160, 160);
             this.pbPreview.TabIndex = 9;
             this.pbPreview.TabStop = false;
+            this.pbPreview.Click += new System.EventHandler(this.pbPreview_Click);
             // 
             // Mispokemons
             // 
