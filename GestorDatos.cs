@@ -21,20 +21,14 @@ namespace PokemonJuegoProyecto
             conn.Open();
             
         }
-        public void RegistrarBatalla(int usuarioId, string pokUser, int nivUser, string pokRival, int nivRival, string resultado, string vidaFinal)
+        public void RegistrarBatalla(int usuarioId, int pokemonId, string faseLograda)
         {
-            string query = @"INSERT INTO HistorialTorneos
-                          (UsuarioId,PokemonUsuario, NivelUsuario, PokemonRival, NivelRival, Resultado, VidaFinal) 
-                          VALUES (@usuarioId, @pokUser, @nivUser, @pokRival, @nivRival, @resultado, @vidaFinal)";
+            string query = @"INSERT INTO HistorialTorneos (UsuarioId, PokemonID, FaseLograda) 
+                    VALUES (@usuarioId, @pokemonId, @faseLograda)";
             conn.ExecuteNonQuery(query,
                 ("@usuarioId", usuarioId),
-                ("@pokUser", pokUser),
-                ("@nivUser", nivUser),
-                ("@pokRival", pokRival),
-                ("@nivRival", nivRival),
-                ("@resultado", resultado),
-                ("@vidaFinal", vidaFinal));
-
+                ("@pokemonId", pokemonId),
+                ("@faseLograda", faseLograda));
         }
 
 
@@ -184,16 +178,14 @@ namespace PokemonJuegoProyecto
             DataTable listarendimiento = new DataTable();
 
             string queryRendimiento = @"
-        SELECT PokemonUsuario AS [Mi Pokémon],
-               NivelUsuario AS [Nivel],
-               PokemonRival AS [Pokémon Rival],
-               NivelRival AS [Nivel Rival],
-               Resultado AS [Resultado],
-               VidaFinal AS [Vida Final]
-        FROM HistorialTorneos
-        WHERE UsuarioId = @idUsuario
-        ORDER BY Id DESC";
-
+        SELECT p.Nombre AS [Mi Pokémon],
+               pu.Nivel AS [Nivel]
+               ht.FaseLograda As [Fase Lograda]
+        FROM HistorialTorneos ht
+        INNER JOIN Pokemones p ON ht.PokemonID = p.Id
+        INNER JOIN PokemonUsuario pu ON pu.PokemonId = p.Id AND pu.UsuarioId = ht.UsuarioId
+        WHERE ht.UsuarioId = @idUsuario
+        ORDER BY ht.rowid DESC";
 
             var rs = conn.ExecuteReader(queryRendimiento, ("@idUsuario", idUsuario));
 
