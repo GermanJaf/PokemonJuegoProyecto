@@ -8,6 +8,7 @@ namespace PokemonJuegoProyecto
 {
     public class PokeDaVI
     {
+        private static Random rand = new Random();
         public int Id { get; }
         public string Nombre { get; }
         public string Tipo { get; }
@@ -64,7 +65,6 @@ namespace PokemonJuegoProyecto
             double efectividad = PokeTipos.Efectividad(ataqueUsado.Tipo, rival.Tipo);
 
             // Critico //
-            Random rand = new Random();
             double critico = 1.0;
             int num = rand.Next(25);
             if (num == 10)
@@ -74,7 +74,7 @@ namespace PokemonJuegoProyecto
             }
 
             // Daño entre 85 a 100% //
-            int porat = rand.Next(85, 101);
+            int porat = rand.Next(70, 116);
             double aleatorio = porat / 100.0;
 
             // Formula
