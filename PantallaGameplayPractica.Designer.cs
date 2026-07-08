@@ -209,9 +209,9 @@
             this.listBoxLog.FormattingEnabled = true;
             this.listBoxLog.IntegralHeight = false;
             this.listBoxLog.ItemHeight = 16;
-            this.listBoxLog.Location = new System.Drawing.Point(585, 6);
+            this.listBoxLog.Location = new System.Drawing.Point(505, 1);
             this.listBoxLog.Name = "listBoxLog";
-            this.listBoxLog.Size = new System.Drawing.Size(316, 574);
+            this.listBoxLog.Size = new System.Drawing.Size(333, 574);
             this.listBoxLog.TabIndex = 12;
             // 
             // pictureBoxJugador
@@ -220,6 +220,7 @@
             this.pictureBoxJugador.Location = new System.Drawing.Point(90, 280);
             this.pictureBoxJugador.Name = "pictureBoxJugador";
             this.pictureBoxJugador.Size = new System.Drawing.Size(160, 160);
+            this.pictureBoxJugador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxJugador.TabIndex = 13;
             this.pictureBoxJugador.TabStop = false;
             // 
@@ -268,6 +269,7 @@
             this.pictureBoxRival.Location = new System.Drawing.Point(455, 68);
             this.pictureBoxRival.Name = "pictureBoxRival";
             this.pictureBoxRival.Size = new System.Drawing.Size(160, 160);
+            this.pictureBoxRival.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxRival.TabIndex = 16;
             this.pictureBoxRival.TabStop = false;
             // 
@@ -295,7 +297,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PokemonJuegoProyecto.Properties.Resources.BATALLAPOKEMON;
+            this.BackgroundImage = global::PokemonJuegoProyecto.Properties.Resources.FONDOLC;
             this.ClientSize = new System.Drawing.Size(904, 586);
             this.Controls.Add(this.pictureBoxTipoRival);
             this.Controls.Add(this.pictureBoxTipoJugador);

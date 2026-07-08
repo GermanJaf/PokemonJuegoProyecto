@@ -783,6 +783,16 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap FONDOLC {
+            get {
+                object obj = ResourceManager.GetObject("FONDOLC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap FONDONUEVAPRACTICA {
             get {
                 object obj = ResourceManager.GetObject("FONDONUEVAPRACTICA", resourceCulture);

@@ -45,8 +45,8 @@ namespace PokemonJuegoProyecto
             button3.Enabled = false;
             button4.Enabled = false;
 
-            motor.EscribirEnLog(listBoxLog, $"--------- TURNO {contadorTurnos} ---------");
-            motor.EscribirEnLog(listBoxLog, $"--------- (Tu turno) ---------");
+            motor.EscribirEnLog(listBoxLog, $"-------------  TURNO {contadorTurnos}  --------------");
+            motor.EscribirEnLog(listBoxLog, $"------------- (Tu turno) --------------");
 
             if (miPokemon.MisAtaques[AtaqueSeleccion] == null)
             {
@@ -85,7 +85,7 @@ namespace PokemonJuegoProyecto
         }
         private void TurnoRival()
         {
-            motor.EscribirEnLog(listBoxLog, "--------- Turno Rival ---------");
+            motor.EscribirEnLog(listBoxLog, "------------- Turno Rival -------------");
             Random rnd = new Random();
             int AtaqueAleatorio = rnd.Next(0, 4);
 
