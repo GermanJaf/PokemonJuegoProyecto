@@ -760,4 +760,16 @@
   <data name="FONDOFINALPRACTICA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FONDOFINALPRACTICA1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btn_sanar_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_sanar_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_sanar_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_sanar_iluminado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_sanar_desactivado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_sanar_desactivado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_sanar_apagado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_sanar_apagado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

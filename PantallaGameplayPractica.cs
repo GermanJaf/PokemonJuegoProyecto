@@ -60,8 +60,6 @@ namespace PokemonJuegoProyecto
             int dañoRealizado = miPokemon.Atacar(rivalPokemon, ataqueUsado, out mensajeInGame);
             rivalPokemon.RecibirDaño(dañoRealizado);
 
-            labelComentarios.Text = mensajeInGame;
-
             motor.EscribirEnLog(listBoxLog, $"mi {miPokemon.Nombre} usó {ataqueUsado.Nombre}!");
 
             if (!string.IsNullOrEmpty(mensajeInGame))
@@ -100,13 +98,12 @@ namespace PokemonJuegoProyecto
 
             int dañoRealizadoR = rivalPokemon.Atacar(miPokemon, ataqueUsadoR, out mensajeInGameRival);
 
-            labelComentarios.Text = mensajeInGameRival;
-
             miPokemon.RecibirDaño(dañoRealizadoR);
             motor.EscribirEnLog(listBoxLog, $"El {rivalPokemon.Nombre} rival usó {ataqueUsadoR.Nombre}!");
             if (!string.IsNullOrEmpty(mensajeInGameRival))
                 motor.EscribirEnLog(listBoxLog, mensajeInGameRival);
             motor.EscribirEnLog(listBoxLog, $"Mi {miPokemon.Nombre} perdió {dañoRealizadoR} HP.");
+           
             ActualizarVida();
 
             if (miPokemon.Debilitado())

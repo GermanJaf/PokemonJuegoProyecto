@@ -36,7 +36,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.labelComentarios = new System.Windows.Forms.Label();
             this.button5Retirarse = new System.Windows.Forms.Button();
             this.listBoxLog = new System.Windows.Forms.ListBox();
             this.pictureBoxJugador = new System.Windows.Forms.PictureBox();
@@ -175,17 +174,6 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // labelComentarios
-            // 
-            this.labelComentarios.BackColor = System.Drawing.Color.Transparent;
-            this.labelComentarios.Location = new System.Drawing.Point(23, 325);
-            this.labelComentarios.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelComentarios.Name = "labelComentarios";
-            this.labelComentarios.Size = new System.Drawing.Size(271, 21);
-            this.labelComentarios.TabIndex = 10;
-            this.labelComentarios.Text = ".";
-            this.labelComentarios.Click += new System.EventHandler(this.labelComentarios_Click);
-            // 
             // button5Retirarse
             // 
             this.button5Retirarse.BackColor = System.Drawing.Color.Transparent;
@@ -306,7 +294,6 @@
             this.Controls.Add(this.panelFondoRival);
             this.Controls.Add(this.listBoxLog);
             this.Controls.Add(this.button5Retirarse);
-            this.Controls.Add(this.labelComentarios);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -343,7 +330,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label labelComentarios;
         private System.Windows.Forms.Button button5Retirarse;
         private System.Windows.Forms.ListBox listBoxLog;
         private System.Windows.Forms.PictureBox pictureBoxJugador;

@@ -20,6 +20,8 @@ namespace PokemonJuegoProyecto
         private int rivalesRestantes;
         private int nivelTorneo;
         private int rivalesTotales;
+        private MotorCombate motor = new MotorCombate();
+        private int contadorTurnos = 1;
         public PantallGameplayaTorneo(PokeDaVI pokemonTorneo, int idPokemonSlc, int cantidadRivales, int nivel)
         {
             InitializeComponent();
@@ -56,10 +58,26 @@ namespace PokemonJuegoProyecto
         private void ActualizarVida()
         {
             labelvidaUsuario.Text = $"{miPokemon.HPActual}/{miPokemon.HPMax}";
-            labelvidaRival.Text = $"{rivalPokemon.HPActual}/{rivalPokemon.HPMax}";
+            int porcentajeRival = (rivalPokemon.HPMax > 0) ? (rivalPokemon.HPActual * 100 / rivalPokemon.HPMax) : 0;
+
+            labelvidaRival.Text = $"{porcentajeRival}%";
+
+            panelFondoUsuario.Width = motor.CalcularAnchoBarra(miPokemon.HPActual, miPokemon.HPMax, 96);
+            panelBarraUsuario.BackColor = motor.ObtenerColorVida(miPokemon.HPActual, miPokemon.HPMax);
+
+            panelFondoRival.Width = motor.CalcularAnchoBarra(rivalPokemon.HPActual, rivalPokemon.HPMax, 110);
+            panelBarraRival.BackColor = motor.ObtenerColorVida(rivalPokemon.HPActual, rivalPokemon.HPMax);
         }
         private void EjecutarDaño(int AtaqueSeleccion)
         {
+            button1.Enabled = false;
+            button2.Enabled = false;
+            button3.Enabled = false;
+            button4.Enabled = false;
+
+            motor.EscribirEnLog(listBoxLog, $"-------------  TURNO {contadorTurnos}  --------------");
+            motor.EscribirEnLog(listBoxLog, $"------------- (Tu turno) --------------");
+
             if (miPokemon.MisAtaques[AtaqueSeleccion] == null)
             {
                 return;
@@ -72,7 +90,12 @@ namespace PokemonJuegoProyecto
             int dañoRealizado = miPokemon.Atacar(rivalPokemon, ataqueUsado, out mensajeInGame);
             rivalPokemon.RecibirDaño(dañoRealizado);
 
-            MessageBox.Show($"{miPokemon.Nombre} uso {ataqueUsado.Nombre} y causo {dañoRealizado} puntos de daño");
+            motor.EscribirEnLog(listBoxLog, $"mi {miPokemon.Nombre} usó {ataqueUsado.Nombre}!");
+
+            if (!string.IsNullOrEmpty(mensajeInGame))
+                motor.EscribirEnLog(listBoxLog, mensajeInGame);
+
+            motor.EscribirEnLog(listBoxLog, $" El {rivalPokemon.Nombre} rival perdió {dañoRealizado} HP.");
 
             ActualizarVida();
 
@@ -85,12 +108,12 @@ namespace PokemonJuegoProyecto
 
                 if (rivalesRestantes > 0)
                 {
-                    MessageBox.Show("Felicidades haz superado al rival. AHORA VA EL SIGUIENTE");
+                    MessageBox.Show("¡Felicidades, superaste al rival! ¡Ahora va el siguiente!");
                     GeneradorRival();
                 }
                 else
                 {
-                    MessageBox.Show("FELICIDADES HAZ GANADO EL TORNEO");
+                    MessageBox.Show("¡Felicidades! ¡Has ganado el torneo!");
                     GestorDatos gestor = new GestorDatos();
                     gestor.RegistrarBatalla(
 
@@ -109,6 +132,7 @@ namespace PokemonJuegoProyecto
         }
         private void TurnoRival()
         {
+            motor.EscribirEnLog(listBoxLog, "------------- Turno Rival -------------");
             Random rnd = new Random();
             int AtaqueAleatorio = rnd.Next(0, 4);
 
@@ -124,13 +148,17 @@ namespace PokemonJuegoProyecto
             int dañoRealizadoR = rivalPokemon.Atacar(miPokemon, ataqueUsadoR, out mensajeInGameRival);
 
             miPokemon.RecibirDaño(dañoRealizadoR);
-            MessageBox.Show($"{rivalPokemon.Nombre} rival uso {ataqueUsadoR.Nombre} y te ha hecho {dañoRealizadoR} puntos de daño");
+            motor.EscribirEnLog(listBoxLog, $"El {rivalPokemon.Nombre} rival usó {ataqueUsadoR.Nombre}!");
+            if (!string.IsNullOrEmpty(mensajeInGameRival))
+                motor.EscribirEnLog(listBoxLog, mensajeInGameRival);
+            motor.EscribirEnLog(listBoxLog, $"Mi {miPokemon.Nombre} perdió {dañoRealizadoR} HP.");
 
             ActualizarVida();
 
             if (miPokemon.Debilitado())
             {
-                MessageBox.Show("Tu pokemon se ha debilitado, haz perdido la batalla");
+                MessageBox.Show("Tu Pokéemon se ha debilitado, perdiste la batalla");
+
                 GestorDatos gestor = new GestorDatos();
                 gestor.RegistrarBatalla(
 
@@ -143,6 +171,14 @@ namespace PokemonJuegoProyecto
 
                 this.Close();
             }
+
+            contadorTurnos++;
+            motor.EscribirEnLog(listBoxLog, "");
+
+            button1.Enabled = true;
+            button2.Enabled = true;
+            button3.Enabled = true;
+            button4.Enabled = true;
         }
 
         private void btnSanar_Click(object sender, EventArgs e)
@@ -156,21 +192,26 @@ namespace PokemonJuegoProyecto
                 MessageBox.Show("Tu pokémon ya tiene la vida al máximo.");
                 return;
             }
+            motor.EscribirEnLog(listBoxLog, $"-------------  TURNO {contadorTurnos}  --------------");
+            motor.EscribirEnLog(listBoxLog, $"------------- (Tu turno) --------------");
 
-            int cantidadCurar = 50;
-            miPokemon.RecibirDaño(-cantidadCurar);
+            int vidaRecuperada = miPokemon.HPMax - miPokemon.HPActual;
+            miPokemon.RecibirDaño(-vidaRecuperada);
 
             pocionesRestantes--;
 
             if (pocionesRestantes == 0)
             {
                 btnSanar.Enabled = false;
+                btnSanar.BackgroundImage = Properties.Resources.btn_sanar_apagado;
             }
 
             lblCantidadHP.Text = $"Pociones restantes = {pocionesRestantes}";
 
-            MessageBox.Show($"¡Has curado a {miPokemon.Nombre}! Recupero {cantidadCurar}HP.");
+            motor.EscribirEnLog(listBoxLog, $" ¡Has curado a  {miPokemon.Nombre}! Recupero {vidaRecuperada}HP.");
+
             ActualizarVida();
+
             TurnoRival();
         }
 
@@ -196,7 +237,7 @@ namespace PokemonJuegoProyecto
 
         private void btnAbandonar_Click(object sender, EventArgs e)
         {
-            DialogResult confirmar = MessageBox.Show("Realmente quieres salir?", "Abandonar torneo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            DialogResult confirmar = MessageBox.Show("¿Realmente quieres salir?", "Abandonar torneo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             if (confirmar == DialogResult.Yes)
             {
@@ -215,11 +256,12 @@ namespace PokemonJuegoProyecto
 
         private void PantallaTorneo_Load(object sender, EventArgs e)
         {
+
             if (miPokemon.MisAtaques[0] != null)
             {
                 button1.Text = miPokemon.MisAtaques[0].Nombre;
             }
-            if(miPokemon.MisAtaques[1] != null)
+            if (miPokemon.MisAtaques[1] != null)
             {
                 button2.Text = miPokemon.MisAtaques[1].Nombre;
             }
@@ -235,6 +277,28 @@ namespace PokemonJuegoProyecto
             lblCantidadHP.Text = $"Pociones restantes = {pocionesRestantes}";
 
             GeneradorRival();
+
+            AsignarImagenInicial(button1, miPokemon.MisAtaques[0]);
+            AsignarImagenInicial(button2, miPokemon.MisAtaques[1]);
+            AsignarImagenInicial(button3, miPokemon.MisAtaques[2]);
+            AsignarImagenInicial(button4, miPokemon.MisAtaques[3]);
+
+            GestorVisual.CargarImagenPokemon(pictureBoxJugador, miPokemon.Nombre, false);
+            GestorVisual.CargarImagenPokemon(pictureBoxRival, rivalPokemon.Nombre, true);
+            GestorVisual.CargarIconoTipo(pictureBoxTipoJugador, miPokemon.Tipo);
+            GestorVisual.CargarIconoTipo(pictureBoxTipoRival, rivalPokemon.Tipo);
+
+            btnAbandonar.BackgroundImage = Properties.Resources.btn_huir_normal;
+            btnAbandonar.BackgroundImageLayout = ImageLayout.Stretch;
+            btnAbandonar.MouseEnter += btnAbandonar_MouseEnter;
+            btnAbandonar.MouseLeave += btnAbandonar_MouseLeave;
+
+            btnSanar.BackgroundImage = Properties.Resources.btn_sanar_normal;
+            btnSanar.BackgroundImageLayout = ImageLayout.Stretch;
+
+            btnSanar.MouseEnter += btnSanar_MouseEnter;
+            btnSanar.MouseLeave += btnSanar_MouseLeave;
+
         }
 
         private void labelvidaRival_Click(object sender, EventArgs e)
@@ -245,6 +309,66 @@ namespace PokemonJuegoProyecto
         private void labelvidaUsuario_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSanar_MouseEnter(object sender, EventArgs e)
+        {
+            btnSanar.BackgroundImage = Properties.Resources.btn_sanar_select;
+        }
+
+        private void btnSanar_MouseLeave(object sender, EventArgs e)
+        {
+
+            btnSanar.BackgroundImage = Properties.Resources.btn_sanar_normal;
+        }
+        private void btnAbandonar_MouseEnter(object sender, EventArgs e)
+        {
+            btnAbandonar.BackgroundImage = Properties.Resources.btn_huir_select;
+        }
+
+        private void btnAbandonar_MouseLeave(object sender, EventArgs e)
+        {
+
+            btnAbandonar.BackgroundImage = Properties.Resources.btn_huir_normal;
+        }
+
+        private void Boton_MouseEnter(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            Ataque atk = (Ataque)btn.Tag;
+
+            string nombreImg = motor.ObtenerNombreImagenBoton(atk.Tipo, true);
+            btn.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nombreImg);
+        }
+
+        private void Boton_MouseLeave(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            Ataque atk = (Ataque)btn.Tag;
+
+            string nombreImg = motor.ObtenerNombreImagenBoton(atk.Tipo, false);
+            btn.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nombreImg);
+        }
+        private void AsignarImagenInicial(Button btn, Ataque atk)
+        {
+            if (atk != null)
+            {
+                btn.Visible = true;
+                btn.Tag = atk;
+                btn.Text = atk.Nombre;
+
+                string nombre = motor.ObtenerNombreImagenBoton(atk.Tipo, false);
+                btn.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nombre);
+
+                btn.MouseEnter -= Boton_MouseEnter;
+                btn.MouseEnter += Boton_MouseEnter;
+                btn.MouseLeave -= Boton_MouseLeave;
+                btn.MouseLeave += Boton_MouseLeave;
+            }
+            else
+            {
+                btn.Visible = false;
+            }
         }
     }
 }
