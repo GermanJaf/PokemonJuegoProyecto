@@ -31,10 +31,10 @@ namespace PokemonJuegoProyecto
 
             labelvidaRival.Text = $"{porcentajeRival}%";
 
-            panelFondoUsuario.Width = motor.CalcularAnchoBarra(miPokemon.HPActual, miPokemon.HPMax, 145);
+            panelFondoUsuario.Width = motor.CalcularAnchoBarra(miPokemon.HPActual, miPokemon.HPMax, 96);
             panelBarraUsuario.BackColor = motor.ObtenerColorVida(miPokemon.HPActual, miPokemon.HPMax);
 
-            panelFondoRival.Width = motor.CalcularAnchoBarra(rivalPokemon.HPActual, rivalPokemon.HPMax, 145);
+            panelFondoRival.Width = motor.CalcularAnchoBarra(rivalPokemon.HPActual, rivalPokemon.HPMax, 110);
             panelBarraRival.BackColor = motor.ObtenerColorVida(rivalPokemon.HPActual, rivalPokemon.HPMax);
         }
 

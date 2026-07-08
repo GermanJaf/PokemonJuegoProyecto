@@ -81,7 +81,7 @@
             this.checkBoxDFacil.Name = "checkBoxDFacil";
             this.checkBoxDFacil.Size = new System.Drawing.Size(92, 33);
             this.checkBoxDFacil.TabIndex = 1;
-            this.checkBoxDFacil.Text = "Facil";
+            this.checkBoxDFacil.Text = "Fácil";
             this.checkBoxDFacil.UseVisualStyleBackColor = false;
             // 
             // checkBoxDMedio
@@ -107,7 +107,7 @@
             this.checkBoxDDificil.Name = "checkBoxDDificil";
             this.checkBoxDDificil.Size = new System.Drawing.Size(105, 33);
             this.checkBoxDDificil.TabIndex = 3;
-            this.checkBoxDDificil.Text = "Dificil";
+            this.checkBoxDDificil.Text = "Difícil";
             this.checkBoxDDificil.UseVisualStyleBackColor = false;
             // 
             // label2

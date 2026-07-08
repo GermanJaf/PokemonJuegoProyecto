@@ -763,6 +763,26 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap FONDOFINALPRACTICA {
+            get {
+                object obj = ResourceManager.GetObject("FONDOFINALPRACTICA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FONDOFINALPRACTICA1 {
+            get {
+                object obj = ResourceManager.GetObject("FONDOFINALPRACTICA1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap FONDOINICIOPOKE {
             get {
                 object obj = ResourceManager.GetObject("FONDOINICIOPOKE", resourceCulture);
@@ -786,6 +806,36 @@ namespace PokemonJuegoProyecto.Properties {
         public static System.Drawing.Bitmap FONDOLC {
             get {
                 object obj = ResourceManager.GetObject("FONDOLC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FONDOLC1 {
+            get {
+                object obj = ResourceManager.GetObject("FONDOLC1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FONDOLC2 {
+            get {
+                object obj = ResourceManager.GetObject("FONDOLC2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FONDOLC3 {
+            get {
+                object obj = ResourceManager.GetObject("FONDOLC3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

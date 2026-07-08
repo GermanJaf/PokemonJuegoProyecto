@@ -398,6 +398,11 @@
     <None Include="Resources\FONDORENDIMIENTO.png" />
     <None Include="Resources\FONDORENDIMIENTO1.png" />
     <None Include="Resources\FONDOLC.png" />
+    <None Include="Resources\FONDOLC1.png" />
+    <None Include="Resources\FONDOLC2.png" />
+    <None Include="Resources\FONDOLC3.png" />
+    <None Include="Resources\FONDOFINALPRACTICA.png" />
+    <None Include="Resources\FONDOFINALPRACTICA1.png" />
     <Content Include="Resources\gastly.gif" />
     <Content Include="Resources\gastly_frente.gif" />
     <Content Include="Resources\geodude.gif" />

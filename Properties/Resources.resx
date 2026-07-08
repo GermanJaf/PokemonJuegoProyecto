@@ -145,14 +145,17 @@
   <data name="rattata_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rattata_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="poochyena_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\poochyena_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="shinx" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shinx .gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MEWTO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MEWTO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="torchic_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torchic_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gible_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gible_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_planta_iluminado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_planta_iluminado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sandshrew" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sandshrew.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,23 +181,11 @@
   <data name="trapinch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trapinch.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="POKEBALL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\POKEBALL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mareep_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mareep_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="FONDO ELECCION" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FONDO ELECCION.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="zubat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zubat.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CIELO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CIELO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="poochyena" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\poochyena.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gemini_Generated_Image_3d2cqo3d2cqo3d2c" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gemini_Generated_Image_3d2cqo3d2cqo3d2c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -213,9 +204,6 @@
   </data>
   <data name="beldum_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\beldum_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="swinub_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\swinub_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="togepi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\togepi.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -246,6 +234,9 @@
   </data>
   <data name="chimchar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chimchar.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_bicho_iluminado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_bicho_iluminado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pikachu_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pikachu_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -280,9 +271,6 @@
   <data name="image-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="treecko_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\treecko_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="geodude" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\geodude.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -298,11 +286,17 @@
   <data name="btn_tierra_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_tierra_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pidgey_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pidgey_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btn_fantasma_iluminado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_fantasma_iluminado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="togepi_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\togepi_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eevee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eevee.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="venipede" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\venipede.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -310,8 +304,8 @@
   <data name="FONDOPOKEMENUU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FONDOPOKEMENUU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gible_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gible_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="snivy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snivy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="INICIOPOKEMON" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\INICIOPOKEMON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -319,8 +313,8 @@
   <data name="teddiursa_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\teddiursa_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gastly" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gastly.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FONDOFINALPRACTICA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDOFINALPRACTICA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="houndour_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\houndour_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -349,6 +343,9 @@
   <data name="FONDORENDIMIENTO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FONDORENDIMIENTO1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btn_psíquico_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_psíquico_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btn_fuego_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_fuego_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -367,14 +364,11 @@
   <data name="btn_dragón_iluminado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_dragón_iluminado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TORNEOXD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TORNEOXD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn_planta_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_planta_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="oshawott" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oshawott.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="snivy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\snivy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btn_agua_iluminado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_agua_iluminado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -390,6 +384,12 @@
   </data>
   <data name="ralts_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ralts_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="marcador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marcador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Volador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Volador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -442,6 +442,9 @@
   <data name="phanpy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\phanpy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btn_huir_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_huir_select.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btn_fuego_iluminado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_fuego_iluminado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -460,6 +463,9 @@
   <data name="btn_veneno_iluminado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_veneno_iluminado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cranidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cranidos.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MADERA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MADERA1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -471,6 +477,9 @@
   </data>
   <data name="FONDO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FONDO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TORNEOXD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TORNEOXD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="REGISTROFONDO (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\REGISTROFONDO (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -493,9 +502,6 @@
   <data name="btn_lucha_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_lucha_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="phanpy_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phanpy_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TORNEOPANTALLA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TORNEOPANTALLA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -517,8 +523,11 @@
   <data name="btn_tierra_iluminado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_tierra_iluminado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MEWTO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MEWTO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FONDOLC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDOLC1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treecko_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treecko_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Hielo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hielo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -526,8 +535,8 @@
   <data name="PIKACHU2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PIKACHU2D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="teddiursa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\teddiursa.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="larvitar_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\larvitar_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btn_bicho_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_bicho_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -538,11 +547,11 @@
   <data name="machop_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\machop_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="POKEDEX ARRIBA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\POKEDEX ARRIBA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FONDOLC2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDOLC2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FONDOPOKEMENUA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FONDOPOKEMENUA1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="phanpy_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phanpy_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btn_lucha_iluminado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_lucha_iluminado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -556,8 +565,8 @@
   <data name="aron_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aron_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="larvitar_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\larvitar_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shinx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shinx .gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rattata" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rattata.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -568,8 +577,8 @@
   <data name="Psíquico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Psíquico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cranidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cranidos.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="poochyena" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poochyena.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="oshawott_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oshawott_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -580,8 +589,8 @@
   <data name="tepig_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tepig_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eevee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eevee.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gastly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gastly.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hitmonchan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hitmonchan.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -619,11 +628,14 @@
   <data name="swinub" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\swinub.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn_planta_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_planta_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FONDOLC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDOLC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BATALLAPOKEMON" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BATALLAPOKEMON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="caterpie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\caterpie.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="treecko" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\treecko.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -637,8 +649,8 @@
   <data name="Bicho" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bicho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="marcador" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\marcador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="zubat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zubat.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bulbasaur" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bulbasaur.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -649,8 +661,11 @@
   <data name="bagon_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bagon_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FONDOPOKEMENUA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDOPOKEMENUA1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="POKEDEX ARRIBA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POKEDEX ARRIBA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mudkip_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mudkip_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -673,8 +688,8 @@
   <data name="snorunt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\snorunt.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pidgey_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pidgey_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mareep_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mareep_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chikorita" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chikorita.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -682,17 +697,17 @@
   <data name="snover_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\snover_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="caterpie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\caterpie.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FONDOLC3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDOLC3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Chorizord" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Chorizord.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn_planta_iluminado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_planta_iluminado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="teddiursa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\teddiursa.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn_psíquico_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_psíquico_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="POKEBALL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POKEBALL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Veneno" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Veneno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -733,16 +748,16 @@
   <data name="inviernooo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\inviernooo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn_huir_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_huir_select.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="swinub_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\swinub_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn_bicho_iluminado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_bicho_iluminado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="poochyena_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poochyena_frente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ralts" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ralts.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FONDOLC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FONDOLC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FONDOFINALPRACTICA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDOFINALPRACTICA1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

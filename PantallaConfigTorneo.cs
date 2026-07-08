@@ -75,11 +75,11 @@ namespace PokemonJuegoProyecto
 
             if(checkseleccionados == 0)
             {
-                MessageBox.Show("Por favor seleccione una dificultad");
+                MessageBox.Show("Por favor, seleccione una dificultad");
                 return;
             }else if(checkseleccionados > 1)
             {
-                MessageBox.Show("ERROR: Solo puedes escoger uno");
+                MessageBox.Show("Solo puedes escoger una dificultad");
                 return;
             }
 
@@ -91,7 +91,7 @@ namespace PokemonJuegoProyecto
 
             if(miPokemonTorneo == null)
             {
-                MessageBox.Show("Favor de escoger un pokemon. No se le olvide presioanr Elegir para que se seleccione");
+                MessageBox.Show("Favor de escoger un Pokémon. No se le olvide presioanr 'Elegir' para que se seleccione");
                 return;
             }
 
@@ -126,7 +126,7 @@ namespace PokemonJuegoProyecto
 
             GestorDatos gestorDatos = new GestorDatos();
             miPokemonTorneo = gestorDatos.PokemonUsuarioCombate(idRegistro);
-            MessageBox.Show($"Haz seleccionado {miPokemonTorneo.Nombre} con el nivel {miPokemonTorneo.Nivel} para este torneo");
+            MessageBox.Show($"Has seleccionado {miPokemonTorneo.Nombre} con el nivel {miPokemonTorneo.Nivel} para este torneo");
         }
 
         private void label5_Click(object sender, EventArgs e)
