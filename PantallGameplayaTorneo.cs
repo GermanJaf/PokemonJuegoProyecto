@@ -54,7 +54,14 @@ namespace PokemonJuegoProyecto
             labelPokemonUsuario.Text = miPokemon.Nombre;
             labelPokemonRival.Text = rivalPokemon.Nombre;
 
+            GestorVisual.CargarImagenPokemon(pictureBoxRival, rivalPokemon.Nombre, true);
+            GestorVisual.CargarIconoTipo(pictureBoxTipoRival, rivalPokemon.Tipo);
+
             ActualizarVida();
+
+            pictureBoxRival.Refresh();
+            pictureBoxTipoRival.Refresh();
+            labelPokemonRival.Refresh();
         }
         private void ActualizarVida()
         {
@@ -111,6 +118,7 @@ namespace PokemonJuegoProyecto
                 {
                     MessageBox.Show("¡Felicidades, superaste al rival! ¡Ahora va el siguiente!");
                     GeneradorRival();
+                    HabilitarBotones();
                 }
                 else
                 {
@@ -130,6 +138,13 @@ namespace PokemonJuegoProyecto
             }
 
             TurnoRival();
+        }
+        private void HabilitarBotones()
+        {
+            button1.Enabled = true;
+            button2.Enabled = true;
+            button3.Enabled = true;
+            button4.Enabled = true;
         }
         private void TurnoRival()
         {

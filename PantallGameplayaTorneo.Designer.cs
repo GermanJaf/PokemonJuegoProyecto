@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallGameplayaTorneo));
             this.labelPokemonRival = new System.Windows.Forms.Label();
             this.labelPokemonUsuario = new System.Windows.Forms.Label();
             this.labelvidaRival = new System.Windows.Forms.Label();
@@ -118,7 +119,7 @@
             this.btnSanar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSanar.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSanar.Location = new System.Drawing.Point(364, 360);
-            this.btnSanar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSanar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSanar.Name = "btnSanar";
             this.btnSanar.Size = new System.Drawing.Size(150, 55);
             this.btnSanar.TabIndex = 6;
@@ -134,7 +135,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(26, 360);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 55);
             this.button1.TabIndex = 7;
@@ -150,7 +151,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(26, 425);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 55);
             this.button2.TabIndex = 8;
@@ -166,7 +167,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(196, 360);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 55);
             this.button3.TabIndex = 9;
@@ -182,7 +183,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(196, 425);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(150, 55);
             this.button4.TabIndex = 10;
@@ -199,7 +200,7 @@
             this.btnAbandonar.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbandonar.ForeColor = System.Drawing.Color.Black;
             this.btnAbandonar.Location = new System.Drawing.Point(364, 425);
-            this.btnAbandonar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAbandonar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAbandonar.Name = "btnAbandonar";
             this.btnAbandonar.Size = new System.Drawing.Size(150, 55);
             this.btnAbandonar.TabIndex = 11;
@@ -331,7 +332,11 @@
             this.Controls.Add(this.labelvidaRival);
             this.Controls.Add(this.labelPokemonUsuario);
             this.Controls.Add(this.labelPokemonRival);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "PantallGameplayaTorneo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PantallaTorneo";

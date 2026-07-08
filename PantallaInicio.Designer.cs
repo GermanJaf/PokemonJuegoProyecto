@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaInicio));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonPokedex = new System.Windows.Forms.Button();
@@ -82,7 +83,7 @@
             this.buttonPokedex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPokedex.Font = new System.Drawing.Font("Stencil", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPokedex.Location = new System.Drawing.Point(0, 214);
-            this.buttonPokedex.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonPokedex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonPokedex.Name = "buttonPokedex";
             this.buttonPokedex.Size = new System.Drawing.Size(225, 144);
             this.buttonPokedex.TabIndex = 2;
@@ -99,7 +100,7 @@
             this.buttonTorneo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonTorneo.Font = new System.Drawing.Font("Stencil", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTorneo.Location = new System.Drawing.Point(466, 214);
-            this.buttonTorneo.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonTorneo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonTorneo.Name = "buttonTorneo";
             this.buttonTorneo.Size = new System.Drawing.Size(221, 144);
             this.buttonTorneo.TabIndex = 3;
@@ -112,7 +113,7 @@
             this.buttonSalir.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonSalir.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSalir.Location = new System.Drawing.Point(149, 431);
-            this.buttonSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSalir.Name = "buttonSalir";
             this.buttonSalir.Size = new System.Drawing.Size(189, 45);
             this.buttonSalir.TabIndex = 4;
@@ -125,7 +126,7 @@
             this.buttonVolverLogin.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonVolverLogin.Font = new System.Drawing.Font("SimSun", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVolverLogin.Location = new System.Drawing.Point(366, 431);
-            this.buttonVolverLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonVolverLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonVolverLogin.Name = "buttonVolverLogin";
             this.buttonVolverLogin.Size = new System.Drawing.Size(197, 45);
             this.buttonVolverLogin.TabIndex = 5;
@@ -194,7 +195,11 @@
             this.Controls.Add(this.buttonPokedex);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "PantallaInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menú";

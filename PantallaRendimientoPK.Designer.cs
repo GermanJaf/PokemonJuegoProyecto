@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaRendimientoPK));
             this.label1 = new System.Windows.Forms.Label();
             this.ListaGanadasPokemon = new System.Windows.Forms.DataGridView();
             this.buttonVolverPT = new System.Windows.Forms.Button();
@@ -55,7 +56,7 @@
             // 
             this.ListaGanadasPokemon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ListaGanadasPokemon.Location = new System.Drawing.Point(11, 136);
-            this.ListaGanadasPokemon.Margin = new System.Windows.Forms.Padding(2);
+            this.ListaGanadasPokemon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ListaGanadasPokemon.Name = "ListaGanadasPokemon";
             this.ListaGanadasPokemon.RowHeadersWidth = 51;
             this.ListaGanadasPokemon.RowTemplate.Height = 24;
@@ -69,7 +70,7 @@
             this.buttonVolverPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonVolverPT.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVolverPT.Location = new System.Drawing.Point(251, 460);
-            this.buttonVolverPT.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonVolverPT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonVolverPT.Name = "buttonVolverPT";
             this.buttonVolverPT.Size = new System.Drawing.Size(169, 39);
             this.buttonVolverPT.TabIndex = 2;
@@ -107,13 +108,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PokemonJuegoProyecto.Properties.Resources.FONDORENDIMIENTO1;
-            this.ClientSize = new System.Drawing.Size(684, 521);
+            this.ClientSize = new System.Drawing.Size(684, 531);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonVolverPT);
             this.Controls.Add(this.ListaGanadasPokemon);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "PantallaRendimientoPK";
             this.Text = "RendimientoPK";
             this.Load += new System.EventHandler(this.PantallaRendimientoPK_Load);

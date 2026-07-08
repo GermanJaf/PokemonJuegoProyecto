@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.Pokeuady = new System.Windows.Forms.Label();
             this.usuariolabel = new System.Windows.Forms.Label();
             this.usuariologinbox = new System.Windows.Forms.TextBox();
@@ -70,7 +71,7 @@
             // 
             this.usuariologinbox.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usuariologinbox.Location = new System.Drawing.Point(25, 132);
-            this.usuariologinbox.Margin = new System.Windows.Forms.Padding(2);
+            this.usuariologinbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.usuariologinbox.Name = "usuariologinbox";
             this.usuariologinbox.Size = new System.Drawing.Size(234, 22);
             this.usuariologinbox.TabIndex = 2;
@@ -92,7 +93,7 @@
             // 
             this.contraseñalogintext.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contraseñalogintext.Location = new System.Drawing.Point(25, 197);
-            this.contraseñalogintext.Margin = new System.Windows.Forms.Padding(2);
+            this.contraseñalogintext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.contraseñalogintext.Name = "contraseñalogintext";
             this.contraseñalogintext.PasswordChar = '*';
             this.contraseñalogintext.Size = new System.Drawing.Size(234, 22);
@@ -103,7 +104,7 @@
             // 
             this.iniciologinbotton.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iniciologinbotton.Location = new System.Drawing.Point(25, 248);
-            this.iniciologinbotton.Margin = new System.Windows.Forms.Padding(2);
+            this.iniciologinbotton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iniciologinbotton.Name = "iniciologinbotton";
             this.iniciologinbotton.Size = new System.Drawing.Size(131, 29);
             this.iniciologinbotton.TabIndex = 5;
@@ -115,7 +116,7 @@
             // 
             this.NuevoUsuarioLogin.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NuevoUsuarioLogin.Location = new System.Drawing.Point(169, 248);
-            this.NuevoUsuarioLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.NuevoUsuarioLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NuevoUsuarioLogin.Name = "NuevoUsuarioLogin";
             this.NuevoUsuarioLogin.Size = new System.Drawing.Size(132, 29);
             this.NuevoUsuarioLogin.TabIndex = 6;
@@ -139,7 +140,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PokemonJuegoProyecto.Properties.Resources.INICIOPOKEMON;
-            this.ClientSize = new System.Drawing.Size(324, 474);
+            this.ClientSize = new System.Drawing.Size(339, 481);
             this.Controls.Add(this.NuevoUsuarioLogin);
             this.Controls.Add(this.iniciologinbotton);
             this.Controls.Add(this.contraseñalogintext);
@@ -148,10 +149,15 @@
             this.Controls.Add(this.usuariolabel);
             this.Controls.Add(this.Pokeuady);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

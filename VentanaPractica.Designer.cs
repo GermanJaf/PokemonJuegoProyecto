@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPractica));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -102,7 +103,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.IntegralHeight = false;
             this.comboBox1.Location = new System.Drawing.Point(93, 366);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(195, 21);
             this.comboBox1.TabIndex = 3;
@@ -114,7 +115,7 @@
             this.comboBox2.IntegralHeight = false;
             this.comboBox2.ItemHeight = 13;
             this.comboBox2.Location = new System.Drawing.Point(558, 366);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(185, 21);
             this.comboBox2.TabIndex = 4;
@@ -127,7 +128,7 @@
             this.buttonSeleccionU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSeleccionU.Font = new System.Drawing.Font("SimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSeleccionU.Location = new System.Drawing.Point(93, 391);
-            this.buttonSeleccionU.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSeleccionU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSeleccionU.Name = "buttonSeleccionU";
             this.buttonSeleccionU.Size = new System.Drawing.Size(185, 47);
             this.buttonSeleccionU.TabIndex = 5;
@@ -142,7 +143,7 @@
             this.buttonSeleccionR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSeleccionR.Font = new System.Drawing.Font("SimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSeleccionR.Location = new System.Drawing.Point(558, 391);
-            this.buttonSeleccionR.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSeleccionR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSeleccionR.Name = "buttonSeleccionR";
             this.buttonSeleccionR.Size = new System.Drawing.Size(185, 47);
             this.buttonSeleccionR.TabIndex = 6;
@@ -157,7 +158,7 @@
             this.buttonInicarPractica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInicarPractica.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonInicarPractica.Location = new System.Drawing.Point(193, 495);
-            this.buttonInicarPractica.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonInicarPractica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonInicarPractica.Name = "buttonInicarPractica";
             this.buttonInicarPractica.Size = new System.Drawing.Size(180, 51);
             this.buttonInicarPractica.TabIndex = 7;
@@ -172,7 +173,7 @@
             this.buttonVolverPractica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonVolverPractica.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVolverPractica.Location = new System.Drawing.Point(454, 495);
-            this.buttonVolverPractica.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonVolverPractica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonVolverPractica.Name = "buttonVolverPractica";
             this.buttonVolverPractica.Size = new System.Drawing.Size(181, 51);
             this.buttonVolverPractica.TabIndex = 8;
@@ -185,7 +186,7 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.IntegralHeight = false;
             this.comboBox3.Location = new System.Drawing.Point(340, 373);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(156, 21);
             this.comboBox3.TabIndex = 10;
@@ -274,7 +275,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PokemonJuegoProyecto.Properties.Resources.FONDONUEVAPRACTICA2;
-            this.ClientSize = new System.Drawing.Size(831, 576);
+            this.ClientSize = new System.Drawing.Size(831, 581);
             this.Controls.Add(this.pictureBoxPokemonRival);
             this.Controls.Add(this.pictureBoxPokemonUsuario);
             this.Controls.Add(this.pictureBox4);
@@ -292,7 +293,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "VentanaPractica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuración de Prácticas";

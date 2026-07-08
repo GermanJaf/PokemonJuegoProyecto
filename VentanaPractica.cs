@@ -67,11 +67,6 @@ namespace PokemonJuegoProyecto
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonSeleccionU_Click(object sender, EventArgs e)
         {
             if(comboBox1.SelectedValue == null)

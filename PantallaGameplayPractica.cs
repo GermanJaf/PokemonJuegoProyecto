@@ -201,11 +201,6 @@ namespace PokemonJuegoProyecto
             EjecutarDaño(3);
         }
 
-        private void labelComentarios_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5Retirarse_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -219,11 +214,6 @@ namespace PokemonJuegoProyecto
         {
   
             button5Retirarse.BackgroundImage = Properties.Resources.btn_huir_normal;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void panelBarraRival_Paint(object sender, PaintEventArgs e)

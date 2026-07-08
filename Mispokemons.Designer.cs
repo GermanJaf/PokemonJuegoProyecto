@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mispokemons));
             this.ListaPokemon = new System.Windows.Forms.DataGridView();
             this.buttonVolverPI = new System.Windows.Forms.Button();
             this.buttonAgregarPK = new System.Windows.Forms.Button();
@@ -45,7 +46,7 @@
             this.ListaPokemon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.ListaPokemon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ListaPokemon.Location = new System.Drawing.Point(334, 73);
-            this.ListaPokemon.Margin = new System.Windows.Forms.Padding(2);
+            this.ListaPokemon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ListaPokemon.Name = "ListaPokemon";
             this.ListaPokemon.RowHeadersWidth = 51;
             this.ListaPokemon.RowTemplate.Height = 24;
@@ -59,7 +60,7 @@
             this.buttonVolverPI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonVolverPI.Font = new System.Drawing.Font("SimSun", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVolverPI.Location = new System.Drawing.Point(31, 418);
-            this.buttonVolverPI.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonVolverPI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonVolverPI.Name = "buttonVolverPI";
             this.buttonVolverPI.Size = new System.Drawing.Size(263, 86);
             this.buttonVolverPI.TabIndex = 1;
@@ -73,7 +74,7 @@
             this.buttonAgregarPK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAgregarPK.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAgregarPK.Location = new System.Drawing.Point(31, 73);
-            this.buttonAgregarPK.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAgregarPK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonAgregarPK.Name = "buttonAgregarPK";
             this.buttonAgregarPK.Size = new System.Drawing.Size(263, 42);
             this.buttonAgregarPK.TabIndex = 2;
@@ -87,7 +88,7 @@
             this.comboBox1.IntegralHeight = false;
             this.comboBox1.ItemHeight = 13;
             this.comboBox1.Location = new System.Drawing.Point(92, 343);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(136, 21);
             this.comboBox1.TabIndex = 3;
@@ -112,7 +113,7 @@
             this.bottonSN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
             this.bottonSN.Font = new System.Drawing.Font("SimSun", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bottonSN.Location = new System.Drawing.Point(334, 431);
-            this.bottonSN.Margin = new System.Windows.Forms.Padding(2);
+            this.bottonSN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bottonSN.Name = "bottonSN";
             this.bottonSN.Size = new System.Drawing.Size(330, 73);
             this.bottonSN.TabIndex = 5;
@@ -147,7 +148,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PokemonJuegoProyecto.Properties.Resources.FONDOPOKEDE;
-            this.ClientSize = new System.Drawing.Size(684, 521);
+            this.ClientSize = new System.Drawing.Size(684, 519);
             this.Controls.Add(this.pbPreview);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bottonSN);
@@ -156,8 +157,13 @@
             this.Controls.Add(this.buttonAgregarPK);
             this.Controls.Add(this.buttonVolverPI);
             this.Controls.Add(this.ListaPokemon);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Mispokemons";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pokédex";
             this.Load += new System.EventHandler(this.Mispokemons_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ListaPokemon)).EndInit();

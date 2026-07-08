@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaTorneos));
             this.label1 = new System.Windows.Forms.Label();
             this.BtnHistorial = new System.Windows.Forms.Button();
             this.BottonVolverPT = new System.Windows.Forms.Button();
@@ -57,7 +58,7 @@
             this.BtnHistorial.BackColor = System.Drawing.SystemColors.Info;
             this.BtnHistorial.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnHistorial.Location = new System.Drawing.Point(216, 401);
-            this.BtnHistorial.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnHistorial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnHistorial.Name = "BtnHistorial";
             this.BtnHistorial.Size = new System.Drawing.Size(246, 36);
             this.BtnHistorial.TabIndex = 3;
@@ -70,7 +71,7 @@
             this.BottonVolverPT.BackColor = System.Drawing.SystemColors.Info;
             this.BottonVolverPT.Font = new System.Drawing.Font("SimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BottonVolverPT.Location = new System.Drawing.Point(260, 458);
-            this.BottonVolverPT.Margin = new System.Windows.Forms.Padding(2);
+            this.BottonVolverPT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BottonVolverPT.Name = "BottonVolverPT";
             this.BottonVolverPT.Size = new System.Drawing.Size(168, 41);
             this.BottonVolverPT.TabIndex = 4;
@@ -83,7 +84,7 @@
             this.buttonTorneo.BackColor = System.Drawing.SystemColors.Info;
             this.buttonTorneo.Font = new System.Drawing.Font("SimSun", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTorneo.Location = new System.Drawing.Point(371, 243);
-            this.buttonTorneo.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonTorneo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonTorneo.Name = "buttonTorneo";
             this.buttonTorneo.Size = new System.Drawing.Size(272, 62);
             this.buttonTorneo.TabIndex = 5;
@@ -96,7 +97,7 @@
             this.buttonPractica.BackColor = System.Drawing.SystemColors.Info;
             this.buttonPractica.Font = new System.Drawing.Font("SimSun", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPractica.Location = new System.Drawing.Point(47, 243);
-            this.buttonPractica.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonPractica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonPractica.Name = "buttonPractica";
             this.buttonPractica.Size = new System.Drawing.Size(267, 62);
             this.buttonPractica.TabIndex = 6;
@@ -135,7 +136,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PokemonJuegoProyecto.Properties.Resources.FONDO_ELECCION;
-            this.ClientSize = new System.Drawing.Size(680, 511);
+            this.ClientSize = new System.Drawing.Size(686, 531);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.buttonPractica);
@@ -143,7 +144,11 @@
             this.Controls.Add(this.BottonVolverPT);
             this.Controls.Add(this.BtnHistorial);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "PantallaTorneos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Torneos";

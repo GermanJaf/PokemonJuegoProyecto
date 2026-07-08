@@ -12,23 +12,19 @@ namespace PokemonJuegoProyecto
     {
         public static void CargarImagenPokemon(PictureBox picBox, string nombrePokemon, bool esFrente)
         {
-            string nombreRecurso = nombrePokemon.ToLower().Replace(" ", "");
-
+            string nombreImagen = nombrePokemon.ToLower();
             if (esFrente)
             {
-                nombreRecurso += "_frente";
+                nombreImagen += "_frente";
             }
 
-            try
+            var imagenEncontrada = Properties.Resources.ResourceManager.GetObject(nombreImagen);
+
+            if (imagenEncontrada != null)
             {
-                object obj = PokemonJuegoProyecto.Properties.Resources.ResourceManager.GetObject(nombreRecurso);
-                if (obj != null)
-                {
-                    picBox.Image = (Image)obj;
-                    picBox.SizeMode = PictureBoxSizeMode.Zoom;
-                }
+                picBox.Image = (Image)imagenEncontrada;
+                picBox.SizeMode = PictureBoxSizeMode.Zoom;
             }
-            catch { }
         }
         public static void CargarIconoTipo(PictureBox pb, string tipo)
         {
@@ -38,10 +34,6 @@ namespace PokemonJuegoProyecto
             {
                 pb.Image = (Image)imagen;
                 pb.SizeMode = PictureBoxSizeMode.Zoom;
-            }
-            else
-            {
-                pb.BackColor = Color.Magenta;
             }
         }
     }

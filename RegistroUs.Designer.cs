@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroUs));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -96,7 +97,7 @@
             this.txtUsuario.BackColor = System.Drawing.SystemColors.ControlDark;
             this.txtUsuario.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(15, 84);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsuario.Multiline = true;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(207, 16);
@@ -107,7 +108,7 @@
             this.txtContrasena.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.txtContrasena.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasena.Location = new System.Drawing.Point(15, 171);
-            this.txtContrasena.Margin = new System.Windows.Forms.Padding(2);
+            this.txtContrasena.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtContrasena.Multiline = true;
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.Size = new System.Drawing.Size(207, 17);
@@ -118,7 +119,7 @@
             this.txtConfirmarContrasena.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.txtConfirmarContrasena.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmarContrasena.Location = new System.Drawing.Point(15, 126);
-            this.txtConfirmarContrasena.Margin = new System.Windows.Forms.Padding(2);
+            this.txtConfirmarContrasena.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtConfirmarContrasena.Multiline = true;
             this.txtConfirmarContrasena.Name = "txtConfirmarContrasena";
             this.txtConfirmarContrasena.Size = new System.Drawing.Size(207, 16);
@@ -129,7 +130,7 @@
             this.btnRegistrar.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnRegistrar.Font = new System.Drawing.Font("SimSun", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.Location = new System.Drawing.Point(244, 29);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(109, 24);
             this.btnRegistrar.TabIndex = 8;
@@ -164,10 +165,15 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "RegistroUs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistroUs";
+            this.Load += new System.EventHandler(this.RegistroUs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

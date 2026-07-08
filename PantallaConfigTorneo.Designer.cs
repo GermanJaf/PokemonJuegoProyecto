@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaConfigTorneo_));
             this.label1 = new System.Windows.Forms.Label();
             this.checkBoxDFacil = new System.Windows.Forms.CheckBox();
             this.checkBoxDMedio = new System.Windows.Forms.CheckBox();
@@ -77,7 +78,7 @@
             this.checkBoxDFacil.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxDFacil.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDFacil.Location = new System.Drawing.Point(107, 248);
-            this.checkBoxDFacil.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBoxDFacil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBoxDFacil.Name = "checkBoxDFacil";
             this.checkBoxDFacil.Size = new System.Drawing.Size(92, 33);
             this.checkBoxDFacil.TabIndex = 1;
@@ -90,7 +91,7 @@
             this.checkBoxDMedio.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxDMedio.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDMedio.Location = new System.Drawing.Point(107, 294);
-            this.checkBoxDMedio.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBoxDMedio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBoxDMedio.Name = "checkBoxDMedio";
             this.checkBoxDMedio.Size = new System.Drawing.Size(108, 33);
             this.checkBoxDMedio.TabIndex = 2;
@@ -103,7 +104,7 @@
             this.checkBoxDDificil.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxDDificil.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDDificil.Location = new System.Drawing.Point(107, 348);
-            this.checkBoxDDificil.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBoxDDificil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBoxDDificil.Name = "checkBoxDDificil";
             this.checkBoxDDificil.Size = new System.Drawing.Size(105, 33);
             this.checkBoxDDificil.TabIndex = 3;
@@ -130,7 +131,7 @@
             this.buttonComenzarTorneo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonComenzarTorneo.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonComenzarTorneo.Location = new System.Drawing.Point(143, 507);
-            this.buttonComenzarTorneo.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonComenzarTorneo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonComenzarTorneo.Name = "buttonComenzarTorneo";
             this.buttonComenzarTorneo.Size = new System.Drawing.Size(201, 47);
             this.buttonComenzarTorneo.TabIndex = 5;
@@ -145,7 +146,7 @@
             this.buttonVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonVolver.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVolver.Location = new System.Drawing.Point(485, 507);
-            this.buttonVolver.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonVolver.Name = "buttonVolver";
             this.buttonVolver.Size = new System.Drawing.Size(201, 47);
             this.buttonVolver.TabIndex = 6;
@@ -158,7 +159,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.IntegralHeight = false;
             this.comboBox1.Location = new System.Drawing.Point(354, 384);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(115, 21);
             this.comboBox1.TabIndex = 7;
@@ -182,7 +183,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.IntegralHeight = false;
             this.comboBox2.Location = new System.Drawing.Point(565, 348);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(216, 21);
             this.comboBox2.TabIndex = 9;
@@ -195,7 +196,7 @@
             this.buttonSeleccionPokemonT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSeleccionPokemonT.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSeleccionPokemonT.Location = new System.Drawing.Point(595, 373);
-            this.buttonSeleccionPokemonT.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSeleccionPokemonT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSeleccionPokemonT.Name = "buttonSeleccionPokemonT";
             this.buttonSeleccionPokemonT.Size = new System.Drawing.Size(158, 24);
             this.buttonSeleccionPokemonT.TabIndex = 10;
@@ -311,7 +312,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PokemonJuegoProyecto.Properties.Resources.TORNEOPANTALLA;
-            this.ClientSize = new System.Drawing.Size(836, 580);
+            this.ClientSize = new System.Drawing.Size(838, 583);
             this.Controls.Add(this.pictureBoxTuPokemon);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -332,7 +333,11 @@
             this.Controls.Add(this.checkBoxDMedio);
             this.Controls.Add(this.checkBoxDFacil);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "PantallaConfigTorneo_";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuració de Torneos";
