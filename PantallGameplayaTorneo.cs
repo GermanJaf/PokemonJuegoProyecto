@@ -22,6 +22,7 @@ namespace PokemonJuegoProyecto
         private int rivalesTotales;
         private MotorCombate motor = new MotorCombate();
         private int contadorTurnos = 1;
+        private Random _random = new Random();
         public PantallGameplayaTorneo(PokeDaVI pokemonTorneo, int idPokemonSlc, int cantidadRivales, int nivel)
         {
             InitializeComponent();
@@ -157,7 +158,7 @@ namespace PokemonJuegoProyecto
 
             if (miPokemon.Debilitado())
             {
-                MessageBox.Show("Tu Pokéemon se ha debilitado, perdiste la batalla");
+                MessageBox.Show("Tu Pokémon se ha debilitado, perdiste la batalla");
 
                 GestorDatos gestor = new GestorDatos();
                 gestor.RegistrarBatalla(
@@ -208,7 +209,7 @@ namespace PokemonJuegoProyecto
 
             lblCantidadHP.Text = $"Pociones restantes = {pocionesRestantes}";
 
-            motor.EscribirEnLog(listBoxLog, $" ¡Has curado a  {miPokemon.Nombre}! Recupero {vidaRecuperada}HP.");
+            motor.EscribirEnLog(listBoxLog, $"¡Has curado a  {miPokemon.Nombre}! Recuperó {vidaRecuperada}HP.");
 
             ActualizarVida();
 
@@ -240,17 +241,29 @@ namespace PokemonJuegoProyecto
             DialogResult confirmar = MessageBox.Show("¿Realmente quieres salir?", "Abandonar torneo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             if (confirmar == DialogResult.Yes)
-            {
-                GestorDatos gestor = new GestorDatos();
-                gestor.RegistrarBatalla(
+            { 
+                int suerte = _random.Next(1, 101);
+                if (suerte <= 40)
+                {
+                    GestorDatos gestor = new GestorDatos();
+                    gestor.RegistrarBatalla(
 
-                    IdRegistroUsuario,
-                    miPokemon.Id,
-                    miPokemon.Nivel,
-                    rivalPokemon.Nombre,
-                    rivalPokemon.Nivel,
-                    "Abandonada");
-                this.Close();
+                        IdRegistroUsuario,
+                        miPokemon.Id,
+                        miPokemon.Nivel,
+                        rivalPokemon.Nombre,
+                        rivalPokemon.Nivel,
+                        "Abandonada");
+                    this.Close();
+                }
+                else
+                {
+                    motor.EscribirEnLog(listBoxLog, $"------------- TURNO {contadorTurnos} --------------");
+                    motor.EscribirEnLog(listBoxLog, "¡El Pokémon rival no te dejó abandonar!");
+
+                    contadorTurnos++;
+                    TurnoRival();
+                }
             }
         }
 
@@ -313,13 +326,18 @@ namespace PokemonJuegoProyecto
 
         private void btnSanar_MouseEnter(object sender, EventArgs e)
         {
-            btnSanar.BackgroundImage = Properties.Resources.btn_sanar_select;
+            if (btnSanar.Enabled)
+            {
+                btnSanar.BackgroundImage = Properties.Resources.btn_sanar_select;
+            }
         }
 
         private void btnSanar_MouseLeave(object sender, EventArgs e)
         {
-
-            btnSanar.BackgroundImage = Properties.Resources.btn_sanar_normal;
+            if (btnSanar.Enabled)
+            {
+                btnSanar.BackgroundImage = Properties.Resources.btn_sanar_normal;
+            }
         }
         private void btnAbandonar_MouseEnter(object sender, EventArgs e)
         {
