@@ -84,12 +84,11 @@ namespace PokemonJuegoProyecto
             GestorDatos gestorDatos = new GestorDatos();
             miPokemon = gestorDatos.PokemonUsuarioCombate(idRegistro);
             MessageBox.Show($"Has seleccionado a {miPokemon.Nombre} con nivel {miPokemon.Nivel}");
-            GestorVisual.CargarImagenPokemon(pictureBoxPokemonUsuario, miPokemon.Nombre, true);
         }
 
         private void buttonSeleccionR_Click(object sender, EventArgs e)
         {
-            if(comboBox2.SelectedValue == null || comboBox3.SelectedItem == null)
+            if (comboBox2.SelectedValue == null || comboBox3.SelectedItem == null)
             {
                 return;
             }
@@ -100,7 +99,6 @@ namespace PokemonJuegoProyecto
             GestorDatos gestorDatos = new GestorDatos();
             rivalPokemon = gestorDatos.PokemonRivalCombate(idPokemon, nivelElegido);
             MessageBox.Show($"Has seleccionado a {rivalPokemon.Nombre} con nivel {nivelElegido}");
-            GestorVisual.CargarImagenPokemon(pictureBoxPokemonRival, rivalPokemon.Nombre, true);
         }
 
         private void buttonInicarPractica_Click(object sender, EventArgs e)
@@ -120,12 +118,24 @@ namespace PokemonJuegoProyecto
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox1.SelectedItem != null)
+            {
+                DataRowView row = (DataRowView)comboBox1.SelectedItem;
+                string nombrePokemon = row["PokemonConNivel"].ToString().Split(' ')[0].Trim();
 
+                GestorVisual.CargarImagenPokemon(pictureBoxPokemonUsuario, nombrePokemon, true);
+            }
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox2.SelectedItem != null)
+            {
+                DataRowView row = (DataRowView)comboBox2.SelectedItem;
+                string nombrePokemon = row["Nombre"].ToString();
 
+                GestorVisual.CargarImagenPokemon(pictureBoxPokemonRival, nombrePokemon, true);
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -144,6 +154,11 @@ namespace PokemonJuegoProyecto
         }
 
         private void pictureBoxPokemonUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxPokemonRival_Click(object sender, EventArgs e)
         {
 
         }

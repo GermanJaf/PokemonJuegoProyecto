@@ -45,7 +45,8 @@ namespace PokemonJuegoProyecto
             button3.Enabled = false;
             button4.Enabled = false;
 
-            motor.EscribirEnLog(listBoxLog, $"--- TURNO {contadorTurnos} (Tu turno) ---");
+            motor.EscribirEnLog(listBoxLog, $"--------- TURNO {contadorTurnos} ---------");
+            motor.EscribirEnLog(listBoxLog, $"--------- (Tu turno) ---------");
 
             if (miPokemon.MisAtaques[AtaqueSeleccion] == null)
             {
@@ -61,12 +62,12 @@ namespace PokemonJuegoProyecto
 
             labelComentarios.Text = mensajeInGame;
 
-            motor.EscribirEnLog(listBoxLog, $"{miPokemon.Nombre} usó {ataqueUsado.Nombre}!");
+            motor.EscribirEnLog(listBoxLog, $"mi {miPokemon.Nombre} usó {ataqueUsado.Nombre}!");
 
             if (!string.IsNullOrEmpty(mensajeInGame))
                 motor.EscribirEnLog(listBoxLog, mensajeInGame);
 
-            motor.EscribirEnLog(listBoxLog, $"{rivalPokemon.Nombre} perdió {dañoRealizado} HP.");
+            motor.EscribirEnLog(listBoxLog, $" El {rivalPokemon.Nombre} rival perdió {dañoRealizado} HP.");
 
             ActualizarVida();
 
@@ -75,7 +76,7 @@ namespace PokemonJuegoProyecto
                 GestorDatos gestorDatos = new GestorDatos();
                 gestorDatos.RegistrarVictorias(IdRegistroUsuario);
 
-                MessageBox.Show("Felicidades haz ganado");
+                MessageBox.Show("¡Felicidades! ¡Ganaste!");
                 this.Close();
                 return;
             }
@@ -84,7 +85,7 @@ namespace PokemonJuegoProyecto
         }
         private void TurnoRival()
         {
-            motor.EscribirEnLog(listBoxLog, "--- Turno Rival ---");
+            motor.EscribirEnLog(listBoxLog, "--------- Turno Rival ---------");
             Random rnd = new Random();
             int AtaqueAleatorio = rnd.Next(0, 4);
 
@@ -102,15 +103,15 @@ namespace PokemonJuegoProyecto
             labelComentarios.Text = mensajeInGameRival;
 
             miPokemon.RecibirDaño(dañoRealizadoR);
-            motor.EscribirEnLog(listBoxLog, $"{rivalPokemon.Nombre} rival usó {ataqueUsadoR.Nombre}!");
+            motor.EscribirEnLog(listBoxLog, $"El {rivalPokemon.Nombre} rival usó {ataqueUsadoR.Nombre}!");
             if (!string.IsNullOrEmpty(mensajeInGameRival))
                 motor.EscribirEnLog(listBoxLog, mensajeInGameRival);
-            motor.EscribirEnLog(listBoxLog, $"{miPokemon.Nombre} perdió {dañoRealizadoR} HP.");
+            motor.EscribirEnLog(listBoxLog, $"Mi {miPokemon.Nombre} perdió {dañoRealizadoR} HP.");
             ActualizarVida();
 
             if (miPokemon.Debilitado())
             {
-                MessageBox.Show("Tu pokemon se ha debilitado, haz perdido la batalla");
+                MessageBox.Show("Tu Pokémon se ha debilitado, perdiste la batalla");
                 this.Close();
             }
             contadorTurnos++;

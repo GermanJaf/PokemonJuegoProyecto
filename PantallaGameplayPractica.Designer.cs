@@ -209,9 +209,9 @@
             this.listBoxLog.FormattingEnabled = true;
             this.listBoxLog.IntegralHeight = false;
             this.listBoxLog.ItemHeight = 16;
-            this.listBoxLog.Location = new System.Drawing.Point(688, 6);
+            this.listBoxLog.Location = new System.Drawing.Point(585, 6);
             this.listBoxLog.Name = "listBoxLog";
-            this.listBoxLog.Size = new System.Drawing.Size(213, 574);
+            this.listBoxLog.Size = new System.Drawing.Size(316, 574);
             this.listBoxLog.TabIndex = 12;
             // 
             // pictureBoxJugador
@@ -317,6 +317,7 @@
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PantallaGameplayPractica";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PantallaGameplay";
             this.Load += new System.EventHandler(this.PantallaGameplay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJugador)).EndInit();

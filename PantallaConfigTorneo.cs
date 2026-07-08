@@ -106,11 +106,10 @@ namespace PokemonJuegoProyecto
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem != null)
+            if (comboBox2.SelectedItem != null)
             {
-                DataRowView row = (DataRowView)comboBox1.SelectedItem;
-
-                string nombrePokemon = row["Nombre"].ToString();
+                DataRowView row = (DataRowView)comboBox2.SelectedItem;
+                string nombrePokemon = row["PokemonConNivel"].ToString().Split(' ')[0].Trim();
 
                 GestorVisual.CargarImagenPokemon(pictureBoxTuPokemon, nombrePokemon, true);
             }

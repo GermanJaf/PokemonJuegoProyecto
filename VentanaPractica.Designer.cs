@@ -267,6 +267,7 @@
             this.pictureBoxPokemonRival.Size = new System.Drawing.Size(100, 96);
             this.pictureBoxPokemonRival.TabIndex = 16;
             this.pictureBoxPokemonRival.TabStop = false;
+            this.pictureBoxPokemonRival.Click += new System.EventHandler(this.pictureBoxPokemonRival_Click);
             // 
             // VentanaPractica
             // 
