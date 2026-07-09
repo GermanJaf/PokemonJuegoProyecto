@@ -50,13 +50,16 @@ CREATE TABLE PokemonUsuario(
        FOREIGN KEY ([PokemonID]) REFERENCES Pokemones([Id])
 );
 
-CREATE TABLE HistorialTorneos(
-       [Id] INTEGER PRIMARY KEY AUTOINCREMENT,
-       [UsuarioId] INTEGER,
-       [PokemonID] INTEGER,
-       [FaseLograda] TEXT NOT NULL,
-       FOREIGN KEY ([UsuarioId]) REFERENCES Usuarios([Id]),
-       FOREIGN KEY ([PokemonID]) REFERENCES Pokemones([Id])
+CREATE TABLE [HistorialTorneos](
+    [Id] INTEGER PRIMARY KEY AUTOINCREMENT,
+    [UsuarioId] INTEGER, 
+    [PokemonId] INTEGER, 
+    [NivelUsuario] INTEGER, 
+    [PokemonRival] INTEGER, 
+    [NivelRival] INTEGER, 
+    [Resultado] TEXT, 
+    FOREIGN KEY ([UsuarioId]) REFERENCES Usuarios([Id]),
+    FOREIGN KEY ([PokemonId]) REFERENCES Pokemones([Id])
 );
 
 INSERT INTO Usuarios (NombreUsuario, Contraseña, BatallasGanadas) VALUES
@@ -168,7 +171,3 @@ INSERT INTO Pokemones (Nombre, Tipo, HPBase, AtaqueBase, DefensaBase, Ataque1Id,
 INSERT INTO PokemonUsuario (UsuarioId, PokemonID, Nivel, HP, Ataque, Defensa) VALUES
 (1, 2, 1, 39, 52, 43),
 (2, 1, 1, 35, 55, 40);
-
-INSERT INTO HistorialTorneos (UsuarioId, PokemonID, FaseLograda) VALUES
-(1, 2, '16VO'),
-(2, 1, 'Semifinales');
