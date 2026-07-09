@@ -55,7 +55,7 @@ CREATE TABLE [HistorialTorneos](
     [UsuarioId] INTEGER, 
     [PokemonId] INTEGER, 
     [NivelUsuario] INTEGER, 
-    [PokemonRival] INTEGER, 
+    [PokemonRival] TEXT, 
     [NivelRival] INTEGER, 
     [Resultado] TEXT, 
     FOREIGN KEY ([UsuarioId]) REFERENCES Usuarios([Id]),

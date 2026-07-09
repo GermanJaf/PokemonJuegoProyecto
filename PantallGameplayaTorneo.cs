@@ -124,6 +124,21 @@ namespace PokemonJuegoProyecto
                 }
                 else
                 {
+                    int puntosObtenidos = 0;
+                    if(rivalesTotales == 3)
+                    {
+                        puntosObtenidos = 1;
+                    }
+                    else if(rivalesTotales == 6)
+                    {
+                        puntosObtenidos = 2;
+                    }
+                    else if(rivalesTotales == 9)
+                    {
+                        puntosObtenidos = 3;
+                    }
+
+
                     MessageBox.Show("¡Felicidades! ¡Has ganado el torneo!");
                     GestorDatos gestor = new GestorDatos();
                     gestor.RegistrarBatalla(
@@ -134,6 +149,7 @@ namespace PokemonJuegoProyecto
                         rivalPokemon.Nombre,
                         rivalPokemon.Nivel,
                         "Ganada");
+                    gestor.SumarPuntosMejora(idUsuarioReal, puntosObtenidos);
                     this.Close();
                 }
                 return;

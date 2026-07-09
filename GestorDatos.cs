@@ -22,6 +22,11 @@ namespace PokemonJuegoProyecto
             conn.Open();
             
         }
+        public void SumarPuntosMejora(int idUsuario, int puntos)
+        {
+            string querySumar = "UPDATE Usuarios SET PuntosMejora = PuntosMejora + @puntos WHERE Id = @idUsuario";
+            conn.ExecuteNonQuery(querySumar, ("@puntos", puntos), ("@idUsuario", idUsuario));
+        }
         public void RegistrarBatalla(int usuarioId, int pokemonId, int nivelUsuario, string pokemonRival, int nivelRival, string resultado)
         {
             string query = @"INSERT INTO HistorialTorneos
