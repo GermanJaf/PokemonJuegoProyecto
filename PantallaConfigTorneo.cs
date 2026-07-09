@@ -98,7 +98,7 @@ namespace PokemonJuegoProyecto
             int nivelElegidoTorneo = Convert.ToInt32(comboBox1.SelectedItem);
             int idRegistro = Convert.ToInt32(comboBox2.SelectedValue);
 
-            PantallGameplayaTorneo pantallaTorneo = new PantallGameplayaTorneo(miPokemonTorneo, idRegistro, cantidadOponentes, nivelElegidoTorneo);
+            PantallGameplayaTorneo pantallaTorneo = new PantallGameplayaTorneo(miPokemonTorneo, idRegistro, cantidadOponentes, nivelElegidoTorneo, idUsuario);
             this.Hide();
             pantallaTorneo.ShowDialog();
             this.Show();

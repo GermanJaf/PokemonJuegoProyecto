@@ -15,6 +15,7 @@ namespace PokemonJuegoProyecto
 
         private PokeDaVI miPokemon;
         private PokeDaVI rivalPokemon;
+        private int idUsuarioReal;
         private int IdRegistroUsuario;
         private int pocionesRestantes;
         private int rivalesRestantes;
@@ -23,12 +24,13 @@ namespace PokemonJuegoProyecto
         private MotorCombate motor = new MotorCombate();
         private int contadorTurnos = 1;
         private Random _random = new Random();
-        public PantallGameplayaTorneo(PokeDaVI pokemonTorneo, int idPokemonSlc, int cantidadRivales, int nivel)
+        public PantallGameplayaTorneo(PokeDaVI pokemonTorneo, int idPokemonSlc, int cantidadRivales, int nivel, int idUsuario)
         {
             InitializeComponent();
             miPokemon = pokemonTorneo;
             miPokemon.CuraMaxima();
             IdRegistroUsuario = idPokemonSlc;
+            idUsuarioReal = idUsuario;
             rivalesTotales = cantidadRivales;
             rivalesRestantes = cantidadRivales;
             nivelTorneo = nivel;
@@ -126,7 +128,7 @@ namespace PokemonJuegoProyecto
                     GestorDatos gestor = new GestorDatos();
                     gestor.RegistrarBatalla(
 
-                        IdRegistroUsuario,
+                        idUsuarioReal,
                         miPokemon.Id,
                         miPokemon.Nivel,
                         rivalPokemon.Nombre,
@@ -178,7 +180,7 @@ namespace PokemonJuegoProyecto
                 GestorDatos gestor = new GestorDatos();
                 gestor.RegistrarBatalla(
 
-                    IdRegistroUsuario,
+                    idUsuarioReal,
                     miPokemon.Id,
                     miPokemon.Nivel,
                     rivalPokemon.Nombre,
@@ -263,7 +265,7 @@ namespace PokemonJuegoProyecto
                     GestorDatos gestor = new GestorDatos();
                     gestor.RegistrarBatalla(
 
-                        IdRegistroUsuario,
+                        idUsuarioReal,
                         miPokemon.Id,
                         miPokemon.Nivel,
                         rivalPokemon.Nombre,
