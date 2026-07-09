@@ -1,0 +1,92 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PokemonJuegoProyecto
+{
+    public class PokeDaVI
+    {
+        private static Random rand = new Random();
+        public int Id { get; }
+        public string Nombre { get; }
+        public string Tipo { get; }
+        public int Nivel { get; }
+        public int HPMax { get; }
+        public int HPActual { get; private set; }
+        public int AtaqueBase { get; }
+        public int DefensaBase { get; }
+        public Ataque[] MisAtaques { get; set; }
+        public PokeDaVI(int id, string nombre, string tipo, int nivel, int hpMax, int ataqueBase, int defensaBase)
+        {
+            Id = id;
+            Nombre = nombre;
+            Tipo = tipo;
+            Nivel = nivel;
+            HPMax = hpMax;
+            HPActual = hpMax;
+            AtaqueBase = ataqueBase;
+            DefensaBase = defensaBase;
+        }
+
+        public void RecibirDaño(int cantidad)
+        {
+            HPActual -= cantidad;
+            if (HPActual < 0) HPActual = 0;
+        }
+
+        public void CuraMaxima()
+        {
+            HPActual = HPMax;
+        }
+
+        // Debilitado//
+        public bool Debilitado()
+        {
+            return HPActual <= 0;
+        }
+        public int Atacar(PokeDaVI rival, Ataque ataqueUsado, out string mensajeGameplay)
+        {
+            mensajeGameplay = "";
+
+            double Niv = ((2.0 * (double)Nivel) / 5.0) + 2.0;
+            double Atade = ataqueUsado.Poder * ((double)AtaqueBase / rival.DefensaBase);
+            double dañoBase = (Atade / 50.0) + 2;
+
+            //STAB//
+            double stab = 1.0;
+            if (ataqueUsado.Tipo == Tipo)
+            {
+                stab = 1.5;
+            }
+
+            // Efectividad//
+            double efectividad = PokeTipos.Efectividad(ataqueUsado.Tipo, rival.Tipo);
+
+            // Critico //
+            double critico = 1.0;
+            int num = rand.Next(25);
+            if (num == 10)
+            {
+                critico = 1.5;
+                mensajeGameplay += "¡Un golpe crítico!";
+            }
+
+            // Daño entre 85 a 100% //
+            int porat = rand.Next(70, 116);
+            double aleatorio = porat / 100.0;
+
+            // Formula
+            int dañoFinal = (int)(dañoBase * critico * aleatorio * stab * efectividad);
+
+            if (efectividad == 2.0) mensajeGameplay += "¡Es súper eficaz!"; 
+
+            else if (efectividad == 0.5) mensajeGameplay += "No es muy eficaz...";
+
+            else if (efectividad == 0.0) mensajeGameplay += "No tiene efectos...";
+
+            return dañoFinal;
+        }
+    }
+}
