@@ -253,9 +253,9 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_electrico_iluminado {
+        internal static System.Drawing.Bitmap btn_eléctrico_iluminado {
             get {
-                object obj = ResourceManager.GetObject("btn_electrico_iluminado", resourceCulture);
+                object obj = ResourceManager.GetObject("btn_eléctrico_iluminado", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,9 +263,9 @@ namespace PokemonJuegoProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_electrico_normal {
+        internal static System.Drawing.Bitmap btn_eléctrico_normal {
             get {
-                object obj = ResourceManager.GetObject("btn_electrico_normal", resourceCulture);
+                object obj = ResourceManager.GetObject("btn_eléctrico_normal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
