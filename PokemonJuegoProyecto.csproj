@@ -12,6 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,34 +34,32 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Data.Sqlite, Version=10.0.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Data.Sqlite.Core.10.0.9\lib\netstandard2.0\Microsoft.Data.Sqlite.dll</HintPath>
-    </Reference>
-    <Reference Include="SQLitePCLRaw.batteries_v2, Version=2.1.11.2622, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
-      <HintPath>packages\SQLitePCLRaw.bundle_e_sqlite3.2.1.11\lib\net461\SQLitePCLRaw.batteries_v2.dll</HintPath>
-    </Reference>
-    <Reference Include="SQLitePCLRaw.core, Version=2.1.11.2622, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
-      <HintPath>packages\SQLitePCLRaw.core.2.1.11\lib\netstandard2.0\SQLitePCLRaw.core.dll</HintPath>
-    </Reference>
-    <Reference Include="SQLitePCLRaw.provider.dynamic_cdecl, Version=2.1.11.2622, Culture=neutral, PublicKeyToken=b68184102cba0b3b, processorArchitecture=MSIL">
-      <HintPath>packages\SQLitePCLRaw.provider.dynamic_cdecl.2.1.11\lib\netstandard2.0\SQLitePCLRaw.provider.dynamic_cdecl.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
-    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
-    </Reference>
     <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -71,27 +71,116 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Ataque.cs" />
+    <Compile Include="GestorVisual.cs" />
+    <Compile Include="MotorCombate.cs" />
+    <Compile Include="PantallaConfigTorneo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="PantallaConfigTorneo.Designer.cs">
+      <DependentUpon>PantallaConfigTorneo.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaGameplayPractica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaGameplayPractica.Designer.cs">
+      <DependentUpon>PantallaGameplayPractica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaRendimientoPK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaRendimientoPK.Designer.cs">
+      <DependentUpon>PantallaRendimientoPK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallGameplayaTorneo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallGameplayaTorneo.Designer.cs">
+      <DependentUpon>PantallGameplayaTorneo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaTorneos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaTorneos.Designer.cs">
+      <DependentUpon>PantallaTorneos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mispokemons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mispokemons.Designer.cs">
+      <DependentUpon>Mispokemons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaInicio.Designer.cs">
+      <DependentUpon>PantallaInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestorDatos.cs" />
+    <Compile Include="PokeDaVI.cs" />
+    <Compile Include="PokeTipos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroUs.Designer.cs">
+      <DependentUpon>RegistroUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlConnectionEstension.cs" />
+    <Compile Include="Usuarios.cs" />
+    <Compile Include="VentanaPractica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaPractica.Designer.cs">
+      <DependentUpon>VentanaPractica.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PantallaConfigTorneo.resx">
+      <DependentUpon>PantallaConfigTorneo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaGameplayPractica.resx">
+      <DependentUpon>PantallaGameplayPractica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaRendimientoPK.resx">
+      <DependentUpon>PantallaRendimientoPK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallGameplayaTorneo.resx">
+      <DependentUpon>PantallGameplayaTorneo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaTorneos.resx">
+      <DependentUpon>PantallaTorneos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mispokemons.resx">
+      <DependentUpon>Mispokemons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaInicio.resx">
+      <DependentUpon>PantallaInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="packages.config" />
+    <EmbeddedResource Include="RegistroUs.resx">
+      <DependentUpon>RegistroUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaPractica.resx">
+      <DependentUpon>VentanaPractica.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -104,6 +193,291 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite">
+      <Version>10.0.9</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
+      <Version>3.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl">
+      <Version>3.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.EF6">
+      <Version>2.0.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INICIOPOKEMON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POKELOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REGISTROFONDO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REGISTROFONDO %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REGISTROFONDO %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERSONAJE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOINICIOPOKE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOINICIOPOKE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPOKEMENU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPOKEMENUU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPOKEMENU1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POKEBALL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokemon_sprite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POKEDEX ARRIBA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikac.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rojo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokedexxxxx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NUBES.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TIERRA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CIELO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inviernooo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marcador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inviernooo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MADERA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TORNEOXD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TORNEOXD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_3d2cqo3d2cqo3d2c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MADERA1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inviernooo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marcador1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marco1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDO ELECCION.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPRACTICA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPRACTICA1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPRACTICA2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPRACTICA3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPRACTICA4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDONUEVAPRACTICA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDONUEVAPRACTICA1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDONUEVAPRACTICA2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PIKACHU2D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MEWTO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TORNEOPANTALLA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PIKACHU2D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chorizord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\aron.gif" />
+    <Content Include="Resources\aron_frente.gif" />
+    <Content Include="Resources\axew.gif" />
+    <Content Include="Resources\axew_frente.gif" />
+    <Content Include="Resources\bagon.gif" />
+    <Content Include="Resources\bagon_frente.gif" />
+    <None Include="Resources\BATALLAPOKEMON.png" />
+    <Content Include="Resources\beldum.gif" />
+    <Content Include="Resources\beldum_frente.gif" />
+    <Content Include="Resources\bulbasaur.gif" />
+    <Content Include="Resources\bulbasaur_frente.gif" />
+    <Content Include="Resources\caterpie.gif" />
+    <Content Include="Resources\caterpie_frente.gif" />
+    <Content Include="Resources\charmander.gif" />
+    <Content Include="Resources\charmander_frente.gif" />
+    <Content Include="Resources\chikorita.gif" />
+    <Content Include="Resources\chikorita_frente.gif" />
+    <Content Include="Resources\chimchar.gif" />
+    <Content Include="Resources\chimchar_frente.gif" />
+    <Content Include="Resources\cranidos.gif" />
+    <Content Include="Resources\cranidos_frente.gif" />
+    <Content Include="Resources\cyndaquil.gif" />
+    <Content Include="Resources\cyndaquil_frente.gif" />
+    <Content Include="Resources\dratini.gif" />
+    <Content Include="Resources\dratini_frente.gif" />
+    <Content Include="Resources\eevee.gif" />
+    <Content Include="Resources\eevee_frente.gif" />
+    <None Include="Resources\FONDOPOKEMENUxd.png" />
+    <None Include="Resources\FONDOPOKEMENUA1.png" />
+    <None Include="Resources\FONDOPOKEMENUA.png" />
+    <None Include="Resources\FONDOPOKEMENUdo1.png" />
+    <None Include="Resources\FONDOPOKEMENUdo.png" />
+    <None Include="Resources\FONDOPOKEDE.png" />
+    <None Include="Resources\FONDOPOKEDEX.png" />
+    <None Include="Resources\FONDORENDIMI.png" />
+    <None Include="Resources\FONDORENDIMI1.png" />
+    <None Include="Resources\FONDORENDIMIENTO.png" />
+    <None Include="Resources\FONDORENDIMIENTO1.png" />
+    <None Include="Resources\FONDOLC.png" />
+    <None Include="Resources\FONDOLC1.png" />
+    <None Include="Resources\FONDOLC2.png" />
+    <None Include="Resources\FONDOLC3.png" />
+    <None Include="Resources\FONDOFINALPRACTICA.png" />
+    <None Include="Resources\FONDOFINALPRACTICA1.png" />
+    <Content Include="Resources\gastly.gif" />
+    <Content Include="Resources\gastly_frente.gif" />
+    <Content Include="Resources\geodude.gif" />
+    <Content Include="Resources\geodude_frente.gif" />
+    <Content Include="Resources\gible.gif" />
+    <Content Include="Resources\gible_frente.gif" />
+    <None Include="Resources\hitmonchan.gif" />
+    <Content Include="Resources\houndour.gif" />
+    <Content Include="Resources\houndour_frente.gif" />
+    <Content Include="Resources\larvitar.gif" />
+    <Content Include="Resources\larvitar_frente.gif" />
+    <Content Include="Resources\machop.gif" />
+    <Content Include="Resources\machop_frente.gif" />
+    <Content Include="Resources\mareep.gif" />
+    <Content Include="Resources\mareep_frente.gif" />
+    <Content Include="Resources\mudkip.gif" />
+    <Content Include="Resources\mudkip_frente.gif" />
+    <Content Include="Resources\oshawott.gif" />
+    <Content Include="Resources\oshawott_frente.gif" />
+    <Content Include="Resources\phanpy.gif" />
+    <Content Include="Resources\phanpy_frente.gif" />
+    <Content Include="Resources\pidgey.gif" />
+    <Content Include="Resources\pidgey_frente.gif" />
+    <Content Include="Resources\pikachu.gif" />
+    <Content Include="Resources\pikachu_frente.gif" />
+    <Content Include="Resources\piplup.gif" />
+    <Content Include="Resources\piplup_frente.gif" />
+    <Content Include="Resources\poochyena.gif" />
+    <Content Include="Resources\poochyena_frente.gif" />
+    <Content Include="Resources\ralts.gif" />
+    <Content Include="Resources\ralts_frente.gif" />
+    <Content Include="Resources\rattata.gif" />
+    <Content Include="Resources\rattata_frente.gif" />
+    <Content Include="Resources\riolu.gif" />
+    <Content Include="Resources\riolu_frente.gif" />
+    <Content Include="Resources\sandile.gif" />
+    <Content Include="Resources\sandile_frente.gif" />
+    <Content Include="Resources\sandshrew.gif" />
+    <Content Include="Resources\sandshrew_frente.gif" />
+    <Content Include="Resources\shinx .gif" />
+    <Content Include="Resources\shinx_frente.gif" />
+    <Content Include="Resources\snivy.gif" />
+    <Content Include="Resources\snivy_frente.gif" />
+    <Content Include="Resources\snorunt.gif" />
+    <Content Include="Resources\snorunt_frente.gif" />
+    <Content Include="Resources\snover.gif" />
+    <Content Include="Resources\snover_frente.gif" />
+    <Content Include="Resources\squirtle.gif" />
+    <Content Include="Resources\squirtle_frente.gif" />
+    <Content Include="Resources\swinub.gif" />
+    <Content Include="Resources\swinub_frente.gif" />
+    <Content Include="Resources\teddiursa.gif" />
+    <Content Include="Resources\teddiursa_frente.gif" />
+    <Content Include="Resources\tepig.gif" />
+    <Content Include="Resources\tepig_frente.gif" />
+    <Content Include="Resources\togepi.gif" />
+    <Content Include="Resources\togepi_frente.gif" />
+    <Content Include="Resources\torchic.gif" />
+    <Content Include="Resources\torchic_frente.gif" />
+    <Content Include="Resources\totodile.gif" />
+    <Content Include="Resources\totodile_frente.gif" />
+    <Content Include="Resources\trapinch.gif" />
+    <Content Include="Resources\trapinch_frente.gif" />
+    <Content Include="Resources\treecko.gif" />
+    <Content Include="Resources\treecko_frente.gif" />
+    <Content Include="Resources\turtwig.gif" />
+    <Content Include="Resources\turtwig_frente.gif" />
+    <Content Include="Resources\venipede.gif" />
+    <Content Include="Resources\venipede_frente.gif" />
+    <Content Include="Resources\vulpix.gif" />
+    <Content Include="Resources\vulpix_frente.gif" />
+    <Content Include="Resources\zorua.gif" />
+    <Content Include="Resources\zorua_frente.gif" />
+    <Content Include="Resources\zubat.gif" />
+    <Content Include="Resources\zubat_frente.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
